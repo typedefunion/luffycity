@@ -1,16 +1,26 @@
 <template>
   <div id="home">
-    前端首页
+    <Header></Header>
+    <Banner></Banner>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+    import Header from "./common/Header"
+    import Banner from "./common/Banner"
+    import Footer from "./common/Footer"
+
     export default {
         name: "Home",
-        data(){
-            return {
-
-            }
+        data() {
+            return {}
+        },
+        methods: {},
+        components: {
+            Header,
+            Footer,
+            Banner,
         }
     }
 </script>
