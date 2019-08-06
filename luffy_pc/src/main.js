@@ -15,6 +15,11 @@ import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(Element);
 
+// 内置axios到vue中
+import axios from 'axios'; // 从node_modules目录中导入包
+// 允许ajax发送请求时附带cookie
+axios.defaults.withCredentials = false;
+Vue.prototype.$axios = axios; // 把对象挂载vue中
 
 Vue.config.productionTip = false;
 

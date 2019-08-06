@@ -3,3 +3,62 @@ INFO 2019-08-06 14:05:24,756 autoreload 597 Watching for file changes with StatR
 INFO 2019-08-06 14:05:28,810 basehttp 154 "GET / HTTP/1.1" 200 16348
 WARNING 2019-08-06 14:05:30,078 log 228 Not Found: /favicon.ico
 WARNING 2019-08-06 14:05:30,081 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1974
+ERROR 2019-08-06 16:44:32,142 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:44:32,250 log 228 Bad Request: /
+WARNING 2019-08-06 16:44:32,251 basehttp 154 "GET / HTTP/1.1" 400 68749
+ERROR 2019-08-06 16:44:32,541 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:44:32,586 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:44:32,587 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:45:44,387 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:44,424 log 228 Bad Request: /
+WARNING 2019-08-06 16:45:44,426 basehttp 154 "GET / HTTP/1.1" 400 68884
+ERROR 2019-08-06 16:45:44,538 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:44,597 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:45:44,600 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:45:46,352 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:46,418 log 228 Bad Request: /
+WARNING 2019-08-06 16:45:46,419 basehttp 154 "GET / HTTP/1.1" 400 68884
+ERROR 2019-08-06 16:45:46,557 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:46,606 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:45:46,607 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:45:47,622 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:47,682 log 228 Bad Request: /
+WARNING 2019-08-06 16:45:47,683 basehttp 154 "GET / HTTP/1.1" 400 68884
+ERROR 2019-08-06 16:45:47,850 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:47,899 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:45:47,906 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:45:48,865 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:48,905 log 228 Bad Request: /
+WARNING 2019-08-06 16:45:48,906 basehttp 154 "GET / HTTP/1.1" 400 68884
+ERROR 2019-08-06 16:45:49,095 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:49,133 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:45:49,135 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:45:55,682 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:55,720 log 228 Bad Request: /
+WARNING 2019-08-06 16:45:55,721 basehttp 154 "GET / HTTP/1.1" 400 68884
+ERROR 2019-08-06 16:45:55,810 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:55,858 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:45:55,860 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:45:56,957 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:57,000 log 228 Bad Request: /
+WARNING 2019-08-06 16:45:57,000 basehttp 154 "GET / HTTP/1.1" 400 68884
+ERROR 2019-08-06 16:45:57,092 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:45:57,131 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:45:57,132 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+ERROR 2019-08-06 16:46:31,093 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:46:31,139 log 228 Bad Request: /
+WARNING 2019-08-06 16:46:31,141 basehttp 154 "GET / HTTP/1.1" 400 68749
+ERROR 2019-08-06 16:46:31,330 exception 77 Invalid HTTP_HOST header: 'api.luffycity.cn:8000'. You may need to add 'api.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-06 16:46:31,379 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-06 16:46:31,380 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68801
+INFO 2019-08-06 16:47:21,286 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-06 16:47:22,624 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-06 16:47:25,603 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-08-06 16:47:25,643 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2019-08-06 16:47:25,817 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2019-08-06 16:47:25,829 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2019-08-06 16:47:25,844 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2019-08-06 16:47:25,849 log 228 Not Found: /favicon.ico
+WARNING 2019-08-06 16:47:25,850 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1981
+INFO 2019-08-06 16:54:15,281 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-06 16:54:15,899 autoreload 597 Watching for file changes with StatReloader
