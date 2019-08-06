@@ -1,0 +1,5 @@
+INFO 2019-08-06 14:03:49,580 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-06 14:05:24,756 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-06 14:05:28,810 basehttp 154 "GET / HTTP/1.1" 200 16348
+WARNING 2019-08-06 14:05:30,078 log 228 Not Found: /favicon.ico
+WARNING 2019-08-06 14:05:30,081 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1974
