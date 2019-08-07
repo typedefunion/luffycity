@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'reversion',
 
     'home',
+    'users',
 ]
 
 
@@ -218,3 +219,7 @@ REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'luffyapi.utils.exceptions.custom_exception_handler',
 }
+
+
+# auth认证模块采用自定义用户模型【这个配置项只能子啊第一次数据迁移之前进行修改，否则报错】
+AUTH_USER_MODEL = 'users.User'   # 格式必须是‘子应用目录名称.模型类名’

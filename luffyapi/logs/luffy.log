@@ -565,3 +565,55 @@ INFO 2019-08-07 22:15:12,037 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 90
 INFO 2019-08-07 22:15:52,229 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 90
 INFO 2019-08-07 22:15:52,236 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
 INFO 2019-08-07 22:15:52,242 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 117
+INFO 2019-08-07 23:41:35,865 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 90
+INFO 2019-08-07 23:41:35,868 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 117
+INFO 2019-08-07 23:41:35,871 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 23:41:35,931 basehttp 154 "GET /media/banner/1.png HTTP/1.1" 304 0
+INFO 2019-08-07 23:41:35,932 basehttp 154 "GET /media/banner/2.jpeg HTTP/1.1" 304 0
+INFO 2019-08-08 00:30:08,471 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-08 00:30:10,742 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 00:49:00,332 autoreload 217 /home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/contrib/admin/migrations/0001_initial.py changed, reloading.
+INFO 2019-08-08 00:49:01,200 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 00:50:39,303 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-08 00:51:03,861 log 228 Not Found: /admin
+WARNING 2019-08-08 00:51:03,862 basehttp 154 "GET /admin HTTP/1.1" 404 2558
+INFO 2019-08-08 00:51:10,977 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-08-08 00:51:11,082 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,088 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,097 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,101 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,112 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,113 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,114 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,125 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,133 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,134 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,138 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-08-08 00:51:11,152 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,160 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,162 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,182 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,185 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,191 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:11,590 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:16,411 basehttp 154 "POST /xadmin/ HTTP/1.1" 200 4462
+INFO 2019-08-08 00:51:16,452 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-08-08 00:51:21,412 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+WARNING 2019-08-08 00:51:22,977 log 228 Forbidden (CSRF token missing or incorrect.): /xadmin/
+WARNING 2019-08-08 00:51:22,977 basehttp 154 "POST /xadmin/ HTTP/1.1" 403 2508
+INFO 2019-08-08 00:51:30,483 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 15520
+INFO 2019-08-08 00:51:36,023 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 15520
+INFO 2019-08-08 00:51:36,083 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:36,085 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 00:51:36,093 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:36,094 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:46,505 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 25478
+INFO 2019-08-08 00:51:46,552 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:46,566 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:46,568 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:46,577 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:46,580 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:46,585 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 00:51:46,587 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2019-08-08 00:51:48,220 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 25299
+INFO 2019-08-08 00:51:48,272 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722

@@ -3,6 +3,7 @@ import Router from "vue-router"
 
 // 这里导入可以让让用户访问的组件
 import Home from '../components/Home'
+import Login from '../components/Login'
 
 Vue.use(Router);
 
@@ -16,10 +17,15 @@ export default new Router({
        path:"/",
        component:Home,
      },
-      {
+     {
        name:"Home",
        path:"/home",
        component:Home,
+     },
+     {
+       name:"Login",
+       path:"/login",
+       component:Login,
      },
   ]
 })
