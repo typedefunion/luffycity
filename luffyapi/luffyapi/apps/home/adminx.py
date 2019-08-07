@@ -1,6 +1,10 @@
 import xadmin
 from xadmin import views
 
+from .models import BannerInfo
+
+from .models import NavInfo
+
 class BaseSetting(object):
     """xadmin的基本配置"""
     enable_themes = True  # 开启主题切换功能
@@ -19,7 +23,14 @@ xadmin.site.register(views.CommAdminView, GlobalSettings)
 
 
 # 轮播图
-from .models import BannerInfo
 class BannerInfoModelAdmin(object):
+    '''轮播模型管理器'''
     list_display=["name","orders","is_show"]
 xadmin.site.register(BannerInfo, BannerInfoModelAdmin)
+
+
+# 导航
+class NavInfoModelAdmin(object):
+    '''导航模型管理器'''
+    list_display=["name","link","is_show"]
+xadmin.site.register(NavInfo, NavInfoModelAdmin)

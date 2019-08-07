@@ -1,6 +1,6 @@
 <template>
-  <el-carousel height="720px" :interval="3000" arrow="always">
-    <el-carousel-item v-for="banner in banner_list">
+  <el-carousel height="450px" :interval="3000" arrow="always">
+    <el-carousel-item :key="banner.id" v-for="banner in banner_list">
       <a :href="banner.link"><img :src="$settings.Host+banner.image_url" alt=""></a>
     </el-carousel-item>
 <!--    <el-carousel-item>-->
@@ -31,7 +31,7 @@
                     this.banner_list = response.data;
                 })
             }
-        }
+        },
 
     }
 </script>

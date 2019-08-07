@@ -25,6 +25,9 @@ a{
   text-decoration: none;
   color: #333;
 }
+img{
+  width: 100%;
+}
 ul,li{
   list-style: none;
 }
