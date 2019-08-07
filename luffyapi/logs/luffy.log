@@ -88,3 +88,50 @@ INFO 2019-08-07 07:48:35,518 autoreload 217 /home/moluo/Desktop/luffycity/luffya
 INFO 2019-08-07 07:48:36,221 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-08-07 08:04:55,272 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
 INFO 2019-08-07 08:04:55,988 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:39:36,479 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/home/models.py changed, reloading.
+INFO 2019-08-07 08:39:37,278 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:46:17,488 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/urls.py changed, reloading.
+INFO 2019-08-07 08:46:19,003 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:50:29,176 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/home/urls.py changed, reloading.
+INFO 2019-08-07 08:50:30,173 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:51:34,478 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/home/views.py changed, reloading.
+INFO 2019-08-07 08:51:35,064 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:52:36,642 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:52:51,940 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:53:30,789 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/home/urls.py changed, reloading.
+INFO 2019-08-07 08:53:31,339 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:53:35,471 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-07 08:53:40,692 log 228 Not Found: /
+WARNING 2019-08-07 08:53:40,734 basehttp 154 "GET / HTTP/1.1" 404 2031
+WARNING 2019-08-07 08:53:52,300 log 228 Not Found: /
+WARNING 2019-08-07 08:53:52,304 basehttp 154 "GET / HTTP/1.1" 404 2031
+WARNING 2019-08-07 08:53:57,959 log 228 Not Found: /
+WARNING 2019-08-07 08:53:57,959 basehttp 154 "GET / HTTP/1.1" 404 2031
+WARNING 2019-08-07 08:54:03,197 log 228 Not Found: /
+WARNING 2019-08-07 08:54:03,197 basehttp 154 "GET / HTTP/1.1" 404 2031
+INFO 2019-08-07 08:55:55,452 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-07 08:55:59,430 log 228 Not Found: /
+WARNING 2019-08-07 08:55:59,434 basehttp 154 "GET / HTTP/1.1" 404 2031
+INFO 2019-08-07 08:57:04,871 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-07 08:57:10,617 log 228 Not Found: /
+WARNING 2019-08-07 08:57:10,617 basehttp 154 "GET / HTTP/1.1" 404 2031
+WARNING 2019-08-07 08:57:14,554 log 228 Not Found: /
+WARNING 2019-08-07 08:57:14,554 basehttp 154 "GET / HTTP/1.1" 404 2031
+WARNING 2019-08-07 08:57:28,058 log 228 Not Found: /
+WARNING 2019-08-07 08:57:28,058 basehttp 154 "GET / HTTP/1.1" 404 2031
+WARNING 2019-08-07 08:57:35,324 log 228 Not Found: /
+WARNING 2019-08-07 08:57:35,325 basehttp 154 "GET / HTTP/1.1" 404 2031
+INFO 2019-08-07 08:57:46,740 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/urls.py changed, reloading.
+INFO 2019-08-07 08:57:47,191 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-07 08:57:47,753 basehttp 154 "GET / HTTP/1.1" 200 5200
+INFO 2019-08-07 08:57:47,796 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2019-08-07 08:57:47,805 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2019-08-07 08:57:47,811 basehttp 154 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2019-08-07 08:57:47,812 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2019-08-07 08:57:47,813 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2019-08-07 08:57:47,817 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2019-08-07 08:57:47,821 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2019-08-07 08:57:47,822 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2019-08-07 08:57:47,823 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+INFO 2019-08-07 08:57:47,825 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2019-08-07 08:57:47,921 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
