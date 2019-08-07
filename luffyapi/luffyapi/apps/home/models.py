@@ -16,5 +16,9 @@ class BannerInfo(models.Model):
         verbose_name = '轮播图'
         verbose_name_plural = verbose_name
 
+    @property
+    def image_url(self):
+        return self.img_url.url
+
     def __str__(self):
         return self.name
