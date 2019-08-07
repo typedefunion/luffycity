@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/luffyapi/apps/home/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/common/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/common/Banner.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffy.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffy.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/home/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/home/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffyapi/apps/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/home/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +191,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565097054900</updated>
-      <workItem from="1565097056558" duration="15596000" />
+      <workItem from="1565097056558" duration="16849000" />
     </task>
     <servers />
   </component>

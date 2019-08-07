@@ -2,5 +2,5 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path(r'', views.BannerInfoListAPIView.as_view()),
+    path(r'banner/', views.BannerInfoListAPIView.as_view()),
 ]

@@ -367,3 +367,15 @@ INFO 2019-08-07 18:06:21,095 basehttp 154 "GET /media/banner/1.png HTTP/1.1" 200
 INFO 2019-08-07 18:06:21,096 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
 INFO 2019-08-07 18:06:21,097 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
 INFO 2019-08-07 18:06:21,101 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2019-08-07 19:37:06,334 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/home/urls.py changed, reloading.
+INFO 2019-08-07 19:37:09,664 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-07 19:37:32,037 log 228 Not Found: /
+WARNING 2019-08-07 19:37:32,060 basehttp 154 "GET / HTTP/1.1" 404 2209
+INFO 2019-08-07 19:41:06,125 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 19:44:03,150 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 19:44:33,275 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 19:49:19,239 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 19:49:52,137 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 19:50:52,106 basehttp 154 "GET /banner/ HTTP/1.1" 200 131
+INFO 2019-08-07 19:50:52,296 basehttp 154 "GET /media/banner/1.png HTTP/1.1" 304 0
+INFO 2019-08-07 19:50:52,298 basehttp 154 "GET /media/banner/2.jpeg HTTP/1.1" 200 199373
