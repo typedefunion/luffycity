@@ -11,10 +11,12 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+# 让spps设置为系统导包路径
+sys.path.insert(0,os.path.join(BASE_DIR,"apps"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -39,12 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'corsheaders',
+
+    'home',
 ]
 
 
 # COR跨域资源共享的配置信息
 CORS_ORIGIN_WHITELIST = (
-    'www.luffycity.cn:8080',
+    'http://www.luffycity.cn:8080',
 )
 CORS_ALLOW_CREDENTIALS = False  # 允许ajax跨域请求时携带cookie
 
@@ -134,7 +138,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+
+# 访问静态文件的url地址前缀
 STATIC_URL = '/static/'
+# 设置django的静态文件目录
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"statics")
+]
+
+# 项目中存储上传文件的根目录[暂时配置]，注意，static目录需要手动创建否则上传文件时报错
+MEDIA_ROOT=os.path.join(BASE_DIR,"statics")
+# 访问上传文件的url地址前缀
+MEDIA_URL ="/media/"
 
 
 
