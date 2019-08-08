@@ -23,6 +23,9 @@ Vue.prototype.$axios = axios; // 把对象挂载vue中
 
 Vue.config.productionTip = false;
 
+// 导入极验验证码的js文件
+import '../static/js/gt.js'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

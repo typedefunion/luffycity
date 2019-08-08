@@ -45,59 +45,103 @@
                 login_type: 0,
                 username: "",
                 password: "",
-                remember: "",
+                remember: false,
             }
         },
-
         methods: {
-            loginHander(){
-                // 登录功能实现
-                // 1.验证数据（剔除脏数据），从vue中提取username和password
-                if(this.username.length<1 || this.password.length<1){
-                    this.$message('对不起，账号和密码不能为空');
-                    // 账号不对，直接终止
-                    return false
-                }
-                // 2.发送ajax提交登录信息,因为只有post才有请求体，所以只能用post方式
-                this.$axios.post(`${this.$settings.Host}/user/authorizations/`,{
-                    username: this.username,
-                    password: this.password,
-                }).then(response=>{
-                    // 3.接受jwt的token字符串
-                    // 根据用户是否勾选 记住密码 来判断使用不同的存储对象保存数据
-                    if(this.remember){
-                        // 永久存储
-                        // localStorage.setItem('user_token', response.data.token);
-                        localStorage.user_token = response.data.token;
-                        localStorage.user_id = response.data.token;
-                        localStorage.user_username = response.data.token;
-                        sessionStorage.removeItem('user.token');
-                        sessionStorage.removeItem('user.id');
-                        sessionStorage.removeItem('user.username');
-                    }else{
-                        // 会话存储你
-                        sessionStorage.user_token = response.data.token;
-                        sessionStorage.user_id = response.data.token;
-                        sessionStorage.user_username = response.data.token;
-                        localStorage.removeItem('user.token');
-                        localStorage.removeItem('user.id');
-                        localStorage.removeItem('user.username');
-                    }
+            handlerPopup(captchaObj) {
+                // 把vue对象保存到一个变量,方便其他对象使用
+                let self = this;
+                console.log(captchaObj);
+                // 成功的回调
+                captchaObj.onSuccess(function () {
+                    var validate = captchaObj.getValidate();
 
-                    // 4.提示登入成功，跳转到其他页面【首页】
-                    let self = this;
-                    this.$alert('登入成功！','路飞学城',{
-                        callback(){
-                            // this.$router.go(-1);  // 跳转到上一个页面
-                            self.$router.push('/');  // 跳转到指定页面
+                    // 使用axios发送ajax
+                    self.$axios.post(`${self.$settings.Host}/user/captcha/`, {
+                        geetest_challenge: validate.geetest_challenge,
+                        geetest_validate: validate.geetest_validate,
+                        geetest_seccode: validate.geetest_seccode,
+                    }).then(response => {
+                        console.log(response.data.status);
+                        if (response.data.status) {
+                            // 验证成功! 把登录信息发送给后端！
+                            self.ajax_login();
+                        } else {
+                            // 验证失败！
+                            self.$message("对不起，账号密码有误！");
                         }
                     });
+                });
 
-                }).catch(error=>{
-                    // 获取后端的错误信息
-                    this.$message(error.response.data.non_field_errors[0],'警告！');
+                // 将验证码加到id为captcha的元素里
+                document.querySelector("#geetest1").innerHTML = "";
+                // document.getElementById("geetest1").innerHTML = "";  // 这一句也可以
+                captchaObj.appendTo("#geetest1");
+            },
+            loginHander() {
+                // 登录功能实现
+                // 1. 从vue中提取username和password, 验证数据
+                if (this.username.length < 1 || this.password.length < 1) {
+                    this.$message("对不起,请填写账号或密码!");
+                    return false;// 阻止函数继续执行
+                }
+
+                // 2. 提供极验验证码
+                this.$axios.get(`${this.$settings.Host}/user/captcha`, {
+                    responseType: "json",
+                }).then(response => {
+                    // 获取到流水号以后,就要对验证码的配置进行初始化
+                    initGeetest({
+                        gt: response.data.gt,
+                        challenge: response.data.challenge,
+                        product: "popup", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+                        offline: !response.data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+                    }, this.handlerPopup);
+                });
+            },
+            ajax_login() {
+                // 发送ajax提交登录信息
+                this.$axios.post(`${this.$settings.Host}/user/authorizations/`, {
+                    username: this.username,
+                    password: this.password,
+                }).then(response => {
+                    // 4. 接受jwt的token字符串
+                    // console.log(response.data);
+                    // 4.1 根据用户是否勾选了 记住密码 来判断使用不用的存储对象保存数据
+                    if (this.remember) {
+                        // 永久存储
+                        // localStorage.setItem("user_token",response.data.token);
+                        localStorage.user_token = response.data.token; // 上面一句和当前一句是同样意思
+                        localStorage.user_id = response.data.user_id;
+                        localStorage.user_name = response.data.user_name;
+                        sessionStorage.removeItem("user_token");
+                        sessionStorage.removeItem("user_id");
+                        sessionStorage.removeItem("user_name");
+                    } else {
+                        // 回话存储
+                        sessionStorage.user_token = response.data.token; // 上面一句和当前一句是同样意思
+                        sessionStorage.user_id = response.data.user_id;
+                        sessionStorage.user_name = response.data.user_name;
+                        localStorage.removeItem("user_token");
+                        localStorage.removeItem("user_id");
+                        localStorage.removeItem("user_name");
+                    }
+
+                    // 5.跳转到其他页面[首页]
+                    let self = this;
+                    this.$alert("欢迎回到路飞学城!~~", "登录成功!", {
+                        callback() {
+                            self.$router.push("/"); // 跳转到指定地址的页面
+                        }
+                    });
+                    // this.$router.push("/"); // 跳转到指定地址的页面
+                    // // this.$router.go(-1);    // 跳转返回上一页
+
+                }).catch(error => {
+                    // 获取后端相应的错误信息
+                    this.$alert(error.response.data.non_field_errors[0], "警告!");
                 })
-
             }
         },
 

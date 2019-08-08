@@ -25,5 +25,5 @@ class CaptchaAPIView(APIView):
         result = gt.success_validate(challenge, validate, seccode, settings.PC_GEETEST_USER_ID)
         if not result:
             result = gt.failback_validate(challenge, validate, seccode)
-
+        print(result)
         return Response({"message": result})
