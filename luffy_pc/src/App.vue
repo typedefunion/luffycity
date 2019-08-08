@@ -14,6 +14,7 @@ export default {
 }
 </script>
 
+
 <style>
 /* 声明全局样式和项目的初始化样式 */
 body,h1,h2,h3,h4,p,table,tr,td,ul,li,a,form,input,select,option,textarea{
@@ -25,16 +26,15 @@ a{
   text-decoration: none;
   color: #333;
 }
-img{
-  width: 100%;
-}
 ul,li{
   list-style: none;
 }
 table{
   border-collapse: collapse; /* 合并边框 */
 }
-
+img{
+  width:100%;
+}
 /* 工具的全局样式 */
 .full-left{
   float: left!important;
@@ -43,6 +43,7 @@ table{
   float: right!important;
 }
 
+/* ElementUI的样式兼容 */
 [class*=" el-icon-"], [class^=el-icon-]{
   font-size: 50px;
 }
@@ -69,5 +70,32 @@ table{
   height: 9px;
   width: 5px;
 }
+.el-submenu__icon-arrow::before{
+  content:"";
+}
+.el-submenu__title{
+  padding: 0;
+}
+.el-menu--popup{
+  min-width: 140px;
+  margin-left: -100px;
+}
 
+
+.geetest_holder.geetest_wind{
+  min-width: 100%!important;
+  margin-top: 20px;
+}
+
+.el-pagination button, .el-pagination span:not([class*=suffix]),
+.el-input--mini,
+.el-pagination__sizes .el-input .el-input__inner,
+.el-pager li{
+  font-size: 16px;
+}
+
+.course-brief img{
+  width: 100%;
+}
 </style>
+
