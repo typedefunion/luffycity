@@ -243,3 +243,8 @@ AUTH_USER_MODEL = 'users.User'   # 格式必须是‘子应用目录名称.模�
 AUTHENTICATION_BACKENDS = [
     'users.utils.UsernameMobileAuthBackend',
 ]
+
+# 极验验证码的配置【Ctrl+shift+U,切换大小写】
+PC_GEETEST_ID = "a9feefab99c8d4bbcf0d9e3021048312"
+PC_GEETEST_KEY = "aa467ab83be3c44929bc7da76eb88028"
+PC_GEETEST_USER_ID = 'test'
