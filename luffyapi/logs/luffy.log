@@ -617,3 +617,36 @@ INFO 2019-08-08 00:51:46,585 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 772
 INFO 2019-08-08 00:51:46,587 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
 INFO 2019-08-08 00:51:48,220 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 25299
 INFO 2019-08-08 00:51:48,272 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 01:13:07,078 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 19:44:36,305 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-08 19:44:39,842 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 19:50:42,323 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 19:56:19,058 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 19:57:10,884 basehttp 154 "GET /user/authorizations HTTP/1.1" 301 0
+WARNING 2019-08-08 19:57:10,925 log 228 Method Not Allowed: /user/authorizations/
+WARNING 2019-08-08 19:57:10,926 basehttp 154 "GET /user/authorizations/ HTTP/1.1" 405 45
+ERROR 2019-08-08 19:57:17,495 log 228 Internal Server Error: /user/authorizations
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to api.luffycity.cn:8000/user/authorizations/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2019-08-08 19:57:17,496 basehttp 154 "POST /user/authorizations HTTP/1.1" 500 71880
+ERROR 2019-08-08 19:59:39,567 log 228 Internal Server Error: /user/authorizations
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to api.luffycity.cn:8000/user/authorizations/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2019-08-08 19:59:39,570 basehttp 154 "POST /user/authorizations HTTP/1.1" 500 71880
+INFO 2019-08-08 19:59:48,757 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 196

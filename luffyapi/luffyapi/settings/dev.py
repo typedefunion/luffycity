@@ -216,8 +216,21 @@ LOGGING = {
 
 # rest_framework配置
 REST_FRAMEWORK = {
-    # 异常处理
+    # 异自定义常处理
     'EXCEPTION_HANDLER': 'luffyapi.utils.exceptions.custom_exception_handler',
+    # 自定义用户认证jwt的配置
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+import datetime
+# 设置jwt格式
+JWT_AUTH = {
+    # 设置jwt的过期时间，可以自己修改时间，支持分、时、天、月、年等。
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
 }
 
 
