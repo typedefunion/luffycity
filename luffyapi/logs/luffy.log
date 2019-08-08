@@ -689,3 +689,143 @@ INFO 2019-08-08 21:21:36,140 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
 INFO 2019-08-08 21:21:36,149 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
 INFO 2019-08-08 21:21:55,422 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
 INFO 2019-08-08 21:21:55,548 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+INFO 2019-08-08 21:36:23,651 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-08 21:36:49,568 log 228 Not Found: /
+WARNING 2019-08-08 21:36:49,571 basehttp 154 "GET / HTTP/1.1" 404 2630
+WARNING 2019-08-08 21:36:50,102 log 228 Not Found: /favicon.ico
+WARNING 2019-08-08 21:36:50,111 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2681
+INFO 2019-08-08 21:36:57,191 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 15520
+INFO 2019-08-08 21:36:57,290 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,296 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,303 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,307 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,311 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,323 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,325 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,346 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,356 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,356 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,357 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 15520
+INFO 2019-08-08 21:36:57,361 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,378 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,388 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,410 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 21:36:57,429 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,430 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,435 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,448 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,455 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,461 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:36:57,987 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,627 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 35384
+INFO 2019-08-08 21:37:01,678 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,679 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,680 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,684 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,683 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,681 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:01,705 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 21:37:01,709 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:28,881 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-08 21:37:29,020 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+INFO 2019-08-08 21:37:46,965 basehttp 154 "GET /xadmin/users/user/1/update/ HTTP/1.1" 200 31711
+INFO 2019-08-08 21:37:47,035 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:47,036 basehttp 154 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2019-08-08 21:37:47,037 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:47,046 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2019-08-08 21:37:47,076 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:47,077 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:47,078 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2019-08-08 21:37:47,084 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2019-08-08 21:37:47,108 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:47,114 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2019-08-08 21:37:47,116 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 21:37:47,120 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+INFO 2019-08-08 21:37:57,311 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 2
+INFO 2019-08-08 21:37:57,352 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-08-08 21:37:57,370 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
+WARNING 2019-08-08 21:38:03,348 log 228 Bad Request: /user/authorizations/
+WARNING 2019-08-08 21:38:03,349 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 400 67
+WARNING 2019-08-08 21:38:09,610 log 228 Bad Request: /user/authorizations/
+WARNING 2019-08-08 21:38:09,611 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 400 67
+INFO 2019-08-08 21:39:22,470 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 35384
+INFO 2019-08-08 21:39:22,519 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-08 21:42:42,895 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-08 21:43:09,466 log 228 Bad Request: /user/authorizations/
+WARNING 2019-08-08 21:43:09,467 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 400 67
+INFO 2019-08-08 21:47:46,685 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/utils.py changed, reloading.
+INFO 2019-08-08 21:47:47,694 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 21:50:41,924 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-08 21:51:27,394 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-08 21:51:27,525 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+ERROR 2019-08-08 21:51:45,587 log 228 Internal Server Error: /user/authorizations/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.validate(value)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/utils.py", line 20, in authenticate
+    if user.check_password(password) and self.user_can_authenticate(user):
+AttributeError: 'NoneType' object has no attribute 'check_password'
+ERROR 2019-08-08 21:51:45,589 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 500 19537
+ERROR 2019-08-08 21:51:48,312 log 228 Internal Server Error: /user/authorizations/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.validate(value)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/utils.py", line 20, in authenticate
+    if user.check_password(password) and self.user_can_authenticate(user):
+AttributeError: 'NoneType' object has no attribute 'check_password'
+ERROR 2019-08-08 21:51:48,313 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 500 19537
+INFO 2019-08-08 21:53:04,838 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-08 21:53:31,198 log 228 Bad Request: /user/authorizations/
+WARNING 2019-08-08 21:53:31,200 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 400 67
