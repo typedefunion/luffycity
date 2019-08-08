@@ -231,6 +231,8 @@ import datetime
 JWT_AUTH = {
     # 设置jwt的过期时间，可以自己修改时间，支持分、时、天、月、年等。
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    # 设置jwt的返回内容
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler'
 }
 
 
