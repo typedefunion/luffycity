@@ -40,7 +40,7 @@
             <div class="login-box login-box2 full-left">
               <router-link to="/login">登录</router-link>
               &nbsp;|&nbsp;
-              <span>注册</span>
+              <router-link to="/register">注册</router-link>
             </div>
           </div>
         </div>

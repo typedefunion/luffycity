@@ -995,3 +995,302 @@ INFO 2019-08-09 01:28:43,068 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 13
 INFO 2019-08-09 01:32:29,975 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-08-09 01:33:06,292 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
 INFO 2019-08-09 01:33:25,631 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 13
+INFO 2019-08-09 10:21:49,059 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-09 10:22:21,701 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
+INFO 2019-08-09 10:22:21,705 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 2
+INFO 2019-08-09 10:22:21,713 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-08-09 10:22:38,225 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 10:22:45,093 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-09 10:22:45,226 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 13
+INFO 2019-08-09 10:23:00,940 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 10:23:07,931 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 13
+INFO 2019-08-09 10:26:06,667 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 10:26:14,134 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 13
+INFO 2019-08-09 10:28:20,750 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 10:28:26,780 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 13
+INFO 2019-08-09 11:03:58,653 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-09 11:04:35,314 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 11:04:41,466 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-09 11:04:41,616 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-09 11:04:41,668 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-09 11:04:41,811 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+INFO 2019-08-09 11:04:43,252 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 2
+INFO 2019-08-09 11:04:43,266 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
+INFO 2019-08-09 11:04:43,269 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-08-09 12:45:13,758 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 2
+INFO 2019-08-09 12:45:13,761 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-08-09 12:45:13,763 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
+INFO 2019-08-09 19:56:08,391 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-09 19:56:54,637 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 2
+INFO 2019-08-09 19:56:54,638 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-08-09 19:56:54,639 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
+INFO 2019-08-09 19:57:12,242 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 19:57:19,464 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-09 19:57:19,876 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-09 19:57:19,926 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-09 19:57:20,065 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+INFO 2019-08-09 19:57:21,983 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 2
+INFO 2019-08-09 19:57:21,989 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 2
+INFO 2019-08-09 19:57:21,992 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+WARNING 2019-08-09 19:57:39,032 log 228 Not Found: /
+WARNING 2019-08-09 19:57:39,033 basehttp 154 "GET / HTTP/1.1" 404 2630
+WARNING 2019-08-09 19:57:39,289 log 228 Not Found: /favicon.ico
+WARNING 2019-08-09 19:57:39,292 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2681
+WARNING 2019-08-09 19:57:45,253 log 228 Not Found: /admin
+WARNING 2019-08-09 19:57:45,255 basehttp 154 "GET /admin HTTP/1.1" 404 2663
+INFO 2019-08-09 19:57:50,335 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-08-09 19:57:50,360 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,361 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,367 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,370 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,371 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,374 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,377 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,377 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,378 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,381 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,392 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-08-09 19:57:50,412 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,416 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,424 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,428 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,430 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:50,439 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:51,844 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-08-09 19:57:51,883 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-08-09 19:57:52,145 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:58,437 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-08-09 19:57:59,432 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 15520
+INFO 2019-08-09 19:57:59,506 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:59,513 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:59,514 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:57:59,554 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 19:58:05,533 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 25478
+INFO 2019-08-09 19:58:05,581 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:05,592 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:05,595 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:05,595 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:05,596 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:05,601 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 19:58:05,603 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:07,916 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 20880
+INFO 2019-08-09 19:58:07,960 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:07,963 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:07,966 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2019-08-09 19:58:07,990 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:20:48,565 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-08-09 20:20:48,632 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 21227
+INFO 2019-08-09 20:20:48,715 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:21:06,130 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-08-09 20:21:06,215 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 30093
+INFO 2019-08-09 20:21:06,287 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2019-08-09 20:21:06,295 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:21:08,393 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 25299
+INFO 2019-08-09 20:21:08,422 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:21:10,476 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 19610
+WARNING 2019-08-09 20:21:10,498 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:21:10,524 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2019-08-09 20:21:10,525 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+INFO 2019-08-09 20:21:10,525 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2019-08-09 20:21:10,528 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2019-08-09 20:21:10,533 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+INFO 2019-08-09 20:21:10,535 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:21:10,535 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+WARNING 2019-08-09 20:21:10,652 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:21:34,368 basehttp 154 "POST /xadmin/home/navinfo/add/ HTTP/1.1" 302 0
+INFO 2019-08-09 20:21:34,441 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 19948
+WARNING 2019-08-09 20:21:34,528 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:21:34,531 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-09 20:21:34,640 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:21:54,479 basehttp 154 "POST /xadmin/home/navinfo/add/ HTTP/1.1" 302 0
+INFO 2019-08-09 20:21:54,555 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 29929
+INFO 2019-08-09 20:21:54,631 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:21:56,739 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 19610
+WARNING 2019-08-09 20:21:56,758 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:21:56,769 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-09 20:21:56,862 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:22:19,847 basehttp 154 "POST /xadmin/home/navinfo/add/ HTTP/1.1" 302 0
+INFO 2019-08-09 20:22:19,923 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 30535
+INFO 2019-08-09 20:22:20,000 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:22:27,775 basehttp 154 "GET /xadmin/home/navinfo/2/update/ HTTP/1.1" 200 19956
+INFO 2019-08-09 20:22:27,797 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-09 20:22:27,797 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-09 20:22:27,874 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-09 20:22:31,905 basehttp 154 "POST /xadmin/home/navinfo/2/update/ HTTP/1.1" 302 0
+INFO 2019-08-09 20:22:32,022 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 30471
+INFO 2019-08-09 20:22:32,101 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-09 20:22:38,837 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-09 20:22:56,640 basehttp 154 "GET /banner/ HTTP/1.1" 200 140
+INFO 2019-08-09 20:22:56,642 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-09 20:22:56,644 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-09 20:22:56,711 basehttp 154 "GET /media/banner/1_b2JtHxR.png HTTP/1.1" 200 361097
+INFO 2019-08-09 20:22:56,728 basehttp 154 "GET /media/banner/2_Serq6x6.jpeg HTTP/1.1" 200 199373
+INFO 2019-08-09 20:23:28,058 basehttp 154 "GET /banner/ HTTP/1.1" 200 140
+INFO 2019-08-09 20:23:28,067 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-09 20:23:28,068 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-09 20:23:28,197 basehttp 154 "GET /media/banner/1_b2JtHxR.png HTTP/1.1" 304 0
+INFO 2019-08-09 20:23:28,244 basehttp 154 "GET /media/banner/2_Serq6x6.jpeg HTTP/1.1" 304 0
+INFO 2019-08-09 20:23:58,858 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-09 20:24:05,034 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-09 20:24:05,171 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-09 20:24:05,227 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-09 20:24:05,410 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+INFO 2019-08-09 20:24:07,641 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-09 20:24:07,649 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-09 20:24:07,650 basehttp 154 "GET /banner/ HTTP/1.1" 200 140
+INFO 2019-08-09 20:24:07,664 basehttp 154 "GET /media/banner/1_b2JtHxR.png HTTP/1.1" 304 0
+INFO 2019-08-09 20:24:07,666 basehttp 154 "GET /media/banner/2_Serq6x6.jpeg HTTP/1.1" 304 0
+INFO 2019-08-09 20:24:53,552 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-09 20:24:53,557 basehttp 154 "GET /banner/ HTTP/1.1" 200 140
+INFO 2019-08-09 20:24:53,560 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-09 20:24:53,584 basehttp 154 "GET /media/banner/1_b2JtHxR.png HTTP/1.1" 304 0
+INFO 2019-08-09 20:24:53,587 basehttp 154 "GET /media/banner/2_Serq6x6.jpeg HTTP/1.1" 304 0
+INFO 2019-08-11 09:45:19,966 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:05:14,125 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py changed, reloading.
+INFO 2019-08-11 10:05:16,092 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:15:12,593 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:16:06,739 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-11 10:17:40,984 log 228 Not Found: /user
+WARNING 2019-08-11 10:17:40,987 basehttp 154 "POST /user HTTP/1.1" 404 2661
+WARNING 2019-08-11 10:18:01,846 log 228 Not Found: /user/
+WARNING 2019-08-11 10:18:01,847 basehttp 154 "POST /user/ HTTP/1.1" 404 3062
+INFO 2019-08-11 10:18:30,002 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:18:35,339 basehttp 154 "POST /user/ HTTP/1.1" 200 12
+INFO 2019-08-11 10:25:01,964 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/serializers.py changed, reloading.
+INFO 2019-08-11 10:25:03,381 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:26:35,993 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:26:38,118 basehttp 154 "POST /user/ HTTP/1.1" 200 12
+INFO 2019-08-11 10:28:43,101 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:28:52,424 basehttp 154 "POST /user/ HTTP/1.1" 200 12
+INFO 2019-08-11 10:34:02,872 basehttp 154 "GET /banner/ HTTP/1.1" 200 140
+INFO 2019-08-11 10:34:02,876 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 10:34:02,878 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 10:34:03,773 basehttp 154 "GET /media/banner/1_b2JtHxR.png HTTP/1.1" 304 0
+INFO 2019-08-11 10:34:03,777 basehttp 154 "GET /media/banner/2_Serq6x6.jpeg HTTP/1.1" 304 0
+WARNING 2019-08-11 10:35:30,281 log 228 Not Found: /
+WARNING 2019-08-11 10:35:30,286 basehttp 154 "GET / HTTP/1.1" 404 2630
+INFO 2019-08-11 10:35:50,658 basehttp 154 "GET /banner HTTP/1.1" 301 0
+INFO 2019-08-11 10:35:50,808 basehttp 154 "GET /banner/ HTTP/1.1" 200 5652
+INFO 2019-08-11 10:35:50,899 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,902 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,904 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,907 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,912 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,913 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,913 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,932 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,936 basehttp 154 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,939 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2019-08-11 10:35:50,974 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2019-08-11 10:35:51,102 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1751
+INFO 2019-08-11 10:37:03,559 basehttp 154 "GET /banner/ HTTP/1.1" 200 140
+INFO 2019-08-11 10:37:03,561 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 10:37:03,568 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 10:38:53,620 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:39:16,429 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-11 10:39:16,434 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 10:39:16,437 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 10:39:35,026 basehttp 154 "GET /banner/ HTTP/1.1" 200 5875
+WARNING 2019-08-11 10:39:35,254 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1751
+WARNING 2019-08-11 10:39:35,366 log 228 Not Found: /favicon.ico
+WARNING 2019-08-11 10:39:35,367 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2681
+INFO 2019-08-11 10:40:15,444 basehttp 154 "GET /banner/ HTTP/1.1" 200 5875
+WARNING 2019-08-11 10:40:15,541 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1751
+ERROR 2019-08-11 10:40:27,843 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-11 10:40:27,936 log 228 Bad Request: /
+WARNING 2019-08-11 10:40:27,937 basehttp 154 "GET / HTTP/1.1" 400 71624
+ERROR 2019-08-11 10:40:28,112 exception 77 Invalid HTTP_HOST header: 'www.luffycity.cn:8000'. You may need to add 'www.luffycity.cn' to ALLOWED_HOSTS.
+WARNING 2019-08-11 10:40:28,175 log 228 Bad Request: /favicon.ico
+WARNING 2019-08-11 10:40:28,176 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 71676
+WARNING 2019-08-11 10:40:35,629 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1751
+INFO 2019-08-11 10:40:44,046 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 10:40:44,067 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-11 10:40:44,071 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 10:40:44,115 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 10:40:44,141 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 10:40:44,143 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-11 10:42:32,936 basehttp 154 "POST /user/ HTTP/1.1" 200 12
+INFO 2019-08-11 10:43:50,424 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-11 10:44:03,277 log 228 Bad Request: /user/
+WARNING 2019-08-11 10:44:03,280 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+ERROR 2019-08-11 10:44:15,383 log 228 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/fields.py", line 93, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'User' object has no attribute 'sms_code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 559, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/fields.py", line 476, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sms_code` on serializer `UserModelSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `User` instance.
+Original exception text was: 'User' object has no attribute 'sms_code'.
+ERROR 2019-08-11 10:44:15,387 basehttp 154 "POST /user/ HTTP/1.1" 500 20302
+INFO 2019-08-11 10:45:21,638 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:45:28,163 basehttp 154 "POST /user/ HTTP/1.1" 201 2
+INFO 2019-08-11 10:52:42,846 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:52:53,464 basehttp 154 "POST /user/ HTTP/1.1" 201 211
+INFO 2019-08-11 10:54:15,889 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 10:54:24,040 basehttp 154 "POST /user/ HTTP/1.1" 201 211
+INFO 2019-08-11 11:07:23,531 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 11:07:23,534 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 11:07:23,548 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-11 11:09:27,084 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/serializers.py changed, reloading.
+INFO 2019-08-11 11:09:27,950 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 11:10:46,440 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/serializers.py changed, reloading.
+INFO 2019-08-11 11:10:47,877 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-11 11:11:17,389 basehttp 154 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2019-08-11 11:11:17,479 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:11:17,480 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+INFO 2019-08-11 11:17:34,467 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-11 11:17:34,476 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 11:17:34,480 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-11 11:18:04,686 basehttp 154 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2019-08-11 11:18:04,699 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:18:04,700 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+WARNING 2019-08-11 11:22:02,750 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:22:02,752 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+WARNING 2019-08-11 11:22:20,247 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:22:20,247 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+WARNING 2019-08-11 11:22:38,459 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:22:38,460 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+WARNING 2019-08-11 11:22:39,582 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:22:39,582 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+WARNING 2019-08-11 11:22:40,132 log 228 Bad Request: /user/
+WARNING 2019-08-11 11:22:40,134 basehttp 154 "POST /user/ HTTP/1.1" 400 41
+INFO 2019-08-11 11:26:00,076 basehttp 154 "POST /user/ HTTP/1.1" 201 211
+INFO 2019-08-11 11:26:02,356 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-11 11:26:02,368 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-11 11:26:02,372 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120

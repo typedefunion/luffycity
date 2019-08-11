@@ -23,14 +23,14 @@
             <p>忘记密码</p>
           </div>
           <button class="login_btn" @click="loginHander">登录</button>
-          <p class="go_login">没有账号 <span>立即注册</span></p>
+          <p class="go_login">没有账号 <router-link to="/register">立即注册</router-link></p>
         </div>
         <div class="inp" v-show="login_type==1">
           <input v-model="username" type="text" placeholder="手机号码" class="user">
           <input v-model="password" type="text" class="pwd" placeholder="短信验证码">
           <button id="get_code">获取验证码</button>
           <button class="login_btn">登录</button>
-          <p class="go_login">没有账号 <span>立即注册</span></p>
+          <p class="go_login">没有账号 <router-link to="/register">立即注册</router-link></p>
         </div>
       </div>
     </div>
@@ -112,6 +112,7 @@
                     if (this.remember) {
                         // 永久存储
                         // localStorage.setItem("user_token",response.data.token);
+                        console.log('永久存储',this.remember);
                         localStorage.user_token = response.data.token; // 上面一句和当前一句是同样意思
                         localStorage.user_id = response.data.user_id;
                         localStorage.user_name = response.data.user_name;
@@ -119,7 +120,8 @@
                         sessionStorage.removeItem("user_id");
                         sessionStorage.removeItem("user_name");
                     } else {
-                        // 回话存储
+                        // 会话存储
+                        console.log('会话',this.remember);
                         sessionStorage.user_token = response.data.token; // 上面一句和当前一句是同样意思
                         sessionStorage.user_id = response.data.user_id;
                         sessionStorage.user_name = response.data.user_name;

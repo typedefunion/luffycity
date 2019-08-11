@@ -1,7 +1,7 @@
 <template>
-  <el-carousel height="450px" :interval="3000" arrow="always">
+  <el-carousel height="610px" :interval="3000" arrow="always">
     <el-carousel-item :key="banner.id" v-for="banner in banner_list">
-      <a :href="banner.link"><img :src="$settings.Host+banner.image_url" alt=""></a>
+      <a :href="banner.link"><img :src="banner.img_url" alt=""></a>
     </el-carousel-item>
 <!--    <el-carousel-item>-->
 <!--      <img src="/static/image/banner1.png" alt="">-->
