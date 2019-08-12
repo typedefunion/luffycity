@@ -7,7 +7,10 @@
 				<div class="inp">
 					<input v-model="mobile" type="text" placeholder="手机号码" class="user">
           <input v-model="password" type="password" placeholder="输入密码" class="user">
-					<input v-model="sms" type="text" placeholder="输入验证码" class="user">
+          <div class="sms_code">
+            <input v-model="sms" type="text" placeholder="输入验证码" class="user" maxlength="6">
+            <span class="code_text">点击发送短信</span>
+          </div>
           <div id="geetest"></div>
 					<button class="register_btn" @click="registerHander">注册</button>
 					<p class="go_login" >已有账号 <router-link to="/login">直接登录</router-link></p>
@@ -219,4 +222,16 @@ export default {
     color: #84cc39;
     cursor: pointer;
 }
+  .sms_code{
+    position: relative;
+  }
+  .code_text{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border-left: 1px solid orange;
+    padding-left: 14px;
+    background-color: #fff;
+
+  }
 </style>

@@ -107,6 +107,43 @@ DATABASES = {
 }
 
 
+# 设置redis缓存
+CACHES = {
+    # 默认缓存
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        # 项目上线时,需要调整这里的路径
+        "LOCATION": "redis://127.0.0.1:6379/0",
+
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供给xadmin或者admin的session存储
+    "session": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供存储短信验证码
+    "sms_code":{
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+# 设置xadmin用户登录时,登录信息session保存到redis
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# 其别名，必须与上面的xadmin中开头的session保持一致
+SESSION_CACHE_ALIAS = "session"
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -248,3 +285,14 @@ AUTHENTICATION_BACKENDS = [
 PC_GEETEST_ID = "a9feefab99c8d4bbcf0d9e3021048312"
 PC_GEETEST_KEY = "aa467ab83be3c44929bc7da76eb88028"
 PC_GEETEST_USER_ID = 'test'
+
+
+# 短信验证码的配置
+SMS_ACCOUNTSID = "8aaf07086c282571016c60936d002125"
+SMS_ACCOUNTTOKEN = "ea0b808c2ede4e18a96e2a21037b86f8"
+SMS_APPID = "8aaf07086c282571016c60936d59212c"
+SMS_SERVERIP = "sandboxapp.cloopen.com"
+
+SMS_EXPIRE_TIME = 300
+SMS_INTERVAL_TIME = 60
+SMS_TEIMPLATE_ID = 1

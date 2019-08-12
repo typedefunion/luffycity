@@ -8,6 +8,10 @@ from rest_framework.generics import CreateAPIView
 from .models import User
 from .serializers import UserModelSerializer
 
+from rest_framework import status
+import random
+from django_redis import get_redis_connection
+from luffyapi.libs.yuntongxun.sms import CCP
 
 
 # Create your views here.
@@ -38,3 +42,47 @@ class CaptchaAPIView(APIView):
 class UserAPIView(CreateAPIView):
     queryset = User.objects.filter(is_active=True).all()
     serializer_class = UserModelSerializer
+
+
+class SMSCodeAPIView(APIView):
+    def get(self, request, mobile):
+        """发送短信"""
+        # 1. 验证手机号格式是否正确，是否注册过
+        try:
+            User.objects.get(mobile=mobile)
+            return Response({'message': '对不起，当前手机号码已经被注册'}, status=status.HTTP_400_BAD_REQUEST)
+        except User.DoesNotExist:
+            # 如果手机号不存在于数据库中， 则表示没有注册，不进行任何处理
+            pass
+        # 2. 验证短信的间隔时间
+        # 2.1 链接redis
+        redis = get_redis_connection('sms_code')
+        # 使用get获取指定键的值，如果获取不到，则返回None
+        interval = redis.get('exp_%s' % mobile)
+        if interval:
+            return Response({'message': '对不起，短信发送间隔太短！'}, status=status.HTTP_403_FORBIDDEN)
+
+        # 3. 发送短信
+        # 3.1 生成随机的短信验证码
+        sms_code = '%06d' % random.randint(0, 999999)
+
+        # 3.2 保存发送的验证码【手机号码、短信验证码、短信发送间隔时间、短信有效期】
+
+        """
+        字符串
+            setex sms_手机号 300 短信验证码
+            setse exp_手机号 60  _
+        """
+        redis.setex('sms_%s' % mobile, settings.SMS_EXPIRE_TIME, sms_code)
+        redis.setex('exp_%s' % mobile, settings.SMS_INTERVAL_TIME, '_')
+
+        # 3.3 调用sdk发送短信
+        ccp = CCP()
+        result = ccp.send_template_sms(mobile, [sms_code, settings.SMS_EXPIRE_TIME//60], settings.SMS_TEIMPLATE_ID)
+
+
+        # 4. 返回发送短信的结果
+        if result == '-1':
+            return Response({'message': '短信发送失败'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        else:
+            return Response({'message': '短信发送成功！'}, status=status.HTTP_200_OK)
