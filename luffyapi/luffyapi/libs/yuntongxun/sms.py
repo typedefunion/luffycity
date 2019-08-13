@@ -78,5 +78,5 @@ if __name__ == '__main__':
     #        短信验证码
     #        短信验证码有效期提示
     # 参数3: 短信模板的id,开发测试时,只能使用1
-    result = ccp.send_template_sms('15079204849', ['1234',5], 1)
+    result = ccp.send_template_sms('15079204849', ['1234', 5], 1)
     print(result)

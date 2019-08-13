@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import User
+from django_redis import get_redis_connection
 
 
 class UserModelSerializer(serializers.ModelSerializer):
@@ -26,6 +27,24 @@ class UserModelSerializer(serializers.ModelSerializer):
             }
         }
 
+    # 验证数据
+    def validate(self, data):
+        """多个字段的验证"""
+        mobile = data.get('mobile')
+        sms_code = data.get('sms_code')
+        redis = get_redis_connection('sms_code')
+        real_sms_code = redis.get('sms_%s' % mobile).decode()
+
+        # 删除redis中的短信验证码
+        try:
+            redis.delete('msm_%s' % mobile)
+        except:
+            pass
+
+        if real_sms_code != sms_code:
+            raise serializers.ValidationError({'message': '短信验证码过期或错误！'})
+        return data
+
     # 保存信息
     def create(self, validated_data):
         """添加用户"""
@@ -36,6 +55,10 @@ class UserModelSerializer(serializers.ModelSerializer):
         validated_data['username'] = validated_data['mobile']
         # 调用当前序列化器父类的create
         user = super().create(validated_data)
+
+        # 对新注册的账户进行保存，同事对密码进行加密
+        user.set_password(user.password)
+        user.save()
 
         # 生成jwt的token值，用于记录登录状态
         from rest_framework_jwt.settings import api_settings

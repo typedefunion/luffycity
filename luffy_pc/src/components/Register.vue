@@ -9,7 +9,7 @@
           <input v-model="password" type="password" placeholder="输入密码" class="user">
           <div class="sms_code">
             <input v-model="sms" type="text" placeholder="输入验证码" class="user" maxlength="6">
-            <span class="code_text">点击发送短信</span>
+            <span class="code_text" @click="sendSMS">点击发送短信</span>
           </div>
           <div id="geetest"></div>
 					<button class="register_btn" @click="registerHander">注册</button>
@@ -64,6 +64,20 @@ export default {
                       self.$router.push('/');
                   }
               })
+          })
+      },
+      sendSMS(){
+          // 发送短信验证码
+          let mobile = this.mobile;
+          if (!/^1[3-9]\d{9}$/.test(mobile)){
+              this.$message('手机号码格式有误');
+          }
+
+          //发送ajax
+          this.$axios.get(`${this.$settings.Host}/user/sms/${mobile}/`).then(response=>{
+              this.$message(response.data.message)
+          }).catch(error=>{
+              this.$message(error.response.data.message)
           })
       }
   },

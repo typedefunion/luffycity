@@ -66,23 +66,26 @@ class SMSCodeAPIView(APIView):
         # 3.1 生成随机的短信验证码
         sms_code = '%06d' % random.randint(0, 999999)
 
-        # 3.2 保存发送的验证码【手机号码、短信验证码、短信发送间隔时间、短信有效期】
-
-        """
-        字符串
-            setex sms_手机号 300 短信验证码
-            setse exp_手机号 60  _
-        """
-        redis.setex('sms_%s' % mobile, settings.SMS_EXPIRE_TIME, sms_code)
-        redis.setex('exp_%s' % mobile, settings.SMS_INTERVAL_TIME, '_')
-
         # 3.3 调用sdk发送短信
         ccp = CCP()
         result = ccp.send_template_sms(mobile, [sms_code, settings.SMS_EXPIRE_TIME//60], settings.SMS_TEIMPLATE_ID)
 
 
         # 4. 返回发送短信的结果
-        if result == '-1':
+        if result == -1:
             return Response({'message': '短信发送失败'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
+            # 3.2 保存发送的验证码【手机号码、短信验证码、短信发送间隔时间、短信有效期】
+            """
+            字符串
+                setex sms_手机号 300 短信验证码
+                setse exp_手机号 60  _
+            """
+            # 事务的管道[pipeline是一个管道对象],只能用于写入（不能用来读取）
+            pipe = redis.pipeline()
+            pipe.multi()    # 开始事务
+            redis.setex('sms_%s' % mobile, settings.SMS_EXPIRE_TIME, sms_code)
+            redis.setex('exp_%s' % mobile, settings.SMS_INTERVAL_TIME, '_')
+            pipe.execute()   # 执行事务
             return Response({'message': '短信发送成功！'}, status=status.HTTP_200_OK)
+        # return Response({'message': '短信发送成功！'}, status=status.HTTP_200_OK)
