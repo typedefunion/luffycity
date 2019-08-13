@@ -72,7 +72,7 @@ class SMSCodeAPIView(APIView):
 
 
         # 4. 返回发送短信的结果
-        if result == -1:
+        if result == '-1':
             return Response({'message': '短信发送失败'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
             # 3.2 保存发送的验证码【手机号码、短信验证码、短信发送间隔时间、短信有效期】

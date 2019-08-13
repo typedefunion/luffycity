@@ -9,7 +9,7 @@
           <input v-model="password" type="password" placeholder="输入密码" class="user">
           <div class="sms_code">
             <input v-model="sms" type="text" placeholder="输入验证码" class="user" maxlength="6">
-            <span class="code_text" @click="sendSMS">点击发送短信</span>
+            <span class="code_text" @click="sendSMS">{{sms_tips}}</span>
           </div>
           <div id="geetest"></div>
 					<button class="register_btn" @click="registerHander">注册</button>
@@ -29,6 +29,8 @@ export default {
         mobile:"",
         password: "",
         validateResult:false,
+        is_sms: false,
+        sms_tips: '点击发送短信',
     }
   },
   created(){
@@ -71,10 +73,29 @@ export default {
           let mobile = this.mobile;
           if (!/^1[3-9]\d{9}$/.test(mobile)){
               this.$message('手机号码格式有误');
+              return ;  //阻止代码继续往下执行
+          }
+
+          // 显示发送短信间隔的剩余时间
+          if(this.is_sms){
+              this.$message(`对不起，发送短信过于频繁，请稍后重试`);
+              return ;
           }
 
           //发送ajax
           this.$axios.get(`${this.$settings.Host}/user/sms/${mobile}/`).then(response=>{
+              let interval_time = 60;
+              this.is_sms = true;
+              let timer = setInterval(()=>{
+                  if(interval_time < 1){
+                      this.is_sms = false;
+                      clearInterval(timer);
+                      this.sms_tips = '点击发送短信';
+                  }else{
+                      interval_time--;
+                      this.sms_tips = `${interval_time}秒后再次点击`;
+                  }
+              },1000);
               this.$message(response.data.message)
           }).catch(error=>{
               this.$message(error.response.data.message)
