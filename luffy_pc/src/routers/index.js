@@ -4,7 +4,8 @@ import Router from "vue-router"
 // 这里导入可以让让用户访问的组件
 import Home from '../components/Home'
 import Login from '../components/Login'
-import Register from "../components/Register";
+import Register from "../components/Register"
+import Course from "../components/Course";
 
 Vue.use(Router);
 
@@ -32,6 +33,10 @@ export default new Router({
        name:"Register",
        path:"/register",
        component:Register,
+     },{
+       name:"Course",
+       path:"/course",
+       component:Course,
      },
   ]
 })

@@ -13,4 +13,5 @@ app.autodiscover_tasks(['celery_tasks.sms'])
 
 # 4.在终端下面运行celery命令启动celery
 # celery -A 主程序 worker --loglevel=info
+# 命令行输入：
 # celery -A celery_tasks.main worker --loglevel=info

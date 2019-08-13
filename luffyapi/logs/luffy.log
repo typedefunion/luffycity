@@ -1681,3 +1681,584 @@ INFO 2019-08-13 21:23:58,179 autoreload 217 /home/moluo/Desktop/luffycity/luffya
 INFO 2019-08-13 21:23:59,568 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-08-13 21:24:17,885 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-08-13 21:24:56,260 basehttp 154 "GET /user/sms/13255555555/ HTTP/1.1" 200 35
+INFO 2019-08-13 21:57:49,824 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/celery_tasks/main.py changed, reloading.
+INFO 2019-08-13 21:57:51,760 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 21:58:04,507 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-13 21:58:11,681 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-13 21:58:12,799 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-13 21:58:12,853 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-13 21:58:13,097 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 228
+INFO 2019-08-13 21:58:14,935 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-13 21:58:14,944 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-13 21:58:14,960 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-13 22:02:59,664 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-13 22:02:59,671 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-13 22:05:34,818 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-13 22:05:34,821 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-13 23:20:39,826 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-13 23:20:40,381 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 23:22:14,940 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 23:28:19,300 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-13 23:28:27,865 log 228 Not Found: /
+WARNING 2019-08-13 23:28:27,874 basehttp 154 "GET / HTTP/1.1" 404 2630
+WARNING 2019-08-13 23:28:28,155 log 228 Not Found: /favicon.ico
+WARNING 2019-08-13 23:28:28,156 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2681
+INFO 2019-08-13 23:28:43,289 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 18505
+INFO 2019-08-13 23:28:43,339 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,340 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,343 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,354 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,362 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,367 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,375 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,388 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,389 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,391 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,392 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:28:43,395 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,399 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,417 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,456 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,456 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,457 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,458 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,459 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,466 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:43,847 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-08-13 23:28:45,286 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 18505
+INFO 2019-08-13 23:30:01,212 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 28037
+INFO 2019-08-13 23:30:01,282 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:30:01,286 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:30:01,287 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:30:01,291 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:30:01,291 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:30:01,294 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:30:01,314 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:30:26,282 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 28037
+INFO 2019-08-13 23:30:26,321 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:30:46,092 basehttp 154 "GET /xadmin/courses/coursecategory/add/ HTTP/1.1" 200 21228
+INFO 2019-08-13 23:30:46,132 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:32:25,169 basehttp 154 "POST /xadmin/courses/coursecategory/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:32:25,234 basehttp 154 "GET /xadmin/courses/coursecategory/add/ HTTP/1.1" 200 21585
+INFO 2019-08-13 23:32:25,324 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:32:56,440 basehttp 154 "POST /xadmin/courses/coursecategory/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:32:56,526 basehttp 154 "GET /xadmin/courses/coursecategory/add/ HTTP/1.1" 200 21590
+INFO 2019-08-13 23:32:56,622 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:05,091 basehttp 154 "POST /xadmin/courses/coursecategory/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:33:05,185 basehttp 154 "GET /xadmin/courses/coursecategory/add/ HTTP/1.1" 200 21591
+INFO 2019-08-13 23:33:05,275 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:16,140 basehttp 154 "POST /xadmin/courses/coursecategory/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:33:16,219 basehttp 154 "GET /xadmin/courses/coursecategory/add/ HTTP/1.1" 200 21591
+INFO 2019-08-13 23:33:16,322 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:25,421 basehttp 154 "POST /xadmin/courses/coursecategory/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:33:25,496 basehttp 154 "GET /xadmin/courses/coursecategory/add/ HTTP/1.1" 200 21591
+INFO 2019-08-13 23:33:25,566 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:39,661 basehttp 154 "POST /xadmin/courses/coursecategory/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:33:39,772 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35812
+INFO 2019-08-13 23:33:39,851 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:39,856 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:50,893 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 29812
+INFO 2019-08-13 23:33:50,940 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:59,741 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29182
+INFO 2019-08-13 23:33:59,783 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+WARNING 2019-08-13 23:33:59,795 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:33:59,801 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,808 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,810 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,810 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,815 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,827 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,829 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,836 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2019-08-13 23:33:59,839 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:33:59,842 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+WARNING 2019-08-13 23:34:00,056 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:37:55,221 basehttp 154 "GET /xadmin/courses/teacher/add/ HTTP/1.1" 200 5274
+WARNING 2019-08-13 23:37:55,409 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:39:46,910 basehttp 154 "POST /xadmin/courses/teacher/add/ HTTP/1.1" 200 108
+INFO 2019-08-13 23:39:59,829 basehttp 154 "GET /xadmin/courses/teacher/ HTTP/1.1" 200 28643
+INFO 2019-08-13 23:39:59,969 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:40:04,581 basehttp 154 "GET /xadmin/courses/teacher/add/ HTTP/1.1" 200 25427
+WARNING 2019-08-13 23:40:04,626 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:40:04,636 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:40:04,767 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:41:01,755 basehttp 154 "POST /xadmin/courses/teacher/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:41:01,901 basehttp 154 "GET /xadmin/courses/teacher/ HTTP/1.1" 200 31402
+INFO 2019-08-13 23:41:01,990 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:41:08,168 basehttp 154 "GET /xadmin/courses/teacher/add/ HTTP/1.1" 200 25427
+WARNING 2019-08-13 23:41:08,207 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:41:08,215 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:41:08,306 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:41:58,898 basehttp 154 "POST /xadmin/courses/teacher/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:41:58,993 basehttp 154 "GET /xadmin/courses/teacher/ HTTP/1.1" 200 32372
+INFO 2019-08-13 23:41:59,043 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:42:01,075 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 29812
+INFO 2019-08-13 23:42:01,145 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:42:04,155 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-13 23:42:04,186 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:42:04,211 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:42:04,315 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:43:17,058 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:43:17,266 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29614
+WARNING 2019-08-13 23:43:17,346 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:43:17,365 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:43:17,494 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:44:40,273 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:44:40,391 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 33611
+INFO 2019-08-13 23:44:40,423 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:44:46,763 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 28532
+INFO 2019-08-13 23:44:46,794 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:45:07,340 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23447
+WARNING 2019-08-13 23:45:07,385 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:45:07,393 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:45:07,539 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:45:43,097 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:45:43,226 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 31397
+INFO 2019-08-13 23:45:43,321 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:45:49,081 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23447
+WARNING 2019-08-13 23:45:49,113 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:45:49,116 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:45:49,208 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:46:11,554 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:46:11,692 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23845
+WARNING 2019-08-13 23:46:11,771 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:46:11,780 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:46:11,885 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:46:39,083 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:46:39,230 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 33456
+INFO 2019-08-13 23:46:39,281 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:46:44,822 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23447
+WARNING 2019-08-13 23:46:44,869 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:46:44,880 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:46:44,952 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:47:22,259 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:47:22,366 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23851
+WARNING 2019-08-13 23:47:22,449 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:47:22,458 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:47:22,562 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:47:51,021 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:47:51,162 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35500
+INFO 2019-08-13 23:47:51,198 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:48:00,051 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 28801
+INFO 2019-08-13 23:48:00,075 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:48:02,123 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35162
+INFO 2019-08-13 23:48:02,155 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:48:06,884 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 28801
+INFO 2019-08-13 23:48:06,913 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:48:08,371 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35162
+INFO 2019-08-13 23:48:08,405 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:48:09,854 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 28801
+INFO 2019-08-13 23:48:09,888 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:48:13,886 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 24506
+WARNING 2019-08-13 23:48:13,918 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:48:13,937 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:48:14,083 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:48:54,730 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35162
+INFO 2019-08-13 23:48:54,762 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:49:01,530 basehttp 154 "GET /xadmin/courses/coursechapter/2/update/ HTTP/1.1" 200 23893
+WARNING 2019-08-13 23:49:01,569 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:49:01,580 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:49:01,651 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:49:30,952 basehttp 154 "POST /xadmin/courses/coursechapter/2/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:49:31,070 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35436
+INFO 2019-08-13 23:49:31,104 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:49:38,641 basehttp 154 "GET /xadmin/courses/coursechapter/4/update/ HTTP/1.1" 200 23917
+WARNING 2019-08-13 23:49:38,679 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:49:38,686 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:49:38,793 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:49:41,781 basehttp 154 "POST /xadmin/courses/coursechapter/4/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:49:41,932 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35442
+INFO 2019-08-13 23:49:41,967 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:49:51,311 basehttp 154 "GET /xadmin/courses/coursechapter/1/update/ HTTP/1.1" 200 23881
+WARNING 2019-08-13 23:49:51,344 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:49:51,351 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:49:51,453 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:49:58,639 basehttp 154 "POST /xadmin/courses/coursechapter/1/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:49:58,824 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35433
+INFO 2019-08-13 23:49:58,858 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:50:01,595 basehttp 154 "GET /xadmin/courses/coursechapter/3/update/ HTTP/1.1" 200 23893
+WARNING 2019-08-13 23:50:01,627 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:01,638 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:50:01,743 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:12,704 basehttp 154 "POST /xadmin/courses/coursechapter/3/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:50:12,835 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35436
+INFO 2019-08-13 23:50:12,891 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:50:14,731 basehttp 154 "GET /xadmin/courses/coursechapter/2/update/ HTTP/1.1" 200 23884
+WARNING 2019-08-13 23:50:14,755 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:14,775 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:50:14,875 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:17,628 basehttp 154 "POST /xadmin/courses/coursechapter/2/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:50:17,765 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35436
+INFO 2019-08-13 23:50:17,804 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:50:19,667 basehttp 154 "GET /xadmin/courses/coursechapter/4/update/ HTTP/1.1" 200 23917
+WARNING 2019-08-13 23:50:19,694 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:19,701 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:50:19,794 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:30,839 basehttp 154 "POST /xadmin/courses/coursechapter/4/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:50:30,953 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35442
+INFO 2019-08-13 23:50:30,996 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:50:32,029 basehttp 154 "GET /xadmin/courses/coursechapter/5/update/ HTTP/1.1" 200 23857
+WARNING 2019-08-13 23:50:32,056 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:32,070 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:50:32,175 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:50:43,078 basehttp 154 "POST /xadmin/courses/coursechapter/5/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:50:43,213 basehttp 154 "GET /xadmin/courses/coursechapter/? HTTP/1.1" 200 35427
+INFO 2019-08-13 23:50:43,252 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:50:48,673 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 28801
+INFO 2019-08-13 23:50:48,711 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:50:52,281 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 24506
+INFO 2019-08-13 23:50:52,325 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:50:52,326 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-13 23:50:52,448 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:51:36,099 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:51:36,230 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 24919
+WARNING 2019-08-13 23:51:36,316 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:51:36,328 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:51:36,432 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:03,546 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:52:03,656 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 31432
+INFO 2019-08-13 23:52:03,735 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:52:05,648 basehttp 154 "GET /xadmin/courses/courselesson/2/update/ HTTP/1.1" 200 25038
+WARNING 2019-08-13 23:52:05,676 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:05,684 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:52:05,786 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:08,033 basehttp 154 "POST /xadmin/courses/courselesson/2/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:52:08,171 basehttp 154 "GET /xadmin/courses/courselesson/? HTTP/1.1" 200 31360
+INFO 2019-08-13 23:52:08,257 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:52:09,483 basehttp 154 "GET /xadmin/courses/courselesson/1/update/ HTTP/1.1" 200 25021
+WARNING 2019-08-13 23:52:09,517 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:09,535 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:52:09,634 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:12,549 basehttp 154 "POST /xadmin/courses/courselesson/1/update/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:52:12,658 basehttp 154 "GET /xadmin/courses/courselesson/? HTTP/1.1" 200 31357
+INFO 2019-08-13 23:52:12,729 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:52:16,843 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 24506
+INFO 2019-08-13 23:52:16,910 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:52:16,915 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-13 23:52:17,016 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:36,693 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:52:36,914 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 24922
+WARNING 2019-08-13 23:52:36,999 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:37,074 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:52:37,189 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:53,121 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:52:53,331 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 32308
+INFO 2019-08-13 23:52:53,374 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:52:56,977 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 24506
+WARNING 2019-08-13 23:52:57,019 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:52:57,030 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-13 23:52:57,129 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-13 23:53:15,159 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-13 23:53:15,321 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 32716
+INFO 2019-08-13 23:53:15,392 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:53:18,534 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35162
+INFO 2019-08-13 23:53:18,568 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:53:20,541 basehttp 154 "GET /xadmin/courses/teacher/ HTTP/1.1" 200 32073
+INFO 2019-08-13 23:53:20,575 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-13 23:53:21,489 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35162
+INFO 2019-08-13 23:53:21,545 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 00:07:29,530 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:07:57,405 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 00:08:55,006 log 228 Internal Server Error: /courses/category/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1022, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1078, in get_field_names
+    'Got %s.' % type(fields).__name__
+TypeError: The `fields` option must be a list or tuple or "__all__". Got set.
+ERROR 2019-08-14 00:08:55,020 basehttp 154 "GET /courses/category/ HTTP/1.1" 500 21182
+INFO 2019-08-14 00:09:48,177 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 00:09:50,577 log 228 Internal Server Error: /course/category/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1022, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1078, in get_field_names
+    'Got %s.' % type(fields).__name__
+TypeError: The `fields` option must be a list or tuple or "__all__". Got set.
+ERROR 2019-08-14 00:09:50,579 basehttp 154 "GET /course/category/ HTTP/1.1" 500 21178
+ERROR 2019-08-14 00:09:52,087 log 228 Internal Server Error: /course/category/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1022, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1078, in get_field_names
+    'Got %s.' % type(fields).__name__
+TypeError: The `fields` option must be a list or tuple or "__all__". Got set.
+ERROR 2019-08-14 00:09:52,094 basehttp 154 "GET /course/category/ HTTP/1.1" 500 21178
+INFO 2019-08-14 00:11:07,588 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:11:16,102 basehttp 154 "GET /course/category/ HTTP/1.1" 200 176
+INFO 2019-08-14 00:20:04,699 basehttp 154 "GET /course/category HTTP/1.1" 301 0
+INFO 2019-08-14 00:20:04,941 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 00:20:04,944 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:20:05,372 basehttp 154 "GET /course/category/ HTTP/1.1" 200 176
+INFO 2019-08-14 00:20:57,685 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35504
+INFO 2019-08-14 00:20:57,844 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 00:21:00,231 basehttp 154 "GET /xadmin/courses/coursecategory/6/update/ HTTP/1.1" 200 21531
+INFO 2019-08-14 00:21:00,270 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 00:21:03,131 basehttp 154 "POST /xadmin/courses/coursecategory/6/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 00:21:03,254 basehttp 154 "GET /xadmin/courses/coursecategory/? HTTP/1.1" 200 35738
+INFO 2019-08-14 00:21:03,345 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 00:21:07,338 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 00:21:07,350 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:21:07,642 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:29:00,163 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:29:00,347 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:29:06,199 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:29:06,548 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:30:15,343 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:30:15,346 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 00:30:15,679 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:32:19,556 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 00:32:19,563 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:32:19,626 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:38:04,891 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:39:48,252 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/courses/serializers.py changed, reloading.
+INFO 2019-08-14 00:39:49,240 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:40:26,710 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:42:12,403 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:42:29,800 basehttp 154 "GET /course/ HTTP/1.1" 200 387
+INFO 2019-08-14 00:46:12,085 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:49:43,397 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:56:34,120 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:56:34,130 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+ERROR 2019-08-14 00:56:34,339 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 526, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 999, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class CourseTeacherModelSerializer missing "Meta" attribute
+ERROR 2019-08-14 00:56:34,341 basehttp 154 "GET /course/ HTTP/1.1" 500 21308
+INFO 2019-08-14 00:56:34,569 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:57:19,915 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:57:41,740 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 00:57:41,743 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:57:41,814 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+ERROR 2019-08-14 00:57:41,875 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 999, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class CourseModelSerializer missing "Meta" attribute
+ERROR 2019-08-14 00:57:41,878 basehttp 154 "GET /course/ HTTP/1.1" 500 21094
+INFO 2019-08-14 00:58:33,013 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 00:58:55,202 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 00:58:55,204 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 00:58:55,208 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 00:58:55,213 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 00:58:56,627 basehttp 154 "GET /media/course/Loginbg.3377d0c.jpg HTTP/1.1" 200 335502
+INFO 2019-08-14 00:58:56,632 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 200 87343
+INFO 2019-08-14 01:01:27,932 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 01:01:27,959 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 01:01:27,960 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 01:01:27,966 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 01:03:12,933 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 01:03:12,966 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 01:03:12,967 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 01:03:12,995 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 01:05:13,491 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 01:05:13,510 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 01:05:13,534 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 01:05:13,881 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 01:05:40,939 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 01:05:40,940 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 01:05:40,963 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 01:05:40,970 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 01:10:36,024 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 01:10:36,038 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 01:10:36,052 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 01:10:36,180 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 01:10:36,342 basehttp 154 "GET /media/course/Loginbg.3377d0c.jpg HTTP/1.1" 304 0
+INFO 2019-08-14 01:10:36,344 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 01:13:52,762 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 01:13:52,776 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 01:13:52,780 basehttp 154 "GET /course/ HTTP/1.1" 200 550
+INFO 2019-08-14 01:13:52,807 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
