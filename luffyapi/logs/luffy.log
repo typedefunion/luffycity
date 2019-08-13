@@ -1646,3 +1646,38 @@ ERROR 2019-08-13 20:17:09,620 log 228 Internal Server Error: /user/sms/132123456
 ERROR 2019-08-13 20:17:09,621 basehttp 154 "GET /user/sms/13212345678/ HTTP/1.1" 500 32
 INFO 2019-08-13 20:18:17,770 autoreload 597 Watching for file changes with StatReloader
 INFO 2019-08-13 20:18:56,103 basehttp 154 "GET /user/sms/13212345678/ HTTP/1.1" 200 35
+INFO 2019-08-13 21:07:33,440 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 21:12:14,203 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 21:19:00,321 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-13 21:19:40,186 log 228 Bad Request: /user/sms/15079204849/
+WARNING 2019-08-13 21:19:40,187 basehttp 154 "GET /user/sms/15079204849/ HTTP/1.1" 400 59
+ERROR 2019-08-13 21:19:55,392 log 228 Internal Server Error: /user/sms/13255555555/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 80, in get
+    if result == '-1':
+NameError: name 'result' is not defined
+ERROR 2019-08-13 21:19:55,395 basehttp 154 "GET /user/sms/13255555555/ HTTP/1.1" 500 19386
+INFO 2019-08-13 21:20:56,506 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 21:21:33,467 basehttp 154 "GET /user/sms/13255555555/ HTTP/1.1" 200 35
+INFO 2019-08-13 21:23:58,179 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/celery_tasks/sms/tasks.py changed, reloading.
+INFO 2019-08-13 21:23:59,568 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 21:24:17,885 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-13 21:24:56,260 basehttp 154 "GET /user/sms/13255555555/ HTTP/1.1" 200 35
