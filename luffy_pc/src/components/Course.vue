@@ -13,9 +13,9 @@
         <div class="ordering">
           <ul>
             <li class="title">筛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选: </li>
-            <li class="default this">默认</li>
-            <li class="hot this">人气</li>
-            <li class="price this">价格</li>
+            <li class="default" :class="if_change('id', filter.ordering)" @click="change('id')">默认</li>
+            <li class="hot" :class="if_change('students', filter.ordering)" @click="change('students')">人气</li>
+            <li class="price" :class="if_change('price', filter.ordering)" @click="change('price')">价格</li>
           </ul>
           <p class="condition-result">共{{course_list.length}}个课程</p>
         </div>
@@ -57,7 +57,10 @@
           category_list: [],
           course_list: [],
           filter: {
+              // 设置默认的筛选是全部查询
               course_category: 0,
+              // 设置默认的排序是最新出现的课程
+              ordering: '-id',
           }
         }
       },
@@ -72,7 +75,10 @@
       watch:{
           'filter.course_category': function() {
               this.get_course();
-          }
+          },
+          'filter.ordering': function() {
+              this.get_course();
+          },
       },
       methods: {
           get_course_category(){
@@ -86,7 +92,9 @@
           get_course(){
 
               // 组装和判断过滤的参数
-              let params = {};
+              let params = {
+                  ordering: this.filter.ordering,
+              };
               // 如果分类是0，则表示不进行筛选，查询全部，不需要进行任何分类
               if(this.filter.course_category>0){
                   params.course_category = this.filter.course_category;
@@ -100,6 +108,60 @@
               }).catch(error=>{
                   console.log(error.response);
               })
+          },
+          if_change(type, ordering){
+
+              // 选择筛选的选项和升降序
+              // 选择默认
+              if(type == 'id' && ordering == '-id'){
+                  return 'this this-desc';
+              }else if(type == 'id' && ordering == 'id'){
+                  return 'this this-asc'
+              }else if(type == 'students' && ordering == '-students'){
+                  return 'this this-desc';
+              }else if(type == 'students' && ordering == 'students'){
+                  return 'this this-asc'
+              }else if(type == 'price' && ordering == '-price'){
+                  return 'this this-desc';
+              }else if(type == 'price' && ordering == 'price'){
+                  return 'this this-asc'
+              }
+              return '';
+          },
+          change(type){
+
+              // 从别的地方切换回默认
+              if(type == 'id' && this.filter.ordering != 'id'){
+                  this.filter.ordering = '-id';
+              }
+              // 点击了默认
+              if(type == 'id' && this.filter.ordering == 'id'){
+                  this.filter.ordering = '-id';
+              }else if(type == 'id' && this.filter.ordering == '-id'){
+                  this.filter.ordering = 'id';
+              }
+
+              // 从别的地方切换回人气
+              if(type == 'students' && this.filter.ordering != '-students'){
+                  this.filter.ordering = 'students';
+              }
+              // 点击了人气
+              if(type == 'students' && this.filter.ordering == '-students'){
+                  this.filter.ordering = 'students';
+              }else if(type == 'students' && this.filter.ordering == 'students'){
+                  this.filter.ordering = '-students';
+              }
+
+              // 从别的地方切换回价格
+              if(type == 'price' && this.filter.ordering != '-price'){
+                  this.filter.ordering = 'price';
+              }
+              // 点击了价格
+              if(type == 'price' && this.filter.ordering == '-price'){
+                  this.filter.ordering = 'price';
+              }else if(type == 'price' && this.filter.ordering == 'price'){
+                  this.filter.ordering = '-price';
+              }
           }
 
       }
@@ -203,8 +265,8 @@
   .course .ordering .price{
     position: relative;
   }
-  .course .ordering .price::before,
-  .course .ordering .price::after{
+  .course .ordering .this::before,
+  .course .ordering .this::after{
     cursor: pointer;
     content:"";
     display: block;
@@ -214,14 +276,20 @@
     position: absolute;
     right: 0;
   }
-  .course .ordering .price::before{
+  .course .ordering .this::before{
     border-bottom: 5px solid #aaa;
     margin-bottom: 2px;
     top: 2px;
   }
-  .course .ordering .price::after{
+  .course .ordering .this::after{
     border-top: 5px solid #aaa;
     bottom: 2px;
+  }
+  .course .ordering .this-asc::before{
+    border-bottom-color: #ffc210;
+  }
+  .course .ordering .this-desc::after{
+    border-top-color: #ffc210;
   }
   .course .course-item:hover{
     box-shadow: 4px 6px 16px rgba(0,0,0,.5);

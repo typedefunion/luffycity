@@ -69,7 +69,7 @@ class Course(BaseModel):
             data.append({
                 'id': lesson.id,
                 'name': lesson.name,
-                'chapter': lesson.chapter.id,
+                'chapter': lesson.course.chapter,
                 'free_trail': True if lesson.free_trail else False,
             })
         return data
