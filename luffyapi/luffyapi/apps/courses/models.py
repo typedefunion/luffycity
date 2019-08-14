@@ -46,7 +46,7 @@ class Course(BaseModel):
     period = models.IntegerField(verbose_name="建议学习周期(day)", default=7)
     attachment_path = models.FileField(max_length=128, verbose_name="课件路径", blank=True, null=True)
     status = models.SmallIntegerField(choices=status_choices, default=0, verbose_name="课程状态")
-    course_category = models.ForeignKey("CourseCategory", on_delete=models.CASCADE, null=True, blank=True,verbose_name="课程分类")
+    course_category = models.ForeignKey("CourseCategory", on_delete=models.CASCADE, null=True, blank=True, verbose_name="课程分类")
     students = models.IntegerField(verbose_name="学习人数",default = 0)
     lessons = models.IntegerField(verbose_name="总课时数量",default = 0)
     pub_lessons = models.IntegerField(verbose_name="课时更新数量",default = 0)

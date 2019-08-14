@@ -2645,3 +2645,1201 @@ INFO 2019-08-14 16:02:06,278 basehttp 154 "GET /course/ HTTP/1.1" 200 794
 INFO 2019-08-14 16:02:06,281 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
 INFO 2019-08-14 16:02:06,282 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
 INFO 2019-08-14 16:02:06,289 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 16:55:51,217 basehttp 154 "GET /xadmin/courses/courselesson/? HTTP/1.1" 200 32644
+INFO 2019-08-14 16:55:51,683 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:00,965 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35504
+INFO 2019-08-14 16:56:01,052 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:03,317 basehttp 154 "GET /xadmin/courses/coursecategory/6/update/ HTTP/1.1" 200 21539
+INFO 2019-08-14 16:56:03,405 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:08,771 basehttp 154 "POST /xadmin/courses/coursecategory/6/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 16:56:08,907 basehttp 154 "GET /xadmin/courses/coursecategory/? HTTP/1.1" 200 35738
+INFO 2019-08-14 16:56:08,996 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:10,789 basehttp 154 "GET /xadmin/courses/coursecategory/1/update/ HTTP/1.1" 200 21523
+INFO 2019-08-14 16:56:10,859 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:13,675 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 33934
+INFO 2019-08-14 16:56:13,722 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:21,480 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 33934
+INFO 2019-08-14 16:56:21,536 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:22,840 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35504
+INFO 2019-08-14 16:56:22,879 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:24,288 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 33934
+INFO 2019-08-14 16:56:24,329 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:56:27,702 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+INFO 2019-08-14 16:56:27,771 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 16:56:27,775 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-14 16:56:27,920 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 16:58:10,326 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 16:58:10,520 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29603
+WARNING 2019-08-14 16:58:10,628 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 16:58:10,646 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 16:58:10,761 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 16:59:22,859 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 16:59:23,026 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 36842
+INFO 2019-08-14 16:59:23,063 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:59:31,269 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-14 16:59:31,314 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 16:59:31,326 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 16:59:31,452 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 16:59:45,259 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35504
+INFO 2019-08-14 16:59:45,304 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:59:47,716 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 36539
+INFO 2019-08-14 16:59:47,752 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 16:59:52,149 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-14 16:59:52,203 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 16:59:52,208 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 16:59:52,325 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:01:14,097 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:01:14,306 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 38148
+INFO 2019-08-14 17:01:14,360 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:01:18,260 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-14 17:01:18,300 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:01:18,321 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:01:18,433 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:02:50,083 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:02:50,211 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 39450
+INFO 2019-08-14 17:02:50,258 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:02:52,745 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35504
+INFO 2019-08-14 17:02:52,800 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:02:58,309 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 39146
+INFO 2019-08-14 17:02:58,356 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:03:02,570 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-14 17:03:02,612 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:03:02,635 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:03:02,755 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:04:21,955 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:04:22,063 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 40777
+INFO 2019-08-14 17:04:22,093 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:04:26,252 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-14 17:04:26,295 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:04:26,304 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:04:26,404 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:05:50,209 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:05:50,438 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 42092
+INFO 2019-08-14 17:05:50,494 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:05:54,660 basehttp 154 "GET /xadmin/courses/course/add/ HTTP/1.1" 200 29248
+WARNING 2019-08-14 17:05:54,745 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:05:54,756 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:05:54,844 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:07:36,277 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 200 29669
+WARNING 2019-08-14 17:07:36,347 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:07:36,371 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:07:36,451 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:07:57,601 basehttp 154 "POST /xadmin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:07:57,721 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 43405
+INFO 2019-08-14 17:07:57,757 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:08:01,760 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 35162
+INFO 2019-08-14 17:08:01,817 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:08:17,457 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23762
+WARNING 2019-08-14 17:08:17,497 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:08:17,510 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:08:17,630 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:09:07,531 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:09:07,709 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 36527
+INFO 2019-08-14 17:09:07,754 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:09:11,489 basehttp 154 "GET /xadmin/courses/coursechapter/add/ HTTP/1.1" 200 23762
+WARNING 2019-08-14 17:09:11,533 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:09:11,541 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:09:11,643 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:09:39,664 basehttp 154 "POST /xadmin/courses/coursechapter/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:09:39,796 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 37550
+INFO 2019-08-14 17:09:39,834 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:09:42,415 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 32644
+INFO 2019-08-14 17:09:42,457 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:09:45,835 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 26022
+WARNING 2019-08-14 17:09:45,873 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:09:45,886 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:09:45,995 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:10:38,429 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:10:38,574 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 33437
+INFO 2019-08-14 17:10:38,618 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:10:41,732 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 26022
+WARNING 2019-08-14 17:10:41,760 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:10:41,782 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:10:41,896 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:11:12,978 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:11:13,178 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 26436
+WARNING 2019-08-14 17:11:13,265 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:11:13,290 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:11:13,400 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:11:42,483 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:11:42,648 basehttp 154 "GET /xadmin/courses/courselesson/add/ HTTP/1.1" 200 26436
+WARNING 2019-08-14 17:11:42,731 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:11:42,749 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:11:42,837 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:12:19,613 basehttp 154 "POST /xadmin/courses/courselesson/add/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:12:19,872 basehttp 154 "GET /xadmin/courses/courselesson/ HTTP/1.1" 200 34721
+INFO 2019-08-14 17:12:19,933 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:12:33,911 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:17:47,462 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 17:17:47,465 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 17:17:47,473 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 17:17:47,513 basehttp 154 "GET /course/ HTTP/1.1" 200 3021
+INFO 2019-08-14 17:17:47,539 basehttp 154 "GET /media/course/Loginbg.3377d0c.jpg HTTP/1.1" 304 0
+INFO 2019-08-14 17:17:47,578 basehttp 154 "GET /media/course/Loginbg.3377d0c_eV6Iaju.jpg HTTP/1.1" 200 335502
+INFO 2019-08-14 17:17:47,586 basehttp 154 "GET /media/course/course-cover_fJVWBPY.jpeg HTTP/1.1" 200 87343
+INFO 2019-08-14 17:17:47,598 basehttp 154 "GET /media/course/2_cCNq6iH.jpeg HTTP/1.1" 200 199373
+INFO 2019-08-14 17:17:47,599 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 200 199373
+INFO 2019-08-14 17:17:47,599 basehttp 154 "GET /media/course/course-cover_tKO3utA.jpeg HTTP/1.1" 200 87343
+INFO 2019-08-14 17:17:47,600 basehttp 154 "GET /media/course/Loginbg.3377d0c_v9pD5Me.jpg HTTP/1.1" 200 335502
+INFO 2019-08-14 17:18:18,625 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 37208
+INFO 2019-08-14 17:18:18,670 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:18:23,062 basehttp 154 "GET /xadmin/courses/teacher/ HTTP/1.1" 200 32073
+INFO 2019-08-14 17:18:23,096 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:18:23,693 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 43090
+INFO 2019-08-14 17:18:23,726 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:18:29,802 basehttp 154 "GET /xadmin/courses/course/9/update/ HTTP/1.1" 200 29874
+INFO 2019-08-14 17:18:29,843 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:18:29,850 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-14 17:18:29,962 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:18:45,895 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 17:18:45,908 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 17:18:45,965 basehttp 154 "GET /course/ HTTP/1.1" 200 3021
+INFO 2019-08-14 17:18:46,051 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 17:19:19,244 basehttp 154 "POST /xadmin/courses/course/9/update/ HTTP/1.1" 200 30234
+WARNING 2019-08-14 17:19:19,350 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:19:19,371 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 17:19:19,486 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 17:19:27,008 basehttp 154 "POST /xadmin/courses/course/9/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 17:19:27,163 basehttp 154 "GET /xadmin/courses/course/? HTTP/1.1" 200 43339
+INFO 2019-08-14 17:19:27,206 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 17:19:31,818 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 17:19:31,863 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 17:19:31,886 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 17:19:31,994 basehttp 154 "GET /course/ HTTP/1.1" 200 3066
+INFO 2019-08-14 17:19:32,006 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 17:19:32,014 basehttp 154 "GET /media/course/2_cCNq6iH.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 17:19:32,015 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 17:19:32,026 basehttp 154 "GET /media/course/course-cover_tKO3utA.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 17:19:32,036 basehttp 154 "GET /media/course/1.png HTTP/1.1" 200 361097
+INFO 2019-08-14 17:19:32,050 basehttp 154 "GET /media/course/course-cover_fJVWBPY.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 17:31:02,249 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-14 17:31:03,498 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:32:34,210 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:32:57,661 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:33:29,142 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:33:44,542 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:36:25,364 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:36:25,368 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20682
+ERROR 2019-08-14 17:36:28,752 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:36:28,754 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+INFO 2019-08-14 17:36:56,768 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:37:04,507 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:37:04,509 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+INFO 2019-08-14 17:42:02,563 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:42:11,889 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/courses/serializers.py changed, reloading.
+INFO 2019-08-14 17:42:12,863 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:42:17,238 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:43:40,836 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:43:49,761 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:43:49,771 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+INFO 2019-08-14 17:44:09,430 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/courses/serializers.py changed, reloading.
+INFO 2019-08-14 17:44:10,609 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:44:13,287 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:44:21,526 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:44:21,538 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+INFO 2019-08-14 17:46:35,318 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:46:57,934 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:46:57,940 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20682
+INFO 2019-08-14 17:49:49,999 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:49:59,778 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:49:59,780 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20682
+ERROR 2019-08-14 17:50:07,183 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:50:07,185 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+INFO 2019-08-14 17:56:21,448 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:56:33,025 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:56:33,028 basehttp 154 "GET /course/ HTTP/1.1" 500 20637
+INFO 2019-08-14 17:57:00,932 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 17:57:06,131 basehttp 154 "GET /course/ HTTP/1.1" 200 3249
+INFO 2019-08-14 17:57:29,512 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 17:57:51,831 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 17:57:51,835 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20682
+INFO 2019-08-14 19:12:04,318 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:12:09,912 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:12:09,914 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20682
+ERROR 2019-08-14 19:12:18,197 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:12:18,199 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+INFO 2019-08-14 19:16:28,395 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:16:35,479 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:16:35,485 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20685
+ERROR 2019-08-14 19:17:07,884 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:17:07,885 basehttp 154 "GET /course/?course_category=1/ HTTP/1.1" 500 20684
+ERROR 2019-08-14 19:17:31,545 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:17:31,546 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+WARNING 2019-08-14 19:17:41,238 log 228 Method Not Allowed: /course/
+WARNING 2019-08-14 19:17:41,239 basehttp 154 "POST /course/?course_category=1 HTTP/1.1" 405 46
+ERROR 2019-08-14 19:17:48,444 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:17:48,453 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+ERROR 2019-08-14 19:17:53,629 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:17:53,630 basehttp 154 "GET /course/?course_category=2 HTTP/1.1" 500 20681
+ERROR 2019-08-14 19:17:58,827 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:17:58,830 basehttp 154 "GET /course/ HTTP/1.1" 500 20636
+ERROR 2019-08-14 19:20:05,354 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:20:05,355 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+INFO 2019-08-14 19:21:07,525 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/courses/serializers.py changed, reloading.
+INFO 2019-08-14 19:21:09,027 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 19:21:11,469 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:22:10,596 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:22:10,642 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+INFO 2019-08-14 19:25:36,493 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:25:56,363 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:25:56,365 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+INFO 2019-08-14 19:26:18,608 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/courses/views.py changed, reloading.
+INFO 2019-08-14 19:26:19,450 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:27:11,366 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:27:11,369 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+INFO 2019-08-14 19:30:20,861 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/courses/views.py changed, reloading.
+INFO 2019-08-14 19:30:22,223 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 19:30:25,125 basehttp 154 "GET /xadmin/courses/coursechapter/ HTTP/1.1" 200 37208
+INFO 2019-08-14 19:30:25,360 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:30:47,841 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 43090
+INFO 2019-08-14 19:30:47,889 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:30:50,173 basehttp 154 "GET /xadmin/courses/course/9/update/ HTTP/1.1" 200 30034
+INFO 2019-08-14 19:30:50,226 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:30:50,229 basehttp 154 "GET /media/course/1.png HTTP/1.1" 304 0
+WARNING 2019-08-14 19:30:50,269 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-14 19:30:50,535 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 19:31:06,177 basehttp 154 "POST /xadmin/courses/course/9/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 19:31:06,301 basehttp 154 "GET /xadmin/courses/course/? HTTP/1.1" 200 43339
+INFO 2019-08-14 19:31:06,360 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:31:09,231 basehttp 154 "GET /xadmin/courses/course/1/update/ HTTP/1.1" 200 30043
+INFO 2019-08-14 19:31:09,280 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:31:09,301 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 19:31:09,302 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-14 19:31:09,422 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 19:31:19,769 basehttp 154 "GET /xadmin/courses/coursecategory/ HTTP/1.1" 200 35504
+INFO 2019-08-14 19:31:19,812 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:31:23,156 basehttp 154 "GET /xadmin/courses/coursecategory/1/update/ HTTP/1.1" 200 21523
+INFO 2019-08-14 19:31:23,179 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:31:29,584 basehttp 154 "POST /xadmin/courses/coursecategory/1/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 19:31:29,676 basehttp 154 "GET /xadmin/courses/coursecategory/? HTTP/1.1" 200 35736
+INFO 2019-08-14 19:31:29,761 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:31:31,657 basehttp 154 "GET /xadmin/courses/coursecategory/2/update/ HTTP/1.1" 200 21543
+INFO 2019-08-14 19:31:31,689 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:31:33,777 basehttp 154 "POST /xadmin/courses/coursecategory/2/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 19:31:33,902 basehttp 154 "GET /xadmin/courses/coursecategory/? HTTP/1.1" 200 35741
+INFO 2019-08-14 19:31:33,976 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:33:40,741 basehttp 154 "GET /xadmin/courses/course/ HTTP/1.1" 200 43090
+INFO 2019-08-14 19:33:40,808 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:33:42,054 basehttp 154 "GET /xadmin/courses/course/6/update/ HTTP/1.1" 200 30007
+INFO 2019-08-14 19:33:42,087 basehttp 154 "GET /media/course/2_cCNq6iH.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:33:42,112 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2019-08-14 19:33:42,125 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+WARNING 2019-08-14 19:33:42,241 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1772
+INFO 2019-08-14 19:34:04,670 basehttp 154 "POST /xadmin/courses/course/6/update/ HTTP/1.1" 302 0
+INFO 2019-08-14 19:34:04,805 basehttp 154 "GET /xadmin/courses/course/? HTTP/1.1" 200 43328
+INFO 2019-08-14 19:34:04,843 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-14 19:34:13,293 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:34:17,095 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:34:17,096 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+INFO 2019-08-14 19:49:09,908 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 19:49:21,419 basehttp 154 "GET /course/ HTTP/1.1" 200 3066
+INFO 2019-08-14 19:49:56,031 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 19:50:10,566 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 200 1072
+INFO 2019-08-14 19:50:18,324 basehttp 154 "GET /course/?course_category=2 HTTP/1.1" 200 582
+INFO 2019-08-14 19:50:51,382 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 200 1072
+INFO 2019-08-14 19:51:07,906 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-14 19:51:11,618 log 228 Internal Server Error: /course/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django_filters/filterset.py", line 352, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: course_category 
+ERROR 2019-08-14 19:51:11,621 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 500 20681
+INFO 2019-08-14 19:51:46,340 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-14 19:53:43,137 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 200 1072
+INFO 2019-08-14 19:55:39,176 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 19:55:39,195 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 19:55:39,269 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 19:55:39,306 basehttp 154 "GET /course/ HTTP/1.1" 200 3066
+INFO 2019-08-14 19:55:39,373 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,380 basehttp 154 "GET /media/course/Loginbg.3377d0c.jpg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,382 basehttp 154 "GET /media/course/Loginbg.3377d0c_v9pD5Me.jpg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,389 basehttp 154 "GET /media/course/2_cCNq6iH.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,390 basehttp 154 "GET /media/course/Loginbg.3377d0c_eV6Iaju.jpg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,427 basehttp 154 "GET /media/course/course-cover_fJVWBPY.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,440 basehttp 154 "GET /media/course/2.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,441 basehttp 154 "GET /media/course/course-cover_tKO3utA.jpeg HTTP/1.1" 304 0
+INFO 2019-08-14 19:55:39,449 basehttp 154 "GET /media/course/1.png HTTP/1.1" 304 0
+INFO 2019-08-14 19:56:14,044 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 19:56:14,056 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 19:56:14,117 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 200 1072
+INFO 2019-08-14 19:56:14,146 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 20:01:33,033 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 20:01:33,037 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 20:01:33,040 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 20:01:37,103 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 20:01:37,111 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 20:01:37,343 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 20:02:29,834 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 20:02:29,867 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 20:02:29,911 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 20:02:29,989 basehttp 154 "GET /course/ HTTP/1.1" 200 3066
+INFO 2019-08-14 20:07:30,674 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-14 20:07:30,690 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-14 20:07:30,775 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-14 20:07:30,969 basehttp 154 "GET /course/ HTTP/1.1" 200 3066
+INFO 2019-08-14 20:07:36,550 basehttp 154 "GET /course/?course_category=1 HTTP/1.1" 200 1072
+INFO 2019-08-14 20:07:41,155 basehttp 154 "GET /course/?course_category=2 HTTP/1.1" 200 582
+INFO 2019-08-14 20:07:42,063 basehttp 154 "GET /course/?course_category=3 HTTP/1.1" 200 539
+INFO 2019-08-14 20:07:42,724 basehttp 154 "GET /course/?course_category=4 HTTP/1.1" 200 600
+INFO 2019-08-14 20:07:43,571 basehttp 154 "GET /course/?course_category=5 HTTP/1.1" 200 277
+INFO 2019-08-14 20:07:49,331 basehttp 154 "GET /course/ HTTP/1.1" 200 3066

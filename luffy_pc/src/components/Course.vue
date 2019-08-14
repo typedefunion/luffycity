@@ -6,8 +6,8 @@
       <div class="condition">
         <ul class="cate-list">
           <li class="title">课程分类:</li>
-          <li :class="filter.category == 0?'this':''" @click="filter.category=0">全部</li>
-          <li :class="filter.category == category.id?'this':''" @click="filter.category=category.id" v-for="category in category_list" :key="category.id">{{category.name}}</li>
+          <li :class="filter.course_category == 0?'this':''" @click="filter.course_category=0">全部</li>
+          <li :class="filter.course_category == category.id?'this':''" @click="filter.course_category=category.id" v-for="category in category_list" :key="category.id">{{category.name}}</li>
         </ul>
 
         <div class="ordering">
@@ -57,7 +57,7 @@
           category_list: [],
           course_list: [],
           filter: {
-              category: 0,
+              course_category: 0,
           }
         }
       },
@@ -69,6 +69,11 @@
           this.get_course_category();
           this.get_course();
       },
+      watch:{
+          'filter.course_category': function() {
+              this.get_course();
+          }
+      },
       methods: {
           get_course_category(){
               // 获取课程分类信息
@@ -79,8 +84,18 @@
               })
           },
           get_course(){
+
+              // 组装和判断过滤的参数
+              let params = {};
+              // 如果分类是0，则表示不进行筛选，查询全部，不需要进行任何分类
+              if(this.filter.course_category>0){
+                  params.course_category = this.filter.course_category;
+              }
+
               // 获取课程信息
-              this.$axios.get(`${this.$settings.Host}/course/`).then(response=>{
+              this.$axios.get(`${this.$settings.Host}/course/`, {
+                  params
+              }).then(response=>{
                   this.course_list = response.data;
               }).catch(error=>{
                   console.log(error.response);
