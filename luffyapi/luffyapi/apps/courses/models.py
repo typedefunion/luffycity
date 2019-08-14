@@ -41,7 +41,7 @@ class Course(BaseModel):
     course_type = models.SmallIntegerField(choices=course_type,default=0, verbose_name="付费类型")
     # 使用这个字段的原因
     brief = models.TextField(max_length=2048, verbose_name="详情介绍", null=True, blank=True)
-    level = models.SmallIntegerField(choices=level_choices, default=1, verbose_name="难度等级")
+    level = models.SmallIntegerField(choices= level_choices, default=1, verbose_name="难度等级")
     pub_date = models.DateField(verbose_name="发布日期", auto_now_add=True)
     period = models.IntegerField(verbose_name="建议学习周期(day)", default=7)
     attachment_path = models.FileField(max_length=128, verbose_name="课件路径", blank=True, null=True)
@@ -56,6 +56,24 @@ class Course(BaseModel):
         db_table = "ly_course"
         verbose_name = "专题课程"
         verbose_name_plural = "专题课程"
+
+    @property
+    def lesson_list(self):
+        """要展示到课程列表的可是信息"""
+        lesson_list = self.courselessons.filter(is_show_list=True)[:4]
+        data = []
+        if len(lesson_list) < 1:
+            return data
+        # 由于查询出来的lesson_list是一个query_set类型，需要将其转换成能json的字典。
+        for lesson in lesson_list:
+            data.append({
+                'id': lesson.id,
+                'name': lesson.name,
+                'chapter': lesson.chapter.id,
+                'free_trail': True if lesson.free_trail else False,
+            })
+        return data
+
 
     def __str__(self):
         return "%s" % self.name
@@ -117,6 +135,11 @@ class CourseLesson(BaseModel):
     duration = models.CharField(verbose_name="视频时长", blank=True, null=True, max_length=32)  # 仅在前端展示使用
     pub_date = models.DateTimeField(verbose_name="发布时间", auto_now_add=True)
     free_trail = models.BooleanField(verbose_name="是否可试看", default=False)
+    # 新增需要展示章节的控制字段
+    is_show_list = models.BooleanField(verbose_name='是否展示到列表页中', default=False)
+    # related_name是给外键的唯一标示，在整个项目中具有唯一性，否则报错
+    course = models.ForeignKey('Course', related_name='courselessons', on_delete=models.CASCADE, verbose_name='课程名称')
+
 
     class Meta:
         db_table = "ly_course_lesson"

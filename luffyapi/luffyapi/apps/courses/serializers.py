@@ -19,4 +19,8 @@ class CourseModelSerializer(serializers.ModelSerializer):
     teacher = CourseTeacherModelSerializer()    # 序列化器的嵌套，需要实例化，拿到的值为一个字典
     class Meta:
         model = Course
-        fields = ("id", "name", "course_img", "students", "lessons", "pub_lessons", "price", "teacher")
+        fields = ("id", "name", "course_img", "students", "lessons", "pub_lessons", "price", "teacher", "lesson_list")
+    """
+    我们在要显示老师的详细信息时，使用的是序列化器嵌套，这样子会将老师的所有信息都嵌套进去。
+    但我们要将课程信息展示出来的时候，并不需要全部都拿出来，只有满足条件的才需要拿到，因此我们采用在课程信息的模型类中自定义类方法的方式
+    """

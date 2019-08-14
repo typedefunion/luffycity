@@ -17,7 +17,7 @@
             <li class="hot this">人气</li>
             <li class="price this">价格</li>
           </ul>
-          <p class="condition-result">共21个课程</p>
+          <p class="condition-result">共{{course_list.length}}个课程</p>
         </div>
 
       </div>
@@ -31,10 +31,7 @@
             <h3><router-link to="`/course/detail/${course.id}`">{{course.name}}</router-link> <span><img src="/static/image/avatar1.svg" alt="">{{course.students}}人已加入学习</span></h3>
             <p class="teather-info">{{course.teacher.name}} {{course.teacher.signature}} {{course.teacher.title}}  <span>共{{course.lessons}}课时/{{course.lessons==course.pub_lessons?'更新已完成':`已更新${course.pub_lessons}课时`}}</span></p>
             <ul class="lesson-list">
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>
-              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>
+              <li v-for="lesson,key in course.lesson_list" :key="key"><span class="lesson-title">0{{key+1}} | 第{{lesson.chapter}}章：{{lesson.name}}</span> <span class="free" v-if="lesson.free_trail">免费</span></li>
             </ul>
             <div class="pay-box">
               <span class="discount-type">限时免费</span>
@@ -44,69 +41,6 @@
             </div>
           </div>
         </div>
-<!--        <div class="course-item">-->
-<!--          <div class="course-image">-->
-<!--            <img src="/static/image/course-cover.jpeg" alt="">-->
-<!--          </div>-->
-<!--          <div class="course-info">-->
-<!--            <h3>Python开发21天入门 <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>-->
-<!--            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>-->
-<!--            <ul class="lesson-list">-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--            </ul>-->
-<!--            <div class="pay-box">-->
-<!--              <span class="discount-type">限时免费</span>-->
-<!--              <span class="discount-price">￥0.00元</span>-->
-<!--              <span class="original-price">原价：9.00元</span>-->
-<!--              <span class="buy-now">立即购买</span>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="course-item">-->
-<!--          <div class="course-image">-->
-<!--            <img src="/static/image/course-cover.jpeg" alt="">-->
-<!--          </div>-->
-<!--          <div class="course-info">-->
-<!--            <h3>Python开发21天入门 <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>-->
-<!--            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>-->
-<!--            <ul class="lesson-list">-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--            </ul>-->
-<!--            <div class="pay-box">-->
-<!--              <span class="discount-type">限时免费</span>-->
-<!--              <span class="discount-price">￥0.00元</span>-->
-<!--              <span class="original-price">原价：9.00元</span>-->
-<!--              <span class="buy-now">立即购买</span>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="course-item">-->
-<!--          <div class="course-image">-->
-<!--            <img src="/static/image/course-cover.jpeg" alt="">-->
-<!--          </div>-->
-<!--          <div class="course-info">-->
-<!--            <h3>Python开发21天入门 <span><img src="/static/image/avatar1.svg" alt="">100人已加入学习</span></h3>-->
-<!--            <p class="teather-info">Alex 金角大王 老男孩Python教学总监 <span>共154课时/更新完成</span></p>-->
-<!--            <ul class="lesson-list">-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码</span> <span class="free">免费</span></li>-->
-<!--              <li><span class="lesson-title">01 | 第1节：初识编码初识编码初识编码初识编码</span> <span class="free">免费</span></li>-->
-<!--            </ul>-->
-<!--            <div class="pay-box">-->
-<!--              <span class="discount-type">限时免费</span>-->
-<!--              <span class="discount-price">￥0.00元</span>-->
-<!--              <span class="original-price">原价：9.00元</span>-->
-<!--              <span class="buy-now">立即购买</span>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
       </div>
     </div>
     <Footer></Footer>
@@ -121,7 +55,7 @@
       data(){
         return{
           category_list: [],
-          coure_list: [],
+          course_list: [],
           filter: {
               category: 0,
           }

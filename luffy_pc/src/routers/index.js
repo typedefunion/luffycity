@@ -33,7 +33,8 @@ export default new Router({
        name:"Register",
        path:"/register",
        component:Register,
-     },{
+     },
+    {
        name:"Course",
        path:"/course",
        component:Course,
