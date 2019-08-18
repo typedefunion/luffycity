@@ -6,6 +6,8 @@ import Home from '../components/Home'
 import Login from '../components/Login'
 import Register from "../components/Register"
 import Course from "../components/Course";
+import Detail from "../components/Detail";
+import Cart from "../components/Cart";
 
 Vue.use(Router);
 
@@ -38,6 +40,16 @@ export default new Router({
        name:"Course",
        path:"/course",
        component:Course,
+     },
+    {
+       name:"Detail",
+       path:"/course/:course",
+       component:Detail,
+     },
+    {
+       name:"Cart",
+       path:"/cart",
+       component:Cart,
      },
   ]
 })

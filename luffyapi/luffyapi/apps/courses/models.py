@@ -1,6 +1,8 @@
 from django.db import models
 from luffyapi.utils.models import BaseModel
-# Create your models here.
+from ckeditor_uploader.fields import RichTextUploadingField
+from django.conf import settings
+
 class CourseCategory(BaseModel):
     """
     课程分类
@@ -38,9 +40,14 @@ class Course(BaseModel):
     )
     name = models.CharField(max_length=128, verbose_name="课程名称")
     course_img = models.ImageField(upload_to="course", max_length=255, verbose_name="封面图片", blank=True, null=True)
+    course_video = models.FileField(upload_to="course", max_length=255, verbose_name="封面视频", blank=True, null=True)
     course_type = models.SmallIntegerField(choices=course_type,default=0, verbose_name="付费类型")
-    # 使用这个字段的原因
-    brief = models.TextField(max_length=2048, verbose_name="详情介绍", null=True, blank=True)
+    # 普通的多行文本框
+    # brief = models.TextField(max_length=2048, verbose_name="详情介绍", null=True, blank=True)
+
+    # ckeditor的富文本框，需要导入from ckeditor_uploader.fields import RichTextUploadingField(继承了models)
+    #  ### 富文本框的模型不需要数据迁移（认为你使用的还是models.TextField）
+    brief = RichTextUploadingField(max_length=2048, verbose_name="详情介绍", null=True, blank=True)
     level = models.SmallIntegerField(choices= level_choices, default=1, verbose_name="难度等级")
     pub_date = models.DateField(verbose_name="发布日期", auto_now_add=True)
     period = models.IntegerField(verbose_name="建议学习周期(day)", default=7)
@@ -57,6 +64,7 @@ class Course(BaseModel):
         verbose_name = "专题课程"
         verbose_name_plural = "专题课程"
 
+    # 定义类方法获取对课程列表
     @property
     def lesson_list(self):
         """要展示到课程列表的可是信息"""
@@ -69,11 +77,51 @@ class Course(BaseModel):
             data.append({
                 'id': lesson.id,
                 'name': lesson.name,
+                # 获取对应课程时长，再通过外键获取章节列表
                 'chapter': lesson.course.chapter,
                 'free_trail': True if lesson.free_trail else False,
             })
         return data
 
+    # 定义类方法获取难度等级的文字描述
+    @property
+    def level_name(self):
+        return self.level_choices[self.level][1]
+
+    # 定义类方法获取富文本框的后端地址
+    @property
+    def real_brief(self):
+        return self.brief.replace('/media', settings.CKEDITOR_UPLOAD_URL+'/media')
+
+    # 定义类方法获取章节信息
+    @property
+    def chapter_list(self):
+        data = []
+        """1.获取当前课程的所有章节信息"""
+        # CourseChapter.objects.filter(Course=pk)
+        chapters = self.coursechapters.filter(is_show=True, is_delete=False).order_by('chapter')
+        if len(chapters) > 0:
+
+            for chapter in chapters:
+                lesson_list = []
+                """2.根据所有的章节，查找章节下面的所有课时"""
+                chapter_lesson = chapter.coursesections.filter(is_show=True, is_delete=False)
+                for lesson in chapter_lesson:
+                    lesson_list.append({
+                        'id': lesson.id,
+                        'name': lesson.name,
+                        'section_type': lesson.section_type,
+                        'duration': lesson.duration,
+                        'free_trail': True if lesson.free_trail else False
+                    })
+                data.append({
+                    'chapter': chapter.chapter,
+                    'name': chapter.name,
+                    'lesson_list': lesson_list,
+                })
+
+
+        return data
 
     def __str__(self):
         return "%s" % self.name

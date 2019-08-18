@@ -14,7 +14,7 @@
 
           <div v-if="token" class="login-bar full-right">
             <div class="shop-cart full-left">
-              <span class="shop-cart-total"></span>
+              <span class="shop-cart-total">{{$store.state.total}}</span>
               <img src="/static/image/cart.svg" alt="">
               <span><router-link to="/cart">购物车</router-link></span>
             </div>
@@ -53,6 +53,7 @@
       name: "Header",
       data(){
         return{
+          total: 0,
           token:"",
           nav_list:[]
         }

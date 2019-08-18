@@ -29,12 +29,11 @@ from django.views.static import serve
 urlpatterns = [
     # path('admin/', admin.site.urls),
     re_path(r'media/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
-
     path(r'xadmin/', xadmin.site.urls),
+    path(r'^ckeditor/', include('ckeditor_uploader.urls')),
 
     path('', include("home.urls")),
-
     path('user/', include('users.urls')),
-
     path('course/', include('courses.urls')),
+    path('cart/', include('cart.urls')),
 ]

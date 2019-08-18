@@ -31,8 +31,9 @@
           </div>
           <div class="course-info">
             <h3>
-              <router-link to="`/course/detail/${course.id}`">{{course.name}}</router-link>
-              <span><img src="/static/image/avatar1.svg" alt="">{{course.students}}人已加入学习</span></h3>
+              <router-link :to="`/course/${course.id}`">{{course.name}}</router-link>
+              <span><img src="/static/image/avatar1.svg" alt="">{{course.students}}人已加入学习</span>
+            </h3>
             <p class="teather-info">{{course.teacher.name}} {{course.teacher.signature}} {{course.teacher.title}} <span>共{{course.lessons}}课时/{{course.lessons==course.pub_lessons?'更新已完成':`已更新${course.pub_lessons}课时`}}</span>
             </p>
             <ul class="lesson-list">
@@ -54,7 +55,7 @@
         :page-size='filter.size'
         :total='total'
         @current-change="pageChange"
-        :hide-on-single-page="true"
+        :hide-on-single-page="false"
       >
       </el-pagination>
     </div>
@@ -111,6 +112,7 @@
                 // 获取课程分类信息
                 this.$axios.get(`${this.$settings.Host}/course/category`).then(response => {
                     this.category_list = response.data;
+                    console.log(111,this.category_list);
                 }).catch(error => {
                     console.log(error.response);
                 })
@@ -199,7 +201,7 @@
             },
             pageChange(page){
                 // 切换页码
-                console.log(page)
+                console.log(page);
                 this.filter.page = page;
             }
 

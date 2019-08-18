@@ -45,11 +45,16 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'reversion',
+    # 过滤的组件
     'django_filters',
+    # 富文本编辑器的组件
+    'ckeditor',     # 只能编辑文本
+    'ckeditor_uploader',    # 允许图文编辑的上传图片模块
 
     'home',
     'users',
     'courses',
+    'cart',
 ]
 
 
@@ -130,13 +135,21 @@ CACHES = {
         }
     },
     # 提供存储短信验证码
-    "sms_code":{
+    "sms_code": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
-    }
+    },
+    # 提供存储购物车信息
+    "cart": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 
 # 设置xadmin用户登录时,登录信息session保存到redis
@@ -298,3 +311,30 @@ SMS_SERVERIP = "sandboxapp.cloopen.com"
 SMS_EXPIRE_TIME = 300
 SMS_INTERVAL_TIME = 60
 SMS_TEIMPLATE_ID = 1
+
+
+
+# 自定义富文本编辑框的功能项(放在同一个列表中的为一个组，编辑器用|隔开)
+# CKEDITOR_CONFIGS = {
+#     'default': {
+#         'toolbar': 'Custom',
+#         'toolbar_Custom': [
+#             ['Bold', 'Italic', 'Underline'],
+#             ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+#             ['Link', 'Unlink'],
+#             ['RemoveFormat', 'Source']
+#         ]
+#     }
+# }
+
+# 富文本编辑器ckeditor配置
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',  # 工具条功能，full表示全部工具
+        'height': 300,      # 编辑器高度【单位：px】
+        # 'width': 300,     # 编辑器宽【一般不设置，怕界面被撑开，出现横向滚动条】
+    },
+}
+CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，留空则调用django的文件上传功能
+CKEDITOR_UPLOAD_URL = 'http://api.luffycity.cn:8000'
+DOMAIL_IMAGE_URL = 'http://api.luffycity.cn:8000'

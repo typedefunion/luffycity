@@ -6,6 +6,11 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import OrderingFilter
 from .paginations import CustomCourseListPageNumberPagination
 
+from rest_framework.generics import RetrieveAPIView
+from .serializers import CourseDetailModelSerializer
+
+
+
 class CourseCategoryListAPIView(ListAPIView):
     """课程分类列表"""
     queryset = CourseCategory.objects.filter(is_show=True, is_delete=False).order_by('orders')
@@ -36,3 +41,7 @@ class CourseListAPIView(ListAPIView):
     pagination_class = CustomCourseListPageNumberPagination
 
 
+class CourseRetrieveAPIView(RetrieveAPIView):
+    """课程详情"""
+    queryset = Course.objects.filter(is_show=True, is_delete=False)
+    serializer_class = CourseDetailModelSerializer
