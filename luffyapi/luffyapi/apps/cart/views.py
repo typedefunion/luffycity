@@ -26,7 +26,6 @@ class CartAPIView(ViewSet):
         user_id = request.user.id
         # 商品ID
         course_id = request.data.get('course_id')
-        print(course_id)
         # 有效期，用0 表示永久有效
         expire = 0
         # 购物车勾选状态
@@ -63,7 +62,7 @@ class CartAPIView(ViewSet):
     @action(methods=['GET'], detail=False)
     def get(self, request):
         """购物车的商品列表"""
-        user_id = 1 # request.user.id
+        user_id = 1 #request.user.id
         redis = get_redis_connection('cart')
         # 仅限于写入时才有事务，读取时出错直接重新读取
         # 从hash里面读取购物车信息
@@ -90,7 +89,7 @@ class CartAPIView(ViewSet):
                 'id': course_id,
                 'name': course.name,
                 'course_img': settings.DOMAIL_IMAGE_URL + course.course_img.url,
-                'price': course.price,
+                'price': course.real_price(),
                 'is_selected': True if course_bytes in cart_selected_list else False,
                 'expire_list': course.expire_list,
             })
@@ -100,7 +99,7 @@ class CartAPIView(ViewSet):
     def patch(self, request):
         """切换购物车中的商品勾选状态"""
         # 接收数据username_id,course_id,is_selected
-        user_id = 1 #request.user.id
+        user_id = request.user.id
         course_id = request.data.get('course_id')
         is_selected = bool(request.data.get('is_selected'))
 

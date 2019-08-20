@@ -179,7 +179,6 @@ export default {
         },
         addCartHander(){
             // 客户点击课程详情中的购物车按钮，将该课程添加到购物车
-
             // 一开始就先判断是否登录，如果没用登录，提示并跳转到登录页面
             let user_token = localStorage.user_token || sessionStorage.user_token;
             if(!user_token){

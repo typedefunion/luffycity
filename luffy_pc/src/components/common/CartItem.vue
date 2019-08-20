@@ -12,7 +12,7 @@
           <el-option v-for="item in cart.expire_list" :label="item.expire_text" :value="item.expire_time" :key="item.expire_time"></el-option>
         </el-select>
       </div>
-      <div class="cart_column column_4">¥{{cart.price.toFixed(2)}}</div>
+      <div class="cart_column column_4">¥{{cart.price}}</div>
       <div class="cart_column column_4">删除</div>
     </div>
 </template>
@@ -32,10 +32,10 @@ export default {
             this.selectedChange()
         },
         'expire': function(value){
-            console.log(value);
             this.cart.expire_list.forEach((item, key)=>{
                 if (item.expire_time == value){
                     this.cart.price = item.price;
+                    console.log(111,item.price)
                 }
             })
         }

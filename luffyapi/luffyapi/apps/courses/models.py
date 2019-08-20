@@ -65,6 +65,7 @@ class Course(BaseModel):
         verbose_name_plural = "专题课程"
 
     # 定义类方法获取对课程列表
+    #  @property 的作用是：将函数转化为属性
     @property
     def lesson_list(self):
         """要展示到课程列表的可是信息"""
@@ -132,7 +133,7 @@ class Course(BaseModel):
             data.append({
                 'expire_text': item.expire_text,
                 'expire_time': item.expire_time,
-                'price': item.price,
+                'price': self.real_price(item.price),
             })
 
         # 永久价格选项
@@ -140,7 +141,7 @@ class Course(BaseModel):
             data.append({
                 'expire_text': '永久有效',
                 'expire_time': -1,
-                'price': self.price,
+                'price': self.real_price(),
             })
         return data
 
@@ -173,15 +174,18 @@ class Course(BaseModel):
         discount = course_price_discount_list.discount.discount_type
         return discount.name
 
-    # @property
-    def real_price(self):
+    def real_price(self, price=None):
         """计算课程的真实价格"""
-        price = float(self.price)
+        if price is None:
+            """如果计算真实价格额时候，含糊没有指定计算价格，则使用永久价格来进行计算"""
+            price = self.price
+
+        price = float(price)
 
         course_price_discount_list = self.activeprices.filter(is_show=True, is_delete=False).first()
         if course_price_discount_list is None:
             """查找不到当前商品课程参与的活动，则表示没有参加活动，直接返回原价"""
-            return price
+            return '%.2f' % price
 
         # 获取当前商品课程参加的活动，判断商品是否在活动期间
         active = course_price_discount_list.active
@@ -192,14 +196,13 @@ class Course(BaseModel):
         # 判断商品是否还在有效期内
         if current_time <= start_time or current_time >= end_time:
             """不在活动期间"""
-            return price
+            return '%.2f' % price
         else:
             """在活动期间"""
             discount = course_price_discount_list.discount
-            print(discount)
             if discount.sale == '':
                 """如果sale为空，则表示价格免费"""
-                return 0
+                return '%.2f' % 0
             elif discount.sale[0] == '*':
                 """限时折扣"""
                 sale = float(discount.sale[1:])
@@ -207,7 +210,6 @@ class Course(BaseModel):
             elif discount.sale[0] == '-':
                 """限时减免"""
                 sale = float(discount.sale[1:])
-                print(111, sale)
                 return '%.2f' % (price - sale)
             elif discount.sale[0] == '满':
                 """满减"""
@@ -223,7 +225,7 @@ class Course(BaseModel):
                 data_dict.sort()
                 data_dict.reverse()
                 return '%.2f' % (price - data_dict[0])
-        return price
+        return '%.2f' % price
 
     def __str__(self):
         return "%s" % self.name
