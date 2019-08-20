@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Cart.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffy.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffy.log" afterDir="false" />
@@ -200,7 +200,7 @@
       <workItem from="1565939703254" duration="368000" />
       <workItem from="1565942463783" duration="654000" />
       <workItem from="1566094133052" duration="8607000" />
-      <workItem from="1566114321426" duration="31475000" />
+      <workItem from="1566114321426" duration="34801000" />
     </task>
     <servers />
   </component>
@@ -232,7 +232,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1566313078696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1566320035237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/luffyapi$serializers.coverage" NAME="serializers Coverage Results" MODIFIED="1565167913390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/luffyapi/apps/home" />
   </component>
 </project>

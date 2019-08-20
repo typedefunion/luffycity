@@ -122,3 +122,23 @@ class CartAPIView(ViewSet):
             return Response({'message': '购物车数据操作有误'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         return Response({'message': '切换勾选状态成功！'})
+
+    @action(methods=['DELETE'], detail=False)
+    def delete(self, request):
+        """删除购物车中的商品"""
+        user_id = 1 # request.user.id
+        course_id = request.query_params.get('course_id')
+        # 校验数据
+        try:
+            course = Course.objects.get(is_show=True, is_delete=False, pk=course_id)
+        except:
+            return Response({'message': '对不起，您购买的商品不存在！'}, status=status.HTTP_400_BAD_REQUEST)
+
+        redis = get_redis_connection('cart')
+        pip = redis.pipeline()
+        pip.multi()
+        pip.hdel('cart_%s' % user_id, course_id)
+        pip.srem('selected_%s' % user_id, course_id)
+        pip.execute()
+
+        return Response({'message': '删除商品成功！'}, status=status.HTTP_204_NO_CONTENT)

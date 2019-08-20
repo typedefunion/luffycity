@@ -15,13 +15,13 @@
             <span class="do_more">操作</span>
           </div>
           <div class="cart_course_list">
-            <CartItem v-for="cart in cart_list" :key="cart.id" :cart="cart"></CartItem>
+            <CartItem v-for="cart in cart_list" :key="cart.id" :cart="cart" @delete="deleteHander" @changeprice="calc_total"></CartItem>
           </div>
           <div class="cart_footer_row">
             <span class="cart_select"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
             <span class="cart_delete"><i class="el-icon-delete"></i> <span>删除</span></span>
             <span class="goto_pay">去结算</span>
-            <span class="cart_total">总计：¥0.0</span>
+            <span class="cart_total">总计：¥{{total}}</span>
           </div>
         </div>
       </div>
@@ -39,6 +39,7 @@ export default {
       return {
         cart_list: [],  // 购物车的商品信息
         checked: false,
+        total: 0,    // 购物车中被勾选付款商品的总价格
       }
     },
     created(){
@@ -56,16 +57,37 @@ export default {
             }
             return user_token;
         },
+        calc_total(){
+            // 计算总价格
+            let total = 0;
+            for (let item in this.cart_list){
+                if (this.cart_list[item].is_selected){
+                    total += parseFloat(this.cart_list[item].price);
+                }
+            }
+            this.total = total.toFixed(2);
+        },
         get_cart(){
+            // 获取购物车的商品列表
             this.$axios.get(`${this.$settings.Host}/cart/course/get`, {
                 headers: {
                     'Authorization': 'jwt ' + this.user_token,
                 }
             }).then(response=>{
                 this.cart_list = response.data;
+                this.calc_total();
             }).catch(error=>{
                 console.log(error.response.data)
             })
+        },
+        deleteHander(course_id){
+            // 删除购物车中的商品
+            for (let item in this.cart_list){
+                if(this.cart_list[item].id == course_id){
+                    this.cart_list.splice(item, 1);
+                }
+            }
+            this.calc_total();
         }
     },
     components:{
@@ -140,7 +162,7 @@ export default {
   line-height: 80px;
 }
 .cart_footer_row .cart_select span{
-  margin-left: -7px;
+  margin-left: 7px;
   font-size: 18px;
   color: #666;
 }

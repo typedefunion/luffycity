@@ -13,7 +13,7 @@
         </el-select>
       </div>
       <div class="cart_column column_4">¥{{cart.price}}</div>
-      <div class="cart_column column_4">删除</div>
+      <div class="cart_column column_4" @click="deleteHander">删除</div>
     </div>
 </template>
 
@@ -29,29 +29,62 @@ export default {
     },
     watch:{
         'cart.is_selected': function(value){
-            this.selectedChange()
+            this.selectedChange();
+            this.$emit('changeprice');
         },
         'expire': function(value){
             this.cart.expire_list.forEach((item, key)=>{
                 if (item.expire_time == value){
                     this.cart.price = item.price;
-                    console.log(111,item.price)
                 }
-            })
+            });
+            this.$emit('changeprice');
         }
     },
     methods:{
+        check_user_login(){
+            // 检查用户是否登录了
+            let user_token = localStorage.user_token || sessionStorage.user_token;
+            if(!user_token){
+                this.$confirm('对不起，您尚未登录，请登录后继续操作！', '警告').then(response=>{
+                    this.$router.push('/login');
+                })
+            }
+            return user_token;
+        },
         selectedChange(){
             let course_id = this.cart.id;
             let is_selected = this.cart.is_selected;
             this.$axios.patch(`${this.$settings.Host}/cart/course/patch/`, {
                 course_id,  // course_id: course_id
                 is_selected: Boolean(is_selected),
+            },{
+                headers:{
+                    'Authorization': 'jwt ' + this.check_user_login(),
+                }
             }).then(response=>{
                 this.$message('切换勾选状态成功！')
             }).catch(error=>{
-                console.log(error.response)
+                console.log(error.response.data)
             })
+        },
+        deleteHander(){
+            // 删除购物车中的商品
+            // 发送ajax请求，删除当前商品
+            this.$axios.delete(`${this.$settings.Host}/cart/course/delete`, {
+                params:{
+                    course_id: this.cart.id,
+                },
+                headers:{
+                    'Authorization': 'jwt ' + this.check_user_login(),
+                },
+            }).then(response=>{
+                this.$message('移除商品成功！')
+            }).catch(error=>{
+                this.$message('移除商品发生，请联系客服工作人员！')
+            })
+            // 删除当前商品成功后，通过子组件传递删除状态给父组件，让父组件把当前组件删除
+            this.$emit('delete', this.cart.id)
         }
     },
 }

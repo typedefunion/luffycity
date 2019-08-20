@@ -167,7 +167,9 @@ class Course(BaseModel):
     @property
     def discount_name(self):
         """折扣类型"""
-        course_price_discount_list = self.activeprices.filter(is_show=True, is_delete=False).first()
+        from datetime import datetime
+        now = datetime.now()
+        course_price_discount_list = self.activeprices.filter(is_show=True, is_delete=False, active__start_time__lte=now, active__end_time__gt=now).first()
         if course_price_discount_list is None:
             """查找不到当前商品参与的活动，则标识没有参加活动，直接返回"""
             return None
