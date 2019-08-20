@@ -34,3 +34,39 @@ class CourseLessonModelAdmin(object):
     """课程课时模型管理类"""
     pass
 xadmin.site.register(CourseLesson, CourseLessonModelAdmin)
+
+###################### 课程有效期 #################################
+
+from .models import CourseExpire
+class CourseExpireModelAdmin(object):
+    """课程有效期模型管理类"""
+    pass
+xadmin.site.register(CourseExpire, CourseExpireModelAdmin)
+
+##################### 课程优惠策略 #################################
+
+from .models import PriceDiscountType
+class PriceDiscountTypeModelAdmin(object):
+    """价格优惠类型"""
+    pass
+xadmin.site.register(PriceDiscountType, PriceDiscountTypeModelAdmin)
+
+
+from .models import PriceDiscount
+class PriceDiscountModelAdmin(object):
+    """价格优惠公式"""
+    pass
+xadmin.site.register(PriceDiscount, PriceDiscountModelAdmin)
+
+from .models import CoursePriceDiscount
+class CoursePriceDiscountModelAdmin(object):
+    """价格优惠公式"""
+    pass
+xadmin.site.register(CoursePriceDiscount, CoursePriceDiscountModelAdmin)
+
+
+from .models import Activity
+class ActivityModelAdmin(object):
+    """商品活动模型"""
+    pass
+xadmin.site.register(Activity, ActivityModelAdmin)

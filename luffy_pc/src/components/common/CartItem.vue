@@ -9,10 +9,7 @@
       </div>
       <div class="cart_column column_3">
         <el-select v-model="expire" size="mini" placeholder="请选择购买有效期" class="my_el_select">
-          <el-option label="1个月有效" value="30" key="30"></el-option>
-          <el-option label="2个月有效" value="60" key="60"></el-option>
-          <el-option label="3个月有效" value="90" key="90"></el-option>
-          <el-option label="永久有效" value="10000" key="10000"></el-option>
+          <el-option v-for="item in cart.expire_list" :label="item.expire_text" :value="item.expire_time" :key="item.expire_time"></el-option>
         </el-select>
       </div>
       <div class="cart_column column_4">¥{{cart.price.toFixed(2)}}</div>
@@ -27,9 +24,36 @@ export default {
     data(){
       return {
         checked:false,
-        expire: "1个月有效",
+        expire: "永久有效",
       }
-    }
+    },
+    watch:{
+        'cart.is_selected': function(value){
+            this.selectedChange()
+        },
+        'expire': function(value){
+            console.log(value);
+            this.cart.expire_list.forEach((item, key)=>{
+                if (item.expire_time == value){
+                    this.cart.price = item.price;
+                }
+            })
+        }
+    },
+    methods:{
+        selectedChange(){
+            let course_id = this.cart.id;
+            let is_selected = this.cart.is_selected;
+            this.$axios.patch(`${this.$settings.Host}/cart/course/patch/`, {
+                course_id,  // course_id: course_id
+                is_selected: Boolean(is_selected),
+            }).then(response=>{
+                this.$message('切换勾选状态成功！')
+            }).catch(error=>{
+                console.log(error.response)
+            })
+        }
+    },
 }
 </script>
 

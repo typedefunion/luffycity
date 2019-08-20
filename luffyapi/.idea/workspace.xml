@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Cart.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Detail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/static/image/1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/static/image/8268683.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/static/image/cart-yellow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/static/image/chapter-player.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/static/image/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../luffy_pc/static/image/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luffyapi/apps/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Course.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/common/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/luffyapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/luffyapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffy.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffy.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffyapi/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffyapi/apps/courses/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/courses/adminx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/apps/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/courses/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/apps/courses/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/courses/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/courses/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/courses/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/settings/dev.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/urls.py" afterDir="false" />
     </list>
@@ -220,7 +205,7 @@
       <workItem from="1565939703254" duration="368000" />
       <workItem from="1565942463783" duration="654000" />
       <workItem from="1566094133052" duration="8607000" />
-      <workItem from="1566114321426" duration="6353000" />
+      <workItem from="1566114321426" duration="25910000" />
     </task>
     <servers />
   </component>
@@ -252,7 +237,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1566130382456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1566302645206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/luffyapi$serializers.coverage" NAME="serializers Coverage Results" MODIFIED="1565167913390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/luffyapi/apps/home" />
   </component>
 </project>

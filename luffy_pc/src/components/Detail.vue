@@ -17,15 +17,19 @@
           <div class="wrap-right">
             <h3 class="course-name">{{course.name}}</h3>
             <p class="data">{{course.students}}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总长：共{{course.lessons}}课时/{{course.lessons==course.pub_lessons?'更新已完成':`已更新${course.pub_lessons}课时`}}&nbsp;&nbsp;&nbsp;&nbsp;难度：{{course.level_name}}</p>
-            <div class="sale-time">
-              <p class="sale-type">限时免费</p>
-              <p class="expire">距离结束：仅剩 01天 04小时 33分 <span class="second">08</span> 秒</p>
+            <div class="sale-time" v-if="course.active_time>0">
+              <p class="sale-type">{{course.discount_name}}</p>
+              <p class="expire">距离结束：仅剩 {{keepformat(course.active_time / 86400)}}天 {{keepformat((course.active_time / 3600) % 24)}}小时 {{keepformat((course.active_time / 60) % 60)}}分 <span class="second">{{keepformat(course.active_time % 60)}}</span> 秒</p>
             </div>
-            <p class="course-price">
+            <p class="course-price" v-if="course.active_time>0">
               <span>活动价</span>
-              <span class="discount">¥0.00</span>
+              <span class="discount">¥{{course.real_price}}</span>
               <span class="original">¥{{course.price}}</span>
             </p>
+            <div class="sale-time course-price2" v-if="course.active_time<1">
+              <span>价格</span>
+              <p class="sale-type discount" style="color:#fff">￥{{course.price}}</p>
+            </div>
             <div class="buy">
               <div class="buy-btn">
                 <button class="buy-now">立即购买</button>
@@ -160,6 +164,14 @@ export default {
                 this.playerOptions.poster = response.data.course_img;
                 // ***修改视频
                 this.playerOptions.sources[0].src = response.data.course_video;
+                // ***活动倒计时
+                let timer = setInterval(()=>{
+                    if (this.course.active_time > 0){
+                        this.course.active_time --;
+                    }else{
+                        clearInterval(timer);
+                    }
+                },1000)
             }).catch(error=>{
                 console.log(error);
                 // this.$router.go(-1);
@@ -192,6 +204,14 @@ export default {
             }).catch(error=>{
                 console.log(error.response.data)
             })
+        },
+        keepformat(timer){
+            let timestamp = parseInt(timer);
+            if (timestamp>=10){
+                return timestamp
+            }else{
+                return '0'+timestamp
+            }
         }
 
     },
@@ -271,7 +291,7 @@ export default {
   color: #fa6240;
   margin-left: 10px;
   display: inline-block;
-  margin-bottom: -5px;
+  margin-bottom: 4px;
 }
 .original{
   font-size: 14px;
@@ -548,6 +568,11 @@ export default {
     max-width: 100%;
   }
   .try a{
+    color: #fff;
+  }
+  .course-price2 span{
+    float: left;
+    margin-top: 10px;
     color: #fff;
   }
 </style>

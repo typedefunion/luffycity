@@ -92,5 +92,34 @@ class CartAPIView(ViewSet):
                 'course_img': settings.DOMAIL_IMAGE_URL + course.course_img.url,
                 'price': course.price,
                 'is_selected': True if course_bytes in cart_selected_list else False,
+                'expire_list': course.expire_list,
             })
         return Response(data)
+
+    @action(methods=['PATCH'], detail=False)
+    def patch(self, request):
+        """切换购物车中的商品勾选状态"""
+        # 接收数据username_id,course_id,is_selected
+        user_id = 1 #request.user.id
+        course_id = request.data.get('course_id')
+        is_selected = bool(request.data.get('is_selected'))
+
+        # 校验数据
+        try:
+            course = Course.objects.get(is_show=True, is_delete=False, pk=course_id)
+        except:
+            return Response({'message': '对不起，您购买的商品不存在！'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # 更新购物车中的商品ID
+        try:
+            redis = get_redis_connection('cart')
+            if is_selected:
+                # 往redis的集合中添加商品课程ID
+                redis.sadd('selected_%s' % user_id, course_id)
+            else:
+                # 往redis的集合中删除商品课程ID
+                redis.srem('selected_%s' % user_id, course_id)
+        except:
+            return Response({'message': '购物车数据操作有误'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        return Response({'message': '切换勾选状态成功！'})
