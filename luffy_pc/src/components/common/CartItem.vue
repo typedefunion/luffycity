@@ -5,7 +5,7 @@
       </div>
       <div class="cart_column column_2">
         <img :src="cart.course_img" alt="">
-        <span><router-link :to="`/course/detail/${cart.id}`">{{cart.name}}</router-link></span>
+        <span><router-link :to="`/course/${cart.id}`">{{cart.name}}</router-link></span>
       </div>
       <div class="cart_column column_3">
         <el-select v-model="expire" size="mini" placeholder="请选择购买有效期" class="my_el_select">

@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'users',
     'courses',
     'cart',
+    'orders',
+    'coupon',
 ]
 
 

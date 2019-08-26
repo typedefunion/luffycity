@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.permissions import IsAuthenticated
-from courses.models import Course
+from courses.models import Course, CourseExpire
 from rest_framework.response import Response
 from rest_framework import status
 from django_redis import get_redis_connection
@@ -16,7 +16,7 @@ log = logging.getLogger('django')
 
 class CartAPIView(ViewSet):
     """读取多条数据"""
-    # permission_classes = [IsAuthenticated, ]
+    permission_classes = [IsAuthenticated,]
 
     @action(methods=['POST'], detail=False)
     def add_course(self, request):
@@ -62,7 +62,7 @@ class CartAPIView(ViewSet):
     @action(methods=['GET'], detail=False)
     def get(self, request):
         """购物车的商品列表"""
-        user_id = 1 #request.user.id
+        user_id = request.user.id
         redis = get_redis_connection('cart')
         # 仅限于写入时才有事务，读取时出错直接重新读取
         # 从hash里面读取购物车信息
@@ -126,7 +126,7 @@ class CartAPIView(ViewSet):
     @action(methods=['DELETE'], detail=False)
     def delete(self, request):
         """删除购物车中的商品"""
-        user_id = 1 # request.user.id
+        user_id = request.user.id
         course_id = request.query_params.get('course_id')
         # 校验数据
         try:
@@ -142,3 +142,40 @@ class CartAPIView(ViewSet):
         pip.execute()
 
         return Response({'message': '删除商品成功！'}, status=status.HTTP_204_NO_CONTENT)
+
+    @action(methods=['GET'], detail=False)
+    def selected(self, request):
+        """获取勾选的商品课程列表"""
+        user_id = request.user.id
+        redis = get_redis_connection('cart')
+        cart_list = redis.hgetall('cart_%s' % user_id)
+        selected_set = redis.smembers('selected_%s' % user_id)
+
+        data = []
+
+        for course_id_byte in selected_set:
+            course_id = course_id_byte.decode()
+            try:
+                course = Course.objects.get(is_show=True, is_delete=False, pk=course_id)
+            except Course.DoesNotExist:
+                return Response({'message': '对不起，指定商品不存在'}, status=status.HTTP_400_BAD_REQUEST)
+
+            try:
+                course_expire = CourseExpire.objects.get(course=course, expire_time=cart_list.get(course_id_byte))
+                expire_text = course_expire.expire_text
+                price = course_expire.price
+            except CourseExpire.DoesNotExist:
+                expire_text = '永久有效'
+                price = course.price
+
+            data.append({
+                'id': course_id,
+                'name': course.name,
+                'course_img': settings.DOMAIL_IMAGE_URL + course.course_img.url,
+                'expire': expire_text,
+                'price': price,
+                'real_price': course.real_price(price),
+                'discount_name': course.discount_name,
+            })
+
+        return Response(data)

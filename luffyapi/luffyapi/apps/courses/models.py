@@ -306,6 +306,7 @@ class CourseLesson(BaseModel):
 # 课程过期时间
 class CourseExpire(BaseModel):
     """课程有效期的勾选"""
+    # 必须在数据库中将course和expire_time字段设置为联合索引 index(字段1， 字段2)
     course = models.ForeignKey('Course', related_name='course_expire', on_delete=models.CASCADE, verbose_name='课程有效期')
     expire_time = models.IntegerField(verbose_name='有效期数值', null=True, blank=True)
     expire_text = models.CharField(verbose_name='有效期提示文本', null=True, blank=True, max_length=150)

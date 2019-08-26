@@ -20,7 +20,7 @@
           <div class="cart_footer_row">
             <span class="cart_select"><label> <el-checkbox v-model="checked"></el-checkbox><span>全选</span></label></span>
             <span class="cart_delete"><i class="el-icon-delete"></i> <span>删除</span></span>
-            <span class="goto_pay">去结算</span>
+            <span class="goto_pay"><router-link to="/order">去结算</router-link></span>
             <span class="cart_total">总计：¥{{total}}</span>
           </div>
         </div>
