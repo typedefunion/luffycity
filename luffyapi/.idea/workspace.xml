@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Cart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/common/CartItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/luffy.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffy.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/courses/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +193,7 @@
       <workItem from="1565939703254" duration="368000" />
       <workItem from="1565942463783" duration="654000" />
       <workItem from="1566094133052" duration="8607000" />
-      <workItem from="1566114321426" duration="34801000" />
+      <workItem from="1566114321426" duration="35155000" />
     </task>
     <servers />
   </component>
