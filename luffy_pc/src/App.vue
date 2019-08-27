@@ -97,5 +97,8 @@ img{
 .course-brief img{
   width: 100%;
 }
+.el-icon-minus, .el-icon-plus{
+  font-size: 12px;
+}
 </style>
 

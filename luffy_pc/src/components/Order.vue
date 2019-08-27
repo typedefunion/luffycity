@@ -37,33 +37,15 @@
                 <a class="select-icon unselect" :class="use_coupon?'is_selected':''" @click="use_coupon=!use_coupon"><img class="sign is_show_select" src="../../static/image/12.png" alt=""></a>
                 <span class="coupon-num">有{{coupon_list.length}}张可用</span>
               </div>
-              <p class="sum-price-wrap">商品总金额：<span class="sum-price">0.00元</span></p>
+              <p class="sum-price-wrap">商品总金额：<span class="sum-price">{{total}}元</span></p>
             </div>
             <div id="collapseOne" v-if="use_coupon">
               <ul class="coupon-list"  v-if="coupon_list.length>0">
-                <li class="coupon-item disable">
-                  <p class="coupon-name">10元优惠券</p>
-                  <p class="coupon-condition">满10元可以使用</p>
-                  <p class="coupon-time start_time">开始时间：2019-10:01 00:00:00</p>
-                  <p class="coupon-time end_time">过期时间：2019-11:01 00:00:00</p>
-                </li>
-                <li class="coupon-item active">
-                  <p class="coupon-name">10元优惠券</p>
-                  <p class="coupon-condition">满10元可以使用</p>
-                  <p class="coupon-time start_time">开始时间：2019-10:01 00:00:00</p>
-                  <p class="coupon-time end_time">过期时间：2019-11:01 00:00:00</p>
-                </li>
-                <li class="coupon-item">
-                  <p class="coupon-name">10元优惠券</p>
-                  <p class="coupon-condition">满10元可以使用</p>
-                  <p class="coupon-time start_time">开始时间：2019-10:01 00:00:00</p>
-                  <p class="coupon-time end_time">过期时间：2019-11:01 00:00:00</p>
-                </li>
-                <li class="coupon-item">
-                  <p class="coupon-name">10元优惠券</p>
-                  <p class="coupon-condition">满10元可以使用</p>
-                  <p class="coupon-time start_time">开始时间：2019-10:01 00:00:00</p>
-                  <p class="coupon-time end_time">过期时间：2019-11:01 00:00:00</p>
+                <li class="coupon-item" :class="check_use(item)" @click="check_click(item)" v-for="item in coupon_list">
+                  <p class="coupon-name">{{item.coupon.name}}</p>
+                  <p class="coupon-condition">满{{item.coupon.condition}}元可以使用</p>
+                  <p class="coupon-time start_time">开始时间：{{item.start_time.replace('T', ' ')}}</p>
+                  <p class="coupon-time end_time">过期时间：{{end_time(item.start_time, item.coupon.timer)}}</p>
                 </li>
               </ul>
               <div class="no-coupon" v-if="coupon_list.length<1">
@@ -74,9 +56,9 @@
           <div class="credit-box">
             <label class="my_el_check_box"><el-checkbox class="my_el_checkbox" v-model="use_credit"></el-checkbox></label>
             <p class="discount-num1" v-if="!use_credit">使用我的贝里</p>
-            <p class="discount-num2" v-else><span>总积分：100，已抵扣 ￥0.00，本次花费0积分</span></p>
+            <p class="discount-num2" v-else><span>总积分：{{user_credit}}，已抵扣<el-input-number v-model="credit" :min="1" :max="max_credit()" label="请填写积分"></el-input-number>积分，剩余{{parseInt(user_credit - credit)}}积分</span></p>
           </div>
-          <p class="sun-coupon-num">优惠券抵扣：<span>0.00元</span></p>
+          <p class="sun-coupon-num">积分抵扣：<span>{{(credit/credit_to_money).toFixed(2)}}元</span></p>
         </div>
 
         <div class="calc">
@@ -92,7 +74,7 @@
                   <img v-else src="../../static/image/wechat.png" alt="">
                 </span>
               </el-col>
-              <el-col :span="8" class="count">实付款： <span>¥{{get_total()}}</span></el-col>
+              <el-col :span="8" class="count">实付款： <span>¥{{(real_total - credit/credit_to_money).toFixed(2)}}</span></el-col>
               <el-col :span="4" class="cart-pay"><span @click="payHander">去支付</span></el-col>
             </el-row>
         </div>
@@ -108,13 +90,17 @@
     name:"Order",
     data(){
       return {
+          user_credit: localStorage.user_credit || sessionStorage.user_credit,   //用户积分
+          credit_to_money: localStorage.credit_to_money || sessionStorage.credit_to_money,    //换算比例
           course_list:[],     // 勾选商品
           pay_type: 1,        // 支付方式
           use_credit: false,  // 是否使用了优惠券
           credit: 0,          // 积分
           use_coupon: false,  // 优惠券ID，0表示没有使用优惠券
           coupon: 0,          // 优惠券ID，0表示没有使用优惠券
-          coupon_list:[1,2,3]      // 优惠券列表
+          coupon_list:[],     // 优惠券列表
+          total: 0,           // 购物车中商品总金额
+          real_total: 0,      // 实际付款金额
       }
     },
     components:{
@@ -124,6 +110,32 @@
     created(){
       this.check_user_login();
       this.get_selected_course();
+      this.get_user_coupon();
+    },
+    watch:{
+        coupon(){
+            // 每次用户调整优惠券的时候，实付价格发生变动
+            this.total = this.get_total();
+            this.real_total = this.get_total(true);
+        },
+        use_coupon(){
+            if(!this.use_coupon){
+                // 当用户不适用优惠券时，把用户当前优惠券重置为0
+                this.coupon = 0;
+            }
+            // 每次用户调整是否使用优惠券的时候，实付价格发生变动
+            this.total = this.get_total();
+            this.real_total = this.get_total(true);
+        },
+        use_credit(){
+            if(!this.use_credit){
+                // 当用户不适用积分抵扣时，把用户当前设置的积分抵扣进行重置
+                this.credit = 0;
+            }
+            // 每次用户使用积分抵扣时，总价格都要重新计算
+            this.total = this.get_total();
+            this.real_total = this.get_total(true);
+        }
     },
     methods: {
       check_user_login(){
@@ -137,32 +149,133 @@
         }
         return user_token;
       },
+      max_credit(){
+          // 计算积分可使用的最大积分数量（总积分，商品总价）
+          let user_credit = parseInt(this.user_credit);
+          let credit_to_money = parseInt(this.credit_to_money);
+          if(user_credit / credit_to_money > this.total){
+              return this.total * credit_to_money
+          }else{
+              return user_credit
+          }
+      },
+      check_use(user_coupon){
+          // 检查优惠券是否过期
+          let start = new Date(user_coupon.start_time) - 0;
+          let now = new Date() - 0;
+          let end = start + user_coupon.coupon.timer * 24 * 60 * 60 * 1000;
+          if (start > now){
+              this.disable = true;
+              // 生效期还没有到
+              return 'disable'
+          }
+          if(now > end){
+              // 优惠券已经过期
+              this.disable = true;
+              return 'disable'
+          }
+          if(this.coupon == user_coupon.id){
+              // 选中状态
+              return 'active'
+          }
+          return ''
+      },
+      check_click(user_coupon){
+          // 保存优惠券ID
+          let start = new Date(user_coupon.start_time) - 0;
+          let now = new Date() - 0;
+          let end = start + user_coupon.coupon.timer * 24 * 60 * 60 * 1000;
+          if(now > start && now < end){
+              this.coupon = user_coupon.id;
+          }
+      },
+      end_time(start_time, timer){
+          // 计算优惠券过期时间
+          // 开始时间
+          let start = (new Date(start_time) - 0) / 1000;   //时间戳,单位秒
+          // 结束时间
+          let end = (start + timer * 24 * 60 * 60) * 1000;
+          let end_date = new Date(end);
+          let Y = end_date.getFullYear() + '-';
+          let M = (end_date.getMonth() + 1) + '-';
+          let D =  end_date.getDate() + ' ';
+          let h = end_date.getHours() + ':';
+          let i =  end_date.getMinutes() + ':';
+          let s = end_date.getSeconds();
+          M = M>9 ? M : '0'+M;
+          D = D>9 ? D : '0'+D;
+          // h = h>9 ? h : '0'+h;
+          // i = i>9 ? i : '0'+i;
+          // s = s>9 ? s : '0'+s;
+          return Y+M+D+h+i+s
+      },
+      get_user_coupon(){
+          // 获取当前登录用户的优惠券
+          let user_id = localStorage.user_id || sessionStorage.user_id;
+          this.$axios.get(`${this.$settings.Host}/coupon/`, {
+              params: {
+                  user_id: user_id,
+              },
+              headers: {
+                  "Authorization":"jwt " + this.check_user_login(),
+              }
+          }).then(response=>{
+              this.coupon_list = response.data;
+              this.total = this.get_total();
+              this.real_total = this.get_total(true);
+          }).catch(error=>{
+              console.log(error.response)
+          })
+      },
       get_selected_course(){
-          // 获取购物车中的勾选商品
-                  // 获取购物车的勾选商品信息
+        // 获取购物车中的勾选商品
         this.$axios.get(`${this.$settings.Host}/cart/course/selected/`,{
           headers:{
             "Authorization":"jwt " + this.check_user_login(),
           }
         }).then(response=>{
           this.course_list = response.data;
+          this.total = this.get_total();
+          this.real_total = this.get_total(true);
         }).catch(error=>{
           console.log(error.response);
         });
       },
-      get_total(){
-          // 计算总价格
+      get_total(user_coupon){
+          // 是否使用优惠券，并计算对应总价
           let total = 0;
 
           for(let key in this.course_list){
               total += parseFloat(this.course_list[key].real_price);
           }
 
+          // 添加优惠券后的总价格
+          if(user_coupon && this.coupon>0){
+              for(let item in this.coupon_list){
+                  let coupon_item = this.coupon_list[item];
+                  if(coupon_item.id == this.coupon){
+                      // 判断当前购买金额是否满足优惠券的条件
+                      if(coupon_item.coupon.condition <= total){
+                          // 截取优惠券后面的数值
+                          let sale_num = parseFloat(coupon_item.coupon.sale.slice(1));
+                          if(coupon_item.coupon.sale[0] == '-'){
+                              // 满减优惠券
+                              total -= sale_num;
+                          }else if(coupon_item.coupon.sale[0] == '*'){
+                              // 折扣优惠券
+                              total *= sale_num;
+                          }
+                      }
+
+                  }
+              }
+          }
+
           return total.toFixed(2);
       },
       payHander(){
           // 生成订单
-          this.$axios.post(`${this.$settings.Host}/orders/`,{
+          this.$axios.post(`${this.$settings.Host}/order/`,{
               pay_type: this.pay_type,
               credit: this.credit,
               coupon: this.coupon
@@ -394,12 +507,15 @@
   margin-bottom:43px;
   margin-top: 40px;
   font-size: 16px;
+  width: 100%;
+  text-align: right;
   color: #4a4a4a;
   display: inline-block;
 }
 .sun-coupon-num span{
   font-size: 18px;
   color: #fa6240;
+  margin-right: 40px;
 }
 .coupon-list{
   margin: 20px 0;

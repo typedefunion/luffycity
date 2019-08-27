@@ -115,18 +115,26 @@
                         console.log('永久存储',this.remember);
                         localStorage.user_token = response.data.token; // 上面一句和当前一句是同样意思
                         localStorage.user_id = response.data.user_id;
+                        localStorage.user_credit = response.data.user_credit;
+                        localStorage.credit_to_money = response.data.credit_to_money;
                         localStorage.user_name = response.data.user_name;
                         sessionStorage.removeItem("user_token");
                         sessionStorage.removeItem("user_id");
+                        sessionStorage.removeItem("user_credit");
+                        sessionStorage.removeItem("credit_to_money");
                         sessionStorage.removeItem("user_name");
                     } else {
                         // 会话存储
                         console.log('会话',this.remember);
                         sessionStorage.user_token = response.data.token; // 上面一句和当前一句是同样意思
                         sessionStorage.user_id = response.data.user_id;
+                        sessionStorage.user_credit = response.data.user_credit;
+                        sessionStorage.credit_to_money = response.data.credit_to_money;
                         sessionStorage.user_name = response.data.user_name;
                         localStorage.removeItem("user_token");
                         localStorage.removeItem("user_id");
+                        localStorage.removeItem("user_credit");
+                        localStorage.removeItem("credit_to_money");
                         localStorage.removeItem("user_name");
                     }
 

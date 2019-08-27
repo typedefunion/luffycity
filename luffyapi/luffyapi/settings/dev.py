@@ -340,3 +340,6 @@ CKEDITOR_CONFIGS = {
 CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，留空则调用django的文件上传功能
 CKEDITOR_UPLOAD_URL = 'http://api.luffycity.cn:8000'
 DOMAIL_IMAGE_URL = 'http://api.luffycity.cn:8000'
+
+# 积分和现金的换算比例【10:1】
+CREDIT_MONEY = 10

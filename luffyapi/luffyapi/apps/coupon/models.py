@@ -20,8 +20,8 @@ class Coupon(BaseModel):
 
     class Meta:
         db_table = "ly_coupon"
-        verbose_name="优惠券"
-        verbose_name_plural="优惠券"
+        verbose_name = "优惠券"
+        verbose_name_plural = "优惠券"
 
     def __str__(self):
         return "%s" % self.name

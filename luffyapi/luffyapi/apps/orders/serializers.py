@@ -5,6 +5,8 @@ import random
 from django_redis import get_redis_connection
 from courses.models import Course, CourseExpire
 from django.db import transaction
+from coupon.models import UserCoupon
+from django.conf import settings
 
 
 class OrderModelSerializer(serializers.ModelSerializer):
@@ -118,13 +120,47 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
             # 保存订单的总价格
             order.total_price = total_price
-            order.real_price = total_price   # todo 暂时先默认总价格为实付价格
+            # 先默认当前商品总价为实付金额
+            order.real_price = total_price
+            # 如果使用了优惠券，加入券后实付金额
+            if coupon > 0:
+                # 1、查找优惠券
+                user_coupon = UserCoupon.objects.get(is_show=True, is_delete=False, pk=coupon)
+                # 2、判断优惠券是否过期
+                start_time = user_coupon.start_time.timestamp()
+                now_time = datetime.now().timestamp()
+                end_time = start_time + user_coupon.coupon.timer * 24 * 3600
+                if now_time < start_time or now_time > end_time:
+                    transaction.savepoint_rollback(save_id)
+                    raise serializers.ValidationError('对不起，优惠券无法使用，请重新确认使用的优惠券')
+                # 3、判断优惠券是否满足使用条件
+                if user_coupon.coupon.condition > total_price:
+                    transaction.savepoint_rollback(save_id)
+                    raise serializers.ValidationError('对不起，优惠券无法使用，请重新确认使用的优惠券')
+                # 4、根据优惠券的不同，使用不同方式计算实付金额
+                sale_num = float(user_coupon.coupon.sale[1:])
+                if user_coupon.coupon.sale[0] == '-':
+                    order.real_price = total_price - sale_num
+                elif user_coupon.coupon.sale[0] == '*':
+                    order.real_price = total_price * sale_num
+                # 防止出现无条件使用的优惠券，造成实付金额为负数的请款
+                if order.real_price < 0:
+                    order.real_price = 0
+
+            # 积分汇算
+            if credit > 0:
+                # 获取用户积分和总商品价格，进行判断使用的积分是否在合理范围内
+                user_credit = self.context['request'].user.credit
+                if credit > user_credit or credit/settings.CREDIT_MONEY > total_price:
+                    transaction.savepoint_rollback(save_id)
+                    raise serializers.ValidationError('对不起，积分换算有误，请重新确认积分数额')
+                # 进行积分抵扣
+                order.real_price = float('%.2f' % (order.real_price - credit / settings.CREDIT_MONEY))
             order.save()
 
         """3. 清除掉购物车中勾选的商品"""
         pip = redis.pipeline()
         pip.multi()
-
         for course_id_bytes in cart_list:
             if course_id_bytes in course_set:
                 pip.hdel('cart_%s' % user_id, course_id_bytes)
