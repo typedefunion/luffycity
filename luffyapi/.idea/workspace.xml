@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/luffyapi/apps/coupon/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luffyapi/apps/coupon/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Success.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luffyapi/apps/payments/key/alipay_public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luffyapi/apps/payments/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../luffy_pc/src/components/Order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/components/Order.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffy_pc/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffy_pc/src/routers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffy.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffy.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/coupon/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/coupon/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/coupon/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/coupon/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/orders/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/orders/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/apps/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/apps/users/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/settings/dev.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/urls.py" afterDir="false" />
     </list>
@@ -211,7 +207,9 @@
       <workItem from="1565942463783" duration="654000" />
       <workItem from="1566094133052" duration="8607000" />
       <workItem from="1566114321426" duration="47324000" />
-      <workItem from="1566823044870" duration="13209000" />
+      <workItem from="1566823044870" duration="14760000" />
+      <workItem from="1566957665011" duration="6111000" />
+      <workItem from="1566976256756" duration="12390000" />
     </task>
     <servers />
   </component>
@@ -231,19 +229,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/luffyapi/apps/courses/views.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1566918206569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567007207173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/luffyapi$serializers.coverage" NAME="serializers Coverage Results" MODIFIED="1565167913390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/luffyapi/apps/home" />
   </component>
 </project>

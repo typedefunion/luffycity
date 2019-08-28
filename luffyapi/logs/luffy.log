@@ -9194,3 +9194,599 @@ INFO 2019-08-27 23:04:00,539 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 
 INFO 2019-08-27 23:04:00,991 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 1001
 INFO 2019-08-27 23:05:17,488 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
 INFO 2019-08-27 23:05:17,790 basehttp 154 "POST /order/ HTTP/1.1" 201 211
+INFO 2019-08-28 09:54:19,583 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 09:56:23,022 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 09:58:49,277 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-28 09:58:55,613 log 228 Not Found: /
+WARNING 2019-08-28 09:58:55,614 basehttp 154 "GET / HTTP/1.1" 404 3165
+INFO 2019-08-28 09:59:02,676 basehttp 154 "GET /xadmin/users/user/? HTTP/1.1" 200 51195
+INFO 2019-08-28 09:59:03,098 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-28 10:00:01,126 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-28 10:00:02,326 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 11:38:04,824 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 11:41:21,093 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 11:41:46,738 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 11:44:15,584 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-28 11:44:21,881 log 228 Not Found: /apyments/201908261932120000019805/alipay
+WARNING 2019-08-28 11:44:21,881 basehttp 154 "POST /apyments/201908261932120000019805/alipay HTTP/1.1" 404 3413
+ERROR 2019-08-28 11:44:57,281 log 228 Internal Server Error: /payments/201908261932120000019805/alipay
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to api.luffycity.cn:8000/payments/201908261932120000019805/alipay/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2019-08-28 11:44:57,289 basehttp 154 "POST /payments/201908261932120000019805/alipay HTTP/1.1" 500 76496
+ERROR 2019-08-28 11:45:09,726 log 228 Internal Server Error: /payments/201908261932120000019805/alipay/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/payments/views.py", line 28, in post
+    debug=settings.ALIPAY_CONFIG["debug"],  # 默认False
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/alipay/__init__.py", line 81, in __init__
+    self._load_key()
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/alipay/__init__.py", line 87, in _load_key
+    with open(self._app_private_key_path) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/moluo/Desktop/luffycity/luffyapi/apps/payments/key/app_private_key.pem'
+ERROR 2019-08-28 11:45:09,727 basehttp 154 "POST /payments/201908261932120000019805/alipay/ HTTP/1.1" 500 20867
+INFO 2019-08-28 11:46:19,037 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/settings/dev.py changed, reloading.
+INFO 2019-08-28 11:46:20,771 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 11:47:36,164 basehttp 154 "POST /payments/201908272305170000015838/alipay/ HTTP/1.1" 200 923
+INFO 2019-08-28 12:06:18,155 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 12:06:52,989 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:06:52,990 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:06:52,991 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 12:06:53,317 basehttp 154 "GET /media/banner/2_Serq6x6.jpeg HTTP/1.1" 304 0
+INFO 2019-08-28 12:06:53,317 basehttp 154 "GET /media/banner/1_b2JtHxR.png HTTP/1.1" 304 0
+INFO 2019-08-28 12:07:01,847 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 12:07:02,417 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:07:02,422 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:07:02,518 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:07:02,623 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 2
+INFO 2019-08-28 12:07:07,805 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:07:07,806 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:07:07,894 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:07:07,973 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:07:07,989 basehttp 154 "GET /media/course/1.png HTTP/1.1" 304 0
+INFO 2019-08-28 12:07:07,991 basehttp 154 "GET /media/course/course-cover_tKO3utA.jpeg HTTP/1.1" 304 0
+INFO 2019-08-28 12:07:07,996 basehttp 154 "GET /media/course/course-cover_fJVWBPY.jpeg HTTP/1.1" 304 0
+INFO 2019-08-28 12:07:10,062 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 12:07:10,092 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:07:10,104 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:07:11,238 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:07:11,264 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 12:07:13,407 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:07:13,412 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:07:13,468 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-28 12:07:14,718 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 12:07:14,718 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:07:14,735 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:07:14,749 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:07:14,822 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:07:14,841 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-28 12:07:32,756 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:07:32,871 basehttp 154 "POST /order/ HTTP/1.1" 201 205
+INFO 2019-08-28 12:09:02,983 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:09:02,990 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 2
+INFO 2019-08-28 12:09:02,991 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:09:03,032 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:09:06,440 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 2
+INFO 2019-08-28 12:09:06,486 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:09:06,488 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:09:06,490 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:09:09,797 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:09:09,822 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:09:09,894 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:09:10,028 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:09:14,737 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 12:09:14,775 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:09:14,803 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:09:18,127 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 12:09:21,284 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:09:21,292 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:09:21,404 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-28 12:09:22,638 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:09:22,648 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:09:22,707 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:09:22,724 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-28 12:09:48,954 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+WARNING 2019-08-28 12:10:29,981 log 228 Bad Request: /order/
+WARNING 2019-08-28 12:10:29,982 basehttp 154 "POST /order/ HTTP/1.1" 400 46
+INFO 2019-08-28 12:11:03,484 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:11:03,487 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:11:03,526 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:11:03,599 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:11:07,894 basehttp 154 "GET /course/8/ HTTP/1.1" 200 582
+INFO 2019-08-28 12:11:07,983 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:11:07,991 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:11:13,849 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 12:11:15,309 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:11:15,318 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:11:15,352 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 246
+INFO 2019-08-28 12:11:18,343 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:11:18,357 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:11:18,372 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:11:18,384 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 220
+INFO 2019-08-28 12:11:47,356 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 12:13:19,256 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:13:19,260 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:13:19,318 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:13:19,367 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:13:20,694 basehttp 154 "GET /course/8/ HTTP/1.1" 200 582
+INFO 2019-08-28 12:13:20,748 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:13:20,752 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:13:24,563 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 12:13:29,924 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:13:29,934 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:13:29,978 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 246
+INFO 2019-08-28 12:13:31,389 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:13:31,407 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:13:31,436 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:13:31,440 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 220
+INFO 2019-08-28 12:13:50,152 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 12:16:19,340 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:16:19,343 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:16:19,362 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 2
+INFO 2019-08-28 12:16:19,382 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:16:22,261 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:16:22,262 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:16:22,309 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:16:22,338 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:16:30,356 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 12:16:30,393 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:16:30,402 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:16:37,268 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 12:16:40,231 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:16:40,232 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:16:40,300 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-28 12:16:42,469 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:16:42,475 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:16:42,487 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:16:42,519 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-28 12:16:55,021 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 12:16:55,124 basehttp 154 "POST /payments/201908281216540000010337/alipay/ HTTP/1.1" 200 936
+INFO 2019-08-28 12:17:34,519 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 12:17:34,526 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:17:36,876 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:17:36,879 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:17:36,919 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:17:36,973 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:17:40,213 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:17:40,226 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:17:40,305 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 12:17:40,490 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 12:17:42,093 basehttp 154 "GET /course/8/ HTTP/1.1" 200 582
+INFO 2019-08-28 12:17:42,129 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:17:42,133 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:17:45,951 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:17:45,981 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 12:17:48,036 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 12:17:48,050 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:17:48,053 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:17:48,091 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:17:48,160 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 246
+INFO 2019-08-28 12:17:50,139 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 12:17:50,142 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 12:17:50,162 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 12:17:50,163 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 220
+INFO 2019-08-28 12:17:51,605 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 12:17:51,663 basehttp 154 "POST /order/ HTTP/1.1" 201 205
+INFO 2019-08-28 12:17:51,772 basehttp 154 "POST /payments/201908281217510000019593/alipay/ HTTP/1.1" 200 924
+INFO 2019-08-28 14:58:12,885 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 14:58:12,887 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:49:36,971 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 19:51:59,327 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 19:51:59,328 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:51:59,330 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 19:52:08,853 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:52:08,855 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 19:52:08,948 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 19:52:09,058 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 19:52:10,614 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 19:52:10,648 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:52:10,649 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 19:52:13,135 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 19:52:13,169 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 19:52:14,036 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 19:52:14,044 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:52:14,045 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 19:52:14,081 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 19:52:14,165 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-28 19:52:15,434 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 19:52:15,437 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 19:52:15,444 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 19:52:15,447 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:52:15,549 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 410
+INFO 2019-08-28 19:52:15,554 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-28 19:52:36,429 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 19:52:36,474 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 19:52:36,581 basehttp 154 "POST /payments/201908281952360000016859/alipay/ HTTP/1.1" 200 938
+INFO 2019-08-28 19:53:33,757 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 19:53:33,757 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 20:53:19,064 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/payments/urls.py changed, reloading.
+INFO 2019-08-28 20:53:23,506 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 20:53:36,261 basehttp 154 "POST /payments/201908272305170000015838/alipay/ HTTP/1.1" 200 915
+WARNING 2019-08-28 20:55:06,683 log 228 Not Found: /pay/result
+WARNING 2019-08-28 20:55:06,687 basehttp 154 "GET /pay/result?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 404 4025
+WARNING 2019-08-28 20:55:51,590 log 228 Not Found: /apyments/alipay/result
+WARNING 2019-08-28 20:55:51,591 basehttp 154 "GET /apyments/alipay/result?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 404 4061
+INFO 2019-08-28 20:57:42,057 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 20:58:38,002 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-28 20:58:44,891 log 228 Not Found: /apyments/alipay/result
+WARNING 2019-08-28 20:58:44,892 basehttp 154 "GET /apyments/alipay/result?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 404 4061
+INFO 2019-08-28 20:59:09,530 basehttp 154 "GET /payments/alipay/result?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 301 0
+ERROR 2019-08-28 20:59:09,612 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 20:59:09,613 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 500 29
+INFO 2019-08-28 21:01:48,451 basehttp 154 "GET /payments/alipay/result?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 301 0
+ERROR 2019-08-28 21:01:48,665 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 21:01:48,666 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 500 29
+INFO 2019-08-28 21:05:08,001 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 21:05:11,941 basehttp 154 "GET /payments/alipay/result?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 301 0
+ERROR 2019-08-28 21:05:12,020 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 21:05:12,022 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 500 29
+ERROR 2019-08-28 21:06:40,191 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 21:06:40,191 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 500 29
+INFO 2019-08-28 21:08:28,350 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-28 21:08:32,048 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 21:08:32,048 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 500 29
+INFO 2019-08-28 21:09:31,086 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 21:09:34,398 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908281952360000016859&method=alipay.trade.page.pay.return&total_amount=759.50&sign=lWHksiJeUgSGp1dWmdiTGlUg2PP2B01H%2Fny899oBE6GHSBUGQhWZRMwJypPOzdrJYTNNSrvAQd%2B6l526GWaxnfgeBxUhE3E0F%2FSigT7LujlxXR97kHRWIxVNSgsCUE%2FVl6ZnK7DoWEd86nLXdTxaa5v0sdL4U7j8FyjIr%2BXFC2hiBVZHDlFichcR4H7XP84BpopxgOpS1HZPHBHXKAUk7Pr1uSIB26VHfaW4ji69qsOiqwEycDuWmfOJVaxSMkRY33mCZElpbv1IS2gCy5DCuuoVQlckAfsjwsEWMiRl%2BCxbX6eQhpUTX021SoIVdnh%2Bm8%2BwlWKiYBmuSEtBPS67Eg%3D%3D&trade_no=2019082822001418111000050420&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2019%3A53%3A28 HTTP/1.1" 200 102
+INFO 2019-08-28 21:38:22,617 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-28 21:39:00,827 log 228 Not Found: /
+WARNING 2019-08-28 21:39:00,829 basehttp 154 "GET / HTTP/1.1" 404 3274
+WARNING 2019-08-28 21:39:02,230 log 228 Not Found: /favicon.ico
+WARNING 2019-08-28 21:39:02,231 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3325
+INFO 2019-08-28 21:39:10,043 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 21:39:10,045 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 21:39:10,046 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 21:39:14,240 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 24162
+INFO 2019-08-28 21:39:14,290 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,294 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,296 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,297 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,300 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,303 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,311 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,317 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,318 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,330 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,349 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,366 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-08-28 21:39:14,367 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,371 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,372 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,384 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,394 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,429 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,431 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:14,431 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:15,505 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 24162
+INFO 2019-08-28 21:39:16,057 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-08-28 21:39:19,114 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 21:39:19,128 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 21:39:19,215 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 21:39:19,351 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 21:39:22,580 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 21:39:22,624 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 21:39:22,625 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 21:39:24,830 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 21:39:24,992 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 21:39:27,039 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 21:39:27,064 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 21:39:27,066 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 21:39:27,113 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 21:39:27,183 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-28 21:39:32,106 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 21:39:32,110 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 21:39:32,113 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 21:39:32,118 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 21:39:32,213 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 21:39:32,222 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-28 21:40:04,234 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 21:40:04,352 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 21:40:04,472 basehttp 154 "POST /payments/201908282140040000011312/alipay/ HTTP/1.1" 200 922
+INFO 2019-08-28 21:40:48,574 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 21:40:48,578 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+ERROR 2019-08-28 21:41:33,046 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 21:41:33,046 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282140040000011312&method=alipay.trade.page.pay.return&total_amount=805.00&sign=fgQeZ4eNn6zEx6EUKIPGDkk5dHAAwvxvdq6rMjxS5VUo0FfS%2BawEux3fDUB1EC2rXFfAFZVFcruWZDVxDh8WJeL2K2R3SSmqP%2B35cuNIl40Q%2F4wMikmwmaXg5h7y5mJmiY6tJVeGqz8xFOD1Yo9KF33D6IZ3aTLy71B6f%2B%2BpmXyn8NXSErdDYO17M5KBA04mMXMicNioU7m910ljKGQdEWqi8%2BlX7BvwgUqZW5sPfKwQCE8PT9A7I3%2FZgsNCdUq21zWIffeOq2ta0AHKJmA%2B07%2BTepj5qm%2BIl62I2pOyOvt%2B1RqtmoAQ0Ug6XJc4rfq0hS%2BDdv6Q30iFkJZRlbzCfQ%3D%3D&trade_no=2019082822001418111000049376&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2021%3A40%3A44 HTTP/1.1" 500 29
+INFO 2019-08-28 22:18:43,435 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-28 22:18:54,211 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 22:18:54,212 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282140040000011312&method=alipay.trade.page.pay.return&total_amount=805.00&sign=fgQeZ4eNn6zEx6EUKIPGDkk5dHAAwvxvdq6rMjxS5VUo0FfS%2BawEux3fDUB1EC2rXFfAFZVFcruWZDVxDh8WJeL2K2R3SSmqP%2B35cuNIl40Q%2F4wMikmwmaXg5h7y5mJmiY6tJVeGqz8xFOD1Yo9KF33D6IZ3aTLy71B6f%2B%2BpmXyn8NXSErdDYO17M5KBA04mMXMicNioU7m910ljKGQdEWqi8%2BlX7BvwgUqZW5sPfKwQCE8PT9A7I3%2FZgsNCdUq21zWIffeOq2ta0AHKJmA%2B07%2BTepj5qm%2BIl62I2pOyOvt%2B1RqtmoAQ0Ug6XJc4rfq0hS%2BDdv6Q30iFkJZRlbzCfQ%3D%3D&trade_no=2019082822001418111000049376&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2021%3A40%3A44 HTTP/1.1" 500 29
+INFO 2019-08-28 22:19:36,142 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-28 22:20:18,508 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 22:20:18,509 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282140040000011312&method=alipay.trade.page.pay.return&total_amount=805.00&sign=fgQeZ4eNn6zEx6EUKIPGDkk5dHAAwvxvdq6rMjxS5VUo0FfS%2BawEux3fDUB1EC2rXFfAFZVFcruWZDVxDh8WJeL2K2R3SSmqP%2B35cuNIl40Q%2F4wMikmwmaXg5h7y5mJmiY6tJVeGqz8xFOD1Yo9KF33D6IZ3aTLy71B6f%2B%2BpmXyn8NXSErdDYO17M5KBA04mMXMicNioU7m910ljKGQdEWqi8%2BlX7BvwgUqZW5sPfKwQCE8PT9A7I3%2FZgsNCdUq21zWIffeOq2ta0AHKJmA%2B07%2BTepj5qm%2BIl62I2pOyOvt%2B1RqtmoAQ0Ug6XJc4rfq0hS%2BDdv6Q30iFkJZRlbzCfQ%3D%3D&trade_no=2019082822001418111000049376&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2021%3A40%3A44 HTTP/1.1" 500 29
+INFO 2019-08-28 22:36:24,586 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/models.py changed, reloading.
+INFO 2019-08-28 22:36:26,067 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 22:57:45,145 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 22:58:39,646 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 22:58:39,648 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:58:39,653 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:58:42,326 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:58:42,383 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:58:42,491 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 22:58:42,698 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 22:58:46,159 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 22:58:46,202 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:58:46,209 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:58:48,721 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+WARNING 2019-08-28 22:58:48,735 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:48,736 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:50,395 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:50,395 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:52,150 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:52,151 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:52,898 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:52,899 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:53,208 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:53,214 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:53,219 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:53,219 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:53,456 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:53,461 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:54,267 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:54,267 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:54,490 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:54,490 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:58:54,672 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:58:54,672 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+INFO 2019-08-28 22:58:56,303 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 22:58:56,329 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:58:56,331 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:58:56,356 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+WARNING 2019-08-28 22:58:56,413 log 228 Unauthorized: /cart/course/get/
+WARNING 2019-08-28 22:58:56,413 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 401 35
+INFO 2019-08-28 22:58:59,285 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:58:59,288 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:58:59,302 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 22:58:59,379 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 22:59:01,239 basehttp 154 "GET /course/8/ HTTP/1.1" 200 582
+INFO 2019-08-28 22:59:01,279 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:59:01,282 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+WARNING 2019-08-28 22:59:02,306 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:59:02,306 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+WARNING 2019-08-28 22:59:03,593 log 228 Unauthorized: /cart/course/add_course/
+WARNING 2019-08-28 22:59:03,593 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 401 35
+INFO 2019-08-28 22:59:30,268 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-28 22:59:37,450 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-28 22:59:37,553 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-28 22:59:37,610 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-28 22:59:37,796 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 269
+INFO 2019-08-28 22:59:39,435 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 22:59:39,435 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:59:39,444 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:59:45,342 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:59:45,362 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 22:59:45,363 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:59:45,430 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 22:59:48,281 basehttp 154 "GET /course/8/ HTTP/1.1" 200 582
+INFO 2019-08-28 22:59:48,434 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:59:48,440 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:59:52,783 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 22:59:54,784 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:59:54,788 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:59:54,846 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 246
+INFO 2019-08-28 22:59:56,522 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 22:59:56,525 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 22:59:56,537 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 22:59:56,547 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 22:59:56,618 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 22:59:56,660 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 220
+INFO 2019-08-28 23:00:16,577 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:00:16,730 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+ERROR 2019-08-28 23:00:16,845 log 228 Internal Server Error: /payments/201908282300160000013724/alipay/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/payments/views.py", line 29, in post
+    appid=settings.ALIAPY_CONFIG["appid"],
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/conf/__init__.py", line 80, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'ALIAPY_CONFIG'
+ERROR 2019-08-28 23:00:16,845 basehttp 154 "POST /payments/201908282300160000013724/alipay/ HTTP/1.1" 500 20730
+INFO 2019-08-28 23:02:19,224 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:02:39,720 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:02:39,729 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 2
+INFO 2019-08-28 23:02:39,730 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 23:02:39,732 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:02:45,144 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:02:45,146 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:02:45,159 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 2
+INFO 2019-08-28 23:02:46,972 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:02:46,974 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:02:47,085 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:02:47,167 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:02:48,519 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 23:02:48,566 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:02:48,570 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:02:50,444 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:02:51,168 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:02:51,173 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:02:51,263 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-28 23:02:55,213 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:02:55,221 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:02:55,273 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-28 23:02:55,289 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 23:03:17,195 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 23:03:17,283 basehttp 154 "POST /payments/201908282303170000012321/alipay/ HTTP/1.1" 200 936
+INFO 2019-08-28 23:04:27,472 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:04:27,475 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+ERROR 2019-08-28 23:04:55,835 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 23:04:55,841 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282303170000012321&method=alipay.trade.page.pay.return&total_amount=805.00&sign=QQgricDkfYjU5HCRJ3e%2BctdnecyaMVwqLAO6da2OuEPrsCypX9eAjRC12WBTvVikkkYJ9sAa4b4Q4oGYl%2BB0LpnE3c1og6%2B%2FSFoUH34R9J6tOvDq50o0AxcJgLzzFows8Q2cN%2B2B160sMpgPUQMxbOKB0xJnZcjnIHIepz4DDBex2gC3V9ReJAimupsbll4wXMaL5kbnWk36K1Uitol0ZgZ3MoRVt%2Fmz%2Fqsq3wh4JKeNLcjATUYgWuPSZXfQCbvTIhpc6zM%2BMHFInLNSa57tH1xm%2BNfOMLYcqdaqVG2CVi2%2B4YuC54%2Bb1YOO0BkZzysRKmL4byStIl01CX0SQ2Ab2g%3D%3D&trade_no=2019082822001418111000050421&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A04%3A22 HTTP/1.1" 500 29
+INFO 2019-08-28 23:11:55,478 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:12:53,392 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:20:57,896 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:32:13,215 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:32:16,475 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:32:16,478 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+ERROR 2019-08-28 23:32:16,790 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 23:32:16,794 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282140040000011312&method=alipay.trade.page.pay.return&total_amount=805.00&sign=fgQeZ4eNn6zEx6EUKIPGDkk5dHAAwvxvdq6rMjxS5VUo0FfS%2BawEux3fDUB1EC2rXFfAFZVFcruWZDVxDh8WJeL2K2R3SSmqP%2B35cuNIl40Q%2F4wMikmwmaXg5h7y5mJmiY6tJVeGqz8xFOD1Yo9KF33D6IZ3aTLy71B6f%2B%2BpmXyn8NXSErdDYO17M5KBA04mMXMicNioU7m910ljKGQdEWqi8%2BlX7BvwgUqZW5sPfKwQCE8PT9A7I3%2FZgsNCdUq21zWIffeOq2ta0AHKJmA%2B07%2BTepj5qm%2BIl62I2pOyOvt%2B1RqtmoAQ0Ug6XJc4rfq0hS%2BDdv6Q30iFkJZRlbzCfQ%3D%3D&trade_no=2019082822001418111000049376&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2021%3A40%3A44 HTTP/1.1" 500 29
+INFO 2019-08-28 23:32:24,994 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:32:54,394 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:32:54,398 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:32:54,404 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 23:33:05,084 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-28 23:33:11,002 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:11,128 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-28 23:33:11,183 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:11,388 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 269
+INFO 2019-08-28 23:33:12,853 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:12,866 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:12,876 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 23:33:14,469 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:14,480 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:14,546 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:33:14,594 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:33:16,255 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 23:33:16,290 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:16,291 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:17,947 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:17,978 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:33:19,882 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:19,900 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:19,922 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:33:19,995 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:33:24,709 basehttp 154 "GET /course/7/ HTTP/1.1" 200 569
+INFO 2019-08-28 23:33:24,740 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:24,743 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:25,930 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:33:27,656 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:27,670 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:27,679 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:33:27,763 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:33:30,095 basehttp 154 "GET /course/?ordering=-id&page=2&size=3 HTTP/1.1" 200 1122
+INFO 2019-08-28 23:33:32,531 basehttp 154 "GET /course/4/ HTTP/1.1" 200 555
+INFO 2019-08-28 23:33:32,546 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:32,557 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:33,565 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:33:34,599 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:34,603 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:34,606 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:34,648 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:34,750 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 904
+INFO 2019-08-28 23:33:46,747 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:46,749 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:33:46,767 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:33:46,772 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:33:46,898 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 23:33:46,933 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 610
+INFO 2019-08-28 23:34:21,921 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:34:22,058 basehttp 154 "POST /order/ HTTP/1.1" 201 210
+INFO 2019-08-28 23:34:22,168 basehttp 154 "POST /payments/201908282334210000012241/alipay/ HTTP/1.1" 200 921
+INFO 2019-08-28 23:35:01,957 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:35:01,962 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+ERROR 2019-08-28 23:35:02,011 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 23:35:02,012 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282334210000012241&method=alipay.trade.page.pay.return&total_amount=1305.00&sign=Lc342FDW8PvnVU%2B%2FFutnDtQVtR3BzraVwcmwBT2ZgiNDZyUHXcGws%2Fs2TeG0gjov5xCGVR1NOeKZP3vxy63dKHjifq4VhUJTglEqWFaQsfZrfHPySlMI0I2GwiwYxOyu0Bzw5%2FTeoYQcEwdy0aKcB2vSfpOxzbNS8FhOacQMtxSOtLW3Ygk8FDjfKQ9R8XjP93W00K%2FxJc5VHCMgVu6teXe9tg8KLIRGu%2FDOlITgHs%2B10pSlL5wR%2BjP1chcPcPhFjlSq2TpqsMHRiTf4fi%2FSW1wTZ87dMiVRDtjCYdZ979%2Fsi7k8aTpi%2BoZ4Ptn1O4HVB2PcCoKKSTCM7L2C1c1DfQ%3D%3D&trade_no=2019082822001418111000050422&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A34%3A57 HTTP/1.1" 500 29
+ERROR 2019-08-28 23:35:31,109 log 228 Internal Server Error: /payments/alipay/result/
+ERROR 2019-08-28 23:35:31,113 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282334210000012241&method=alipay.trade.page.pay.return&total_amount=1305.00&sign=Lc342FDW8PvnVU%2B%2FFutnDtQVtR3BzraVwcmwBT2ZgiNDZyUHXcGws%2Fs2TeG0gjov5xCGVR1NOeKZP3vxy63dKHjifq4VhUJTglEqWFaQsfZrfHPySlMI0I2GwiwYxOyu0Bzw5%2FTeoYQcEwdy0aKcB2vSfpOxzbNS8FhOacQMtxSOtLW3Ygk8FDjfKQ9R8XjP93W00K%2FxJc5VHCMgVu6teXe9tg8KLIRGu%2FDOlITgHs%2B10pSlL5wR%2BjP1chcPcPhFjlSq2TpqsMHRiTf4fi%2FSW1wTZ87dMiVRDtjCYdZ979%2Fsi7k8aTpi%2BoZ4Ptn1O4HVB2PcCoKKSTCM7L2C1c1DfQ%3D%3D&trade_no=2019082822001418111000050422&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A34%3A57 HTTP/1.1" 500 29
+INFO 2019-08-28 23:43:56,108 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:44:24,783 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:44:44,375 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:44:44,380 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 23:44:44,389 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:44:48,746 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:44:48,747 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:44:48,793 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:44:48,829 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:44:50,981 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 23:44:51,010 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:44:51,013 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:44:52,118 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:44:52,141 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:44:54,333 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:44:54,344 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:44:54,358 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:44:54,428 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:44:58,498 basehttp 154 "GET /course/7/ HTTP/1.1" 200 569
+INFO 2019-08-28 23:44:58,520 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:44:58,525 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:44:59,723 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:45:01,735 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 23:45:01,750 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:45:01,751 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:45:01,775 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:45:01,876 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 670
+INFO 2019-08-28 23:45:07,767 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:45:07,769 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 23:45:07,787 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:45:07,796 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:45:07,850 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 23:45:07,870 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 412
+INFO 2019-08-28 23:45:21,544 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:45:21,675 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 23:45:21,788 basehttp 154 "POST /payments/201908282345210000011916/alipay/ HTTP/1.1" 200 922
+INFO 2019-08-28 23:46:48,616 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-28 23:47:32,770 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-28 23:47:32,773 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:32,774 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:34,642 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:34,645 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:34,709 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:47:34,754 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:47:35,986 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-28 23:47:36,015 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:36,021 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:36,967 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:47:36,987 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:47:39,003 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:39,007 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:39,019 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-28 23:47:39,089 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-28 23:47:41,302 basehttp 154 "GET /course/7/ HTTP/1.1" 200 569
+INFO 2019-08-28 23:47:41,341 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:41,347 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:43,232 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-28 23:47:46,868 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-28 23:47:46,882 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:46,885 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:46,903 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:47:47,011 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 670
+INFO 2019-08-28 23:47:48,474 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-28 23:47:48,474 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:47:48,535 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:47:48,548 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:47:48,579 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 274
+INFO 2019-08-28 23:47:48,609 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 412
+INFO 2019-08-28 23:48:00,066 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-28 23:48:00,152 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-28 23:48:00,313 basehttp 154 "POST /payments/201908282348000000018362/alipay/ HTTP/1.1" 200 916
+INFO 2019-08-28 23:48:46,952 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-28 23:48:46,965 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-28 23:48:47,165 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282348000000018362&method=alipay.trade.page.pay.return&total_amount=805.00&sign=a1qCdPLO5xsQhsBQmXmkjh7iV1%2BDuTRAID1Y39P8yiH%2FsdtT65MZWyVk0zsXHKnjLr2mniK3v%2FbbE%2B5tbA7E4y%2Ff8YHzGK7YpNKnn9k%2BASYZx4z%2Bw1eYy%2BMpyBTlfg0AY3GeaEaaWT4VePEc%2Fdwu769Rp6edc16KsoiEaHwtUUtC22R01uO5FUk04b21SX7szGRI9oEZ606iwdT4C0ilKUp9dZ4bnBCBKZeZI0D8lxNRGBfveLyUE3NJDF7JvtFTeiG6xnrzdLXZPd8Z0LkmKvGjO7u3YvLGF3TdglO2P2hO3OquopS0d2uMDL3%2B0D%2F8lxsa%2FBkKjt1sg8CwcC3HUg%3D%3D&trade_no=2019082822001418111000049377&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A48%3A42 HTTP/1.1" 200 102
+WARNING 2019-08-28 23:49:10,242 log 228 Bad Request: /payments/alipay/result/
+WARNING 2019-08-28 23:49:10,246 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282348000000018362&method=alipay.trade.page.pay.return&total_amount=805.00&sign=a1qCdPLO5xsQhsBQmXmkjh7iV1%2BDuTRAID1Y39P8yiH%2FsdtT65MZWyVk0zsXHKnjLr2mniK3v%2FbbE%2B5tbA7E4y%2Ff8YHzGK7YpNKnn9k%2BASYZx4z%2Bw1eYy%2BMpyBTlfg0AY3GeaEaaWT4VePEc%2Fdwu769Rp6edc16KsoiEaHwtUUtC22R01uO5FUk04b21SX7szGRI9oEZ606iwdT4C0ilKUp9dZ4bnBCBKZeZI0D8lxNRGBfveLyUE3NJDF7JvtFTeiG6xnrzdLXZPd8Z0LkmKvGjO7u3YvLGF3TdglO2P2hO3OquopS0d2uMDL3%2B0D%2F8lxsa%2FBkKjt1sg8CwcC3HUg%3D%3D&trade_no=2019082822001418111000049377&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A48%3A42 HTTP/1.1" 400 68

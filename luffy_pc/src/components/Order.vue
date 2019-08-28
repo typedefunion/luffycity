@@ -284,17 +284,21 @@
                 "Authorization":"jwt " + this.check_user_login(),
               }
           }).then(response=>{
-              // 下单成功
-              console.log(response);
-
-              // 发起支付
-
+              // 下单成功,并发起支付
+              this.get_alipay_payment_url(response.data.order_number);
           }).catch(error=>{
               console.log(error.response);
           })
-
-
-      }
+      },
+      get_alipay_payment_url(order_number){
+          this.$axios.post(`${this.$settings.Host}/payments/${order_number}/alipay/`).then(response=>{
+              // console.log(11111,response.data.pay_url);
+              // 页面跳转
+              location.href = response.data.pay_url;
+          }).catch(error=>{
+              console.log(error.response)
+          })
+      },
     }
   }
 </script>

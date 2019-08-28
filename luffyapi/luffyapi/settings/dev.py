@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'cart',
     'orders',
     'coupon',
+    'payments',
 ]
 
 
@@ -204,16 +205,13 @@ USE_TZ = False
 STATIC_URL = '/static/'
 # 设置django的静态文件目录
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"statics")
+    os.path.join(BASE_DIR, "statics")
 ]
 
 # 项目中存储上传文件的根目录[暂时配置]，注意，static目录需要手动创建否则上传文件时报错
 MEDIA_ROOT=os.path.join(BASE_DIR,"statics")
 # 访问上传文件的url地址前缀
 MEDIA_URL ="/media/"
-
-
-
 
 # 日志配置
 LOGGING = {
@@ -261,7 +259,7 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
-            'propagate': True, # 是否让日志信息继续冒泡给其他的日志处理系统
+            'propagate': True,  # 是否让日志信息继续冒泡给其他的日志处理系统
         },
     }
 }
@@ -314,8 +312,6 @@ SMS_EXPIRE_TIME = 300
 SMS_INTERVAL_TIME = 60
 SMS_TEIMPLATE_ID = 1
 
-
-
 # 自定义富文本编辑框的功能项(放在同一个列表中的为一个组，编辑器用|隔开)
 # CKEDITOR_CONFIGS = {
 #     'default': {
@@ -343,3 +339,17 @@ DOMAIL_IMAGE_URL = 'http://api.luffycity.cn:8000'
 
 # 积分和现金的换算比例【10:1】
 CREDIT_MONEY = 10
+
+# 支付宝配置信息
+ALIPAY_CONFIG = {
+    # "gateway_url": "https://openapi.alipay.com/gateway.do?",  # 真实支付宝网关地址
+    "gateway_url": "https://openapi.alipaydev.com/gateway.do?",  # 沙箱支付宝网关地址
+    "appid": "2016101400682164",
+    "app_notify_url": None,
+    "app_private_key_path": os.path.join(os.path.dirname(BASE_DIR), "luffyapi/apps/payments/key/app_private_key.pem"),
+    "alipay_public_key_path": os.path.join(os.path.dirname(BASE_DIR), "luffyapi/apps/payments/key/alipay_public_key.pem"),
+    "sign_type": "RSA2",
+    "debug": False,
+    "return_url": "http://www.luffycity.cn:8080/pay/result",
+    "notify_url": "http://api.luffycity.cn:8000/pay/result",
+}

@@ -9,6 +9,7 @@ import Course from "../components/Course";
 import Detail from "../components/Detail";
 import Cart from "../components/Cart";
 import Order from "../components/Order";
+import Success from "../components/Success";
 
 Vue.use(Router);
 
@@ -32,30 +33,35 @@ export default new Router({
        path:"/login",
        component:Login,
      },
-    {
+     {
        name:"Register",
        path:"/register",
        component:Register,
      },
-    {
+     {
        name:"Course",
        path:"/course",
        component:Course,
      },
-    {
+     {
        name:"Detail",
        path:"/course/:course",
        component:Detail,
      },
-    {
+     {
        name:"Cart",
        path:"/cart",
        component:Cart,
      },
-    {
+     {
        name:"Order",
        path:"/order",
        component:Order,
+     },
+     {
+       name:"Success",
+       path:"/pay/result",
+       component:Success,
      },
   ]
 })
