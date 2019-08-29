@@ -5,14 +5,16 @@
         <div class="title">
 <!--          <img src="../../static/images/right.svg" alt="">-->
           <div class="success-tips">
-              <p class="tips1">您已成功购买 1 门课程！</p>
+              <p class="tips1">您已成功购买 {{result.course_list.length}} 门课程！</p>
               <p class="tips2">你还可以加入QQ群 <span>747556033</span> 学习交流</p>
           </div>
         </div>
         <div class="order-info">
-            <p class="info1"><b>付款时间：</b><span>2019/04/02 10:27</span></p>
-            <p class="info2"><b>付款金额：</b><span >0</span></p>
-            <p class="info3"><b>课程信息：</b><span><span>《Pycharm使用秘籍》</span></span></p>
+            <p class="info1"><b>付款时间：</b><span>{{result.pay_time|timeformat}}</span></p>
+            <p class="info2"><b>付款金额：</b><span >￥{{result.real_price}}</span></p>
+            <p class="info3"><b>课程信息：</b>
+              <span v-for="course in result.course_list">《{{course.name}}》</span>
+            </p>
         </div>
         <div class="wechat-code">
 <!--          <img src="../../static/image/server.cf99f78.png" alt="" class="er">-->
@@ -33,25 +35,51 @@
     name:"Success",
     data(){
       return {
-        current_page:0,
+        result:{},
       };
     },
     created(){
       // 把地址栏上面的支付结果，转发给后端
       this.get_result();
     },
+    filters:{
+        timeformat(time){
+            // 时间格式化
+            // 2019/04/02 10:27
+            let current_obj = new Date(time);
+            // 年份
+            let Y = current_obj.getFullYear();
+            // 月份
+            let m = current_obj.getMonth()+1;
+            m = m<10?"0"+m:m;
+            // 日期
+            let d = current_obj.getDate();
+            d = d<10?"0"+d:d;
+            // 小时
+            let H = current_obj.getHours();
+            H = H<10?"0"+H:H;
+            // 分钟
+            let i = current_obj.getMinutes();
+            i = i<10?"0"+i:i;
+            // 秒
+            let s = current_obj.getSeconds();
+            s = s<10?"0"+s:s;
+
+            return `${Y}/${m}/${d} ${H}:${i}`;
+        }
+    },
+    methods:{
+       get_result(){
+           this.$axios.get(`${this.$settings.Host}/payments/alipay/result/`+ location.search).then(response=>{
+               this.result = response.data
+          }).catch(error=>{
+              console.log(error.response);
+          });
+       }
+    },
     components:{
       Header,
       Footer,
-    },
-    methods:{
-      get_result(){
-        this.$axios.get(`${this.$settings.Host}/payments/alipay/result/` + location.search).then(response=>{
-          console.log(response);
-        }).catch(error=>{
-          console.log(error.response);
-        })
-      }
     }
   }
 </script>

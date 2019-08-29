@@ -51,14 +51,27 @@ class AliapyAPIView(APIView):
 
 
 class AlipayResultAPIView(APIView):
-    """
-    支付宝支付结果的通知处理
-    """
+    """支付宝支付结果的通知处理"""
 
     def get(self, request):
         # for rest_framework users
         data = request.query_params.dict()
 
+        # 修改订单状态和购买记录、消费记录
+        return self.result(data)
+
+    def post(self, request):
+        """
+        处理异步通知结果
+        1、线下开发不起作用，因为外网的支付宝无法范文无名的局域网地址
+        2、如果使用了代理服务器，通过代理方式提供对外访问时,异步通知会在转发请求的过程中存在丢失数据的可能
+        """
+
+        data = request.data.dict()
+
+        return self.result(data)
+
+    def result(self, data):
         signature = data.pop("sign")
 
         # 创建支付宝的sdk对象
@@ -74,7 +87,6 @@ class AlipayResultAPIView(APIView):
 
         # verification
         success = alipay.verify(data, signature)
-        print(111, success)
         if success:
 
             # 修改订单状态
@@ -87,7 +99,6 @@ class AlipayResultAPIView(APIView):
             with transaction.atomic():
                 # 记录事务的回滚点
                 save_id = transaction.savepoint()
-
                 order.order_status = 1
                 order.pay_time = datetime.now()
                 order.save()
@@ -99,7 +110,6 @@ class AlipayResultAPIView(APIView):
                         user_coupon = UserCoupon.objects.get(pk=user_coupon_id, is_use=False)
                         user_coupon.is_use = True
                         user_coupon.save()
-
                     except UserCoupon.DoesNotExist:
                         log.error("生成订单支付结果有误！优惠券发生异常！")
                         transaction.savepoint_rollback(save_id)
@@ -116,8 +126,8 @@ class AlipayResultAPIView(APIView):
 
                 # 记录用户购买商品的记录信息
                 order_course = order.order_courses.all()
+                course_list = []
                 for item in order_course:
-
                     # 获取本次购买课程的有效期选项
                     try:
                         """有效期选项"""
@@ -127,20 +137,17 @@ class AlipayResultAPIView(APIView):
                         out_timestamp = order.pay_time.timestamp() + timer
                         # 把数值时间戳转变成日期对象
                         out_time = datetime.fromtimestamp(out_timestamp)
-
                     except CourseExpire.DoesNotExist:
                         """永久有效，默认过期时间200年后"""
                         out_time = "2199-01-01 00:00:00"
-
                     """
                         判断之前当前用户是否购买过同一商品，如果购买了同一商品，则在前面的过期时间基础上增加时间
                         过期时间，也需要判断，如果现在已经过期了，则购买完课程以后的过期时间 = 现在 + 有效期
                                           如果现在没有过期，则购买完课程以后的过期时间 = 过期时间 + 有效期
-
                         购买完成，我们扣除了积分，但是我们也要针对本次消费的积分进行积分流水记录！ Credit
                     """
                     UserCourse.objects.create(
-                        user=user,
+                        user=User.objects.get(pk=order.user_id),
                         course=item.course,
                         trade_no=data.get("trade_no"),
                         buy_type=1,
@@ -149,17 +156,18 @@ class AlipayResultAPIView(APIView):
                         orders=0,
                     )
 
+                    course_list.append({
+                        'id': item.course.id,
+                        'name': item.course.name,
+                    })
+
             data = {
                 "order_number": order.order_number,
                 "pay_time": order.pay_time,
                 "real_price": order.real_price,
+                'course_list': course_list,
             }
 
             return Response(data)
-
         else:
             return Response({"message": "支付失败！"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-    def post(self, request):
-
-        return Response({"message": "ok"})

@@ -2,6 +2,8 @@ from rest_framework import serializers
 from .models import User
 from django_redis import get_redis_connection
 
+from orders.models import Order
+
 
 class UserModelSerializer(serializers.ModelSerializer):
     """用户注册的序列化器"""
@@ -70,3 +72,9 @@ class UserModelSerializer(serializers.ModelSerializer):
         user.token = jwt_encode_handler(payload)
 
         return user
+
+
+class UserOrderModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = ["id", "created_time", "order_number", "status", "order_status", "pay_time", "course_list"]

@@ -13,8 +13,12 @@ import random
 from django_redis import get_redis_connection
 from luffyapi.libs.yuntongxun.sms import CCP
 
+from rest_framework.generics import ListAPIView
+from orders.models import Order
+from .serializers import UserOrderModelSerializer
+from rest_framework.permissions import IsAuthenticated
 
-# Create your views here.
+
 class CaptchaAPIView(APIView):
     """验证码"""
     def get(self, request):
@@ -36,7 +40,6 @@ class CaptchaAPIView(APIView):
             result = gt.failback_validate(challenge, validate, seccode)
         print(result)
         return Response({"status": result})
-
 
 
 class UserAPIView(CreateAPIView):
@@ -94,3 +97,23 @@ class SMSCodeAPIView(APIView):
         #     pipe.execute()   # 执行事务
         #     return Response({'message': '短信发送成功！'}, status=status.HTTP_200_OK)
         return Response({'message': '短信发送成功！'}, status=status.HTTP_200_OK)
+
+
+class UserOrderAPIView(ListAPIView):
+    """用户的订单列表"""
+    queryset = Order.objects.all().order_by('-id')
+    serializer_class = UserOrderModelSerializer
+    permission_classes = [IsAuthenticated]
+
+    def list(self, request, *args, **kwargs):
+        # 重写列表查询方法，在数据查询的时候新增当前用户的过滤条件
+        queryset = self.filter_queryset(self.get_queryset().filter(user=request.user))
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(queryset, many=True)
+
+        return Response(serializer.data)

@@ -10,6 +10,7 @@ import Detail from "../components/Detail";
 import Cart from "../components/Cart";
 import Order from "../components/Order";
 import Success from "../components/Success";
+import UserOrder from "../components/user/Order";
 
 Vue.use(Router);
 
@@ -62,6 +63,11 @@ export default new Router({
        name:"Success",
        path:"/pay/result",
        component:Success,
+     },
+    {
+       name:"UserOrder",
+       path:"/user/order",
+       component:UserOrder,
      },
   ]
 })

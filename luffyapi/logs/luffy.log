@@ -9790,3 +9790,650 @@ INFO 2019-08-28 23:48:46,965 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
 INFO 2019-08-28 23:48:47,165 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282348000000018362&method=alipay.trade.page.pay.return&total_amount=805.00&sign=a1qCdPLO5xsQhsBQmXmkjh7iV1%2BDuTRAID1Y39P8yiH%2FsdtT65MZWyVk0zsXHKnjLr2mniK3v%2FbbE%2B5tbA7E4y%2Ff8YHzGK7YpNKnn9k%2BASYZx4z%2Bw1eYy%2BMpyBTlfg0AY3GeaEaaWT4VePEc%2Fdwu769Rp6edc16KsoiEaHwtUUtC22R01uO5FUk04b21SX7szGRI9oEZ606iwdT4C0ilKUp9dZ4bnBCBKZeZI0D8lxNRGBfveLyUE3NJDF7JvtFTeiG6xnrzdLXZPd8Z0LkmKvGjO7u3YvLGF3TdglO2P2hO3OquopS0d2uMDL3%2B0D%2F8lxsa%2FBkKjt1sg8CwcC3HUg%3D%3D&trade_no=2019082822001418111000049377&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A48%3A42 HTTP/1.1" 200 102
 WARNING 2019-08-28 23:49:10,242 log 228 Bad Request: /payments/alipay/result/
 WARNING 2019-08-28 23:49:10,246 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908282348000000018362&method=alipay.trade.page.pay.return&total_amount=805.00&sign=a1qCdPLO5xsQhsBQmXmkjh7iV1%2BDuTRAID1Y39P8yiH%2FsdtT65MZWyVk0zsXHKnjLr2mniK3v%2FbbE%2B5tbA7E4y%2Ff8YHzGK7YpNKnn9k%2BASYZx4z%2Bw1eYy%2BMpyBTlfg0AY3GeaEaaWT4VePEc%2Fdwu769Rp6edc16KsoiEaHwtUUtC22R01uO5FUk04b21SX7szGRI9oEZ606iwdT4C0ilKUp9dZ4bnBCBKZeZI0D8lxNRGBfveLyUE3NJDF7JvtFTeiG6xnrzdLXZPd8Z0LkmKvGjO7u3YvLGF3TdglO2P2hO3OquopS0d2uMDL3%2B0D%2F8lxsa%2FBkKjt1sg8CwcC3HUg%3D%3D&trade_no=2019082822001418111000049377&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-28%2023%3A48%3A42 HTTP/1.1" 400 68
+INFO 2019-08-29 00:32:22,385 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 00:32:51,624 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 00:32:51,629 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:32:51,632 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:32:53,394 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:32:53,410 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:32:53,484 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-29 00:32:53,504 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-29 00:32:54,899 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-29 00:32:54,942 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:32:54,945 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:32:57,741 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:32:57,770 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-29 00:33:00,132 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 00:33:00,145 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:33:00,147 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:33:00,211 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:33:00,288 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-29 00:33:03,206 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:33:03,208 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-29 00:33:03,240 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:33:03,247 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:33:03,317 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 136
+INFO 2019-08-29 00:33:03,358 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-29 00:33:20,014 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:33:20,093 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-29 00:33:20,224 basehttp 154 "POST /payments/201908290033200000012463/alipay/ HTTP/1.1" 200 928
+INFO 2019-08-29 00:33:56,295 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:33:56,303 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:33:56,535 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908290033200000012463&method=alipay.trade.page.pay.return&total_amount=855.00&sign=Y1DmMITBxbQSWwPP5a9FgEWiOoR5MHITnTDAzXwfJXZpTdb3hQn8mbWzQvf8FQ0thoKoxnowMasyT4%2B7Ye53B%2FD42AL7kE1cMM%2B5fljD1DhMpZZSBAZvLB4pCg%2BHf0quApZDMesgJt8H8bR6pkyqm1MeE1TLLvy21aaYaQpOzb9YVJakw0ciqZ5Y1X9RLrzfSF7urDSD8zmLIlvl4%2FxQyWihQs3g8R5Lib1nGVnKt0euTGB7y7SlPkediFe5OirI%2FRxxBIkPfED7%2BNVi6KNkMTC%2B4oEem1m%2B3cx9oWxtVHzTU9%2FIKD88r7o2RjKtaww8DjVV1sE471zhrc1FUn4FZg%3D%3D&trade_no=2019082922001418111000052273&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-29%2000%3A33%3A52 HTTP/1.1" 200 102
+INFO 2019-08-29 00:36:43,743 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:36:43,747 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+WARNING 2019-08-29 00:36:43,911 log 228 Bad Request: /payments/alipay/result/
+WARNING 2019-08-29 00:36:43,912 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908290033200000012463&method=alipay.trade.page.pay.return&total_amount=855.00&sign=Y1DmMITBxbQSWwPP5a9FgEWiOoR5MHITnTDAzXwfJXZpTdb3hQn8mbWzQvf8FQ0thoKoxnowMasyT4%2B7Ye53B%2FD42AL7kE1cMM%2B5fljD1DhMpZZSBAZvLB4pCg%2BHf0quApZDMesgJt8H8bR6pkyqm1MeE1TLLvy21aaYaQpOzb9YVJakw0ciqZ5Y1X9RLrzfSF7urDSD8zmLIlvl4%2FxQyWihQs3g8R5Lib1nGVnKt0euTGB7y7SlPkediFe5OirI%2FRxxBIkPfED7%2BNVi6KNkMTC%2B4oEem1m%2B3cx9oWxtVHzTU9%2FIKD88r7o2RjKtaww8DjVV1sE471zhrc1FUn4FZg%3D%3D&trade_no=2019082922001418111000052273&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-29%2000%3A33%3A52 HTTP/1.1" 400 68
+INFO 2019-08-29 00:37:23,278 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:37:23,298 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:37:23,299 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 00:37:24,645 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:37:24,652 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:37:24,718 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-29 00:37:24,765 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-29 00:37:25,929 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-29 00:37:25,964 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:37:25,967 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:37:27,923 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:37:27,951 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-29 00:37:29,468 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 00:37:29,508 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:37:29,509 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:37:29,548 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:37:29,629 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-29 00:37:30,730 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-29 00:37:30,731 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:37:30,742 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:37:30,757 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:37:30,838 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 136
+INFO 2019-08-29 00:37:30,850 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-29 00:38:02,097 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:38:02,167 basehttp 154 "POST /order/ HTTP/1.1" 201 208
+INFO 2019-08-29 00:38:02,282 basehttp 154 "POST /payments/201908290038020000011088/alipay/ HTTP/1.1" 200 928
+INFO 2019-08-29 00:38:38,527 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:38:38,535 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:38:38,679 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908290038020000011088&method=alipay.trade.page.pay.return&total_amount=855.00&sign=m6unsymS4KW8sVGrU66pug8TIKfPoHsdj4Zd%2FpQfwNsEZ9lfhPVoKBbSD0HDtTe6WdBzx7hnoUs6YLWb8KQrif7J3CZERamwYrnKxuXChsluiBwpFab6fnbgSAyK5n6EVD%2FGt4ANC5lDiPLb9%2BkGMZ16TFlTAuwqA2WtfGR%2BCodynt%2FIjXfu064EddN6%2F3m4ZUHg0JKU9D5HYL2TC5j1WuSQA1tSM7lGh2KOJ%2BrMPkrL59Pgn8xELTr%2FmKhK5pDFuYBPveY0XEIrIg%2FGYiLpwN8tUe3ScIcinxDEPUcV0oXkWnSoF%2B%2BS4X83sNpCNBonKYtnO8s5lsAE854jiG1WxQ%3D%3D&trade_no=2019082922001418111000052274&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-29%2000%3A38%3A34 HTTP/1.1" 200 102
+INFO 2019-08-29 00:38:55,879 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 00:38:55,900 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:38:55,904 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:38:57,341 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:38:57,365 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:38:57,390 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-29 00:38:57,467 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-29 00:38:58,462 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-29 00:38:58,510 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:38:58,514 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:39:00,283 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:39:00,302 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-29 00:39:04,018 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 00:39:04,034 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:39:04,037 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:39:04,067 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:39:04,177 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-29 00:39:05,411 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-29 00:39:05,419 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:39:05,436 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:39:05,436 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:39:05,507 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 136
+INFO 2019-08-29 00:39:05,518 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-29 00:57:54,982 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 00:58:55,453 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:58:55,456 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:58:55,461 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 00:58:57,337 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:58:57,338 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:58:57,376 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-29 00:58:57,418 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-29 00:58:58,883 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-29 00:58:58,991 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:58:58,995 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:59:01,400 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:59:01,430 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-29 00:59:05,093 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 00:59:05,108 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:59:05,111 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:59:05,142 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:59:05,228 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-29 00:59:06,717 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-29 00:59:06,721 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:59:06,736 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 00:59:06,745 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 00:59:06,815 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 136
+INFO 2019-08-29 00:59:06,825 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-29 00:59:09,662 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-29 00:59:09,717 basehttp 154 "POST /order/ HTTP/1.1" 201 205
+INFO 2019-08-29 00:59:09,829 basehttp 154 "POST /payments/201908290059090000013458/alipay/ HTTP/1.1" 200 924
+ERROR 2019-08-29 00:59:53,215 log 228 Internal Server Error: /payments/alipay/result/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/payments/views.py", line 61, in get
+    return self.result(data)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/payments/views.py", line 150, in result
+    user=user,
+UnboundLocalError: local variable 'user' referenced before assignment
+ERROR 2019-08-29 00:59:53,216 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908290059090000013458&method=alipay.trade.page.pay.return&total_amount=955.00&sign=Pj1OlPPhfL2uLFoRx1RKdn0g9AC6SyRxrXMFti2oxT4CyTiKhqU6O9MTvkfKsaUqHW5VerNpolsnMaZaDgMLGguEc6OQH6M3X9S8RJTL7KEQzxM8hDYCSmNmf13awT0YefDZ2v9eJKUSETP6LCAxf3N%2FLroN11te80vmzP8vC3B%2BcTKcvq28uJbHY9890Sf5xTYUyszJUPLHvwizxoJhxOD1%2BHWLYQje4yuCLAOh1GnE0DPNYWr42ud2NHmZ6sqlUQgvWKJMCbrGbJyHEZrq3aJbzpVmSHd8kqWwyCFQIAvJ8vu4Zg8zLkRumTpf9LyndYs14zDaeUrisTNC5tS3ew%3D%3D&trade_no=2019082922001418111000052275&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-29%2000%3A59%3A49 HTTP/1.1" 500 23240
+INFO 2019-08-29 01:05:28,116 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 01:05:54,005 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 01:05:54,007 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 01:05:54,007 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 01:05:55,261 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 01:05:55,261 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 01:05:55,320 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-29 01:05:55,390 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-29 01:05:56,641 basehttp 154 "GET /course/9/ HTTP/1.1" 200 543
+INFO 2019-08-29 01:05:56,671 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 01:05:56,674 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 01:05:58,513 basehttp 154 "OPTIONS /cart/course/add_course/ HTTP/1.1" 200 0
+INFO 2019-08-29 01:05:58,530 basehttp 154 "POST /cart/course/add_course/ HTTP/1.1" 201 45
+INFO 2019-08-29 01:06:02,674 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 01:06:02,705 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 01:06:02,707 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 01:06:02,748 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 01:06:02,841 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 429
+INFO 2019-08-29 01:06:04,236 basehttp 154 "OPTIONS /coupon/?user_id=1 HTTP/1.1" 200 0
+INFO 2019-08-29 01:06:04,238 basehttp 154 "OPTIONS /cart/course/selected/ HTTP/1.1" 200 0
+INFO 2019-08-29 01:06:04,247 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 01:06:04,258 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 01:06:04,325 basehttp 154 "GET /coupon/?user_id=1 HTTP/1.1" 200 136
+INFO 2019-08-29 01:06:04,341 basehttp 154 "GET /cart/course/selected/ HTTP/1.1" 200 194
+INFO 2019-08-29 01:06:06,949 basehttp 154 "OPTIONS /order/ HTTP/1.1" 200 0
+INFO 2019-08-29 01:06:07,005 basehttp 154 "POST /order/ HTTP/1.1" 201 205
+INFO 2019-08-29 01:06:07,191 basehttp 154 "POST /payments/201908290106060000010581/alipay/ HTTP/1.1" 200 934
+INFO 2019-08-29 01:06:41,481 basehttp 154 "GET /payments/alipay/result/?charset=utf-8&out_trade_no=201908290106060000010581&method=alipay.trade.page.pay.return&total_amount=955.00&sign=g2NUwHguI8ESZYKGs%2FqO1dMlG79JJ30xPYB527DsoS1nz1HzlMq%2FjSdl9nvD6DjTCSAeAteq22HUwYKhA2%2BdASLcHUcer1mBeYJkAIGIUKc77a004V%2BQz%2BjbvlNgtsw9NjcIQJ1%2FwqlZSOA0H4OWB05UoyKdUstgTeKLDTl0JehPYTAO%2FtY8cuGev9WEcugzzgmybssjMNB9NVHQ6wt1PRsR62CK%2Fpz3qqAyzndU5xyAARK%2B%2F5iV5s1V6gIhHLK2wVJWcNms%2FyB6Rr65sddJAX5SKc9NGs1MxYHc%2FZwyfvQIO0eqJ4bb0hkZHVU8hC4GrE2Y3Gpyt4IR79oU9lObKw%3D%3D&trade_no=2019082922001418111000052276&auth_app_id=2016101400682164&version=1.0&app_id=2016101400682164&sign_type=RSA2&seller_id=2088102179492450&timestamp=2019-08-29%2001%3A06%3A36 HTTP/1.1" 200 160
+INFO 2019-08-29 01:06:41,537 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 01:06:41,541 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:51:38,339 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 08:51:38,353 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:51:38,355 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:51:46,829 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:51:46,834 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:52:16,584 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 08:52:16,626 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:52:16,643 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:52:16,654 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 08:52:16,763 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 2
+INFO 2019-08-29 08:52:20,714 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:52:20,715 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:53:44,963 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:53:44,967 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:53:46,831 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:53:46,839 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:54:01,922 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 08:54:01,928 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:54:01,936 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:54:12,715 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:54:12,719 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:54:22,519 basehttp 154 "GET /user/captcha/ HTTP/1.1" 200 140
+INFO 2019-08-29 08:54:28,381 basehttp 154 "OPTIONS /user/captcha/ HTTP/1.1" 200 0
+INFO 2019-08-29 08:54:29,009 basehttp 154 "POST /user/captcha/ HTTP/1.1" 200 12
+INFO 2019-08-29 08:54:29,059 basehttp 154 "OPTIONS /user/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-29 08:54:29,214 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 200 269
+INFO 2019-08-29 08:54:30,687 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:54:30,696 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 08:54:30,698 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 08:54:40,270 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 08:54:40,275 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:44:56,286 basehttp 154 "OPTIONS /cart/course/get HTTP/1.1" 200 0
+INFO 2019-08-29 14:44:56,304 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:44:56,315 basehttp 154 "OPTIONS /cart/course/get/ HTTP/1.1" 200 0
+INFO 2019-08-29 14:44:56,317 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:44:56,392 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 2
+INFO 2019-08-29 14:45:00,174 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:45:00,178 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:45:05,618 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:45:05,629 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:45:05,639 basehttp 154 "GET /cart/course/get/ HTTP/1.1" 200 2
+INFO 2019-08-29 14:45:07,554 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:45:07,556 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:45:07,605 basehttp 154 "GET /course/category/ HTTP/1.1" 200 149
+INFO 2019-08-29 14:45:07,656 basehttp 154 "GET /course/?ordering=-id&page=1&size=3 HTTP/1.1" 200 1138
+INFO 2019-08-29 14:45:12,191 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:45:12,195 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:50:11,745 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:50:11,755 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:50:13,557 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:50:13,568 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 14:52:15,583 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 14:52:15,592 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 20:31:29,485 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/serializers.py changed, reloading.
+INFO 2019-08-29 20:31:36,264 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 20:32:40,224 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/orders/models.py changed, reloading.
+INFO 2019-08-29 20:32:41,905 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 20:37:11,239 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py changed, reloading.
+INFO 2019-08-29 20:37:13,028 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 20:37:35,381 basehttp 154 "GET /user/orders HTTP/1.1" 301 0
+ERROR 2019-08-29 20:37:35,540 log 228 Internal Server Error: /user/orders/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 119, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1004, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class UserOrderModelSerializer missing "Meta.model" attribute
+ERROR 2019-08-29 20:37:35,542 basehttp 154 "GET /user/orders/ HTTP/1.1" 500 22062
+ERROR 2019-08-29 20:37:47,403 log 228 Internal Server Error: /user/orders/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 119, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1004, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class UserOrderModelSerializer missing "Meta.model" attribute
+ERROR 2019-08-29 20:37:47,405 basehttp 154 "GET /user/orders/ HTTP/1.1" 500 22012
+INFO 2019-08-29 20:41:47,198 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-29 20:41:51,996 log 228 Internal Server Error: /user/orders/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 119, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1004, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class UserOrderModelSerializer missing "Meta.model" attribute
+ERROR 2019-08-29 20:41:51,997 basehttp 154 "GET /user/orders/ HTTP/1.1" 500 22012
+INFO 2019-08-29 20:43:06,477 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-29 20:43:09,920 log 228 Internal Server Error: /user/orders/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 119, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1004, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class UserOrderModelSerializer missing "Meta.model" attribute
+ERROR 2019-08-29 20:43:09,922 basehttp 154 "GET /user/orders/ HTTP/1.1" 500 22012
+INFO 2019-08-29 20:45:14,951 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-29 20:45:18,225 log 228 Internal Server Error: /user/orders/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 119, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 511, in to_representation
+    for field in fields:
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 372, in _readable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 360, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 1004, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class UserOrderModelSerializer missing "Meta.model" attribute
+ERROR 2019-08-29 20:45:18,227 basehttp 154 "GET /user/orders/ HTTP/1.1" 500 22012
+INFO 2019-08-29 20:46:29,285 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-08-29 20:46:33,694 log 228 Internal Server Error: /user/orders/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 497, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 457, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 468, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/views.py", line 494, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py", line 119, in list
+    return Response(serializer.data)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 757, in data
+    ret = super().data
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/fields.py", line 443, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/moluo/.virtualenvs/luffy/lib/python3.6/site-packages/rest_framework/fields.py", line 98, in get_attribute
+    instance = instance()
+  File "/home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/orders/models.py", line 61, in course_list
+    'course_img': settings.DOMAIL_IMAGE_URL[:-1] + item.course.course_img,
+TypeError: must be str, not ImageFieldFile
+ERROR 2019-08-29 20:46:33,697 basehttp 154 "GET /user/orders/ HTTP/1.1" 500 21802
+INFO 2019-08-29 20:47:34,475 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 20:47:38,193 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 20:49:49,217 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 20:49:52,402 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 20:53:50,674 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/views.py changed, reloading.
+INFO 2019-08-29 20:53:52,977 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 20:54:00,674 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 20:54:00,685 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 20:59:21,124 basehttp 154 "OPTIONS /user/orders HTTP/1.1" 200 0
+INFO 2019-08-29 20:59:21,186 basehttp 154 "GET /user/orders HTTP/1.1" 301 0
+INFO 2019-08-29 20:59:21,199 basehttp 154 "OPTIONS /user/orders/ HTTP/1.1" 200 0
+INFO 2019-08-29 20:59:21,242 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 20:59:21,245 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 20:59:21,791 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 20:59:26,719 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 20:59:26,730 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 20:59:28,963 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:04:43,807 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:04:43,835 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:04:44,847 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:04:46,783 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:04:46,785 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:04:47,560 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:05:32,323 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:05:32,327 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:05:33,278 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:07:30,050 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 21:15:21,628 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:15:21,636 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 21:15:21,639 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:16:45,143 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:16:45,144 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:16:45,145 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 21:16:52,988 basehttp 154 "OPTIONS /user/orders HTTP/1.1" 200 0
+INFO 2019-08-29 21:16:52,998 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:16:53,005 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:16:53,073 basehttp 154 "OPTIONS /user/orders/ HTTP/1.1" 200 0
+INFO 2019-08-29 21:16:53,550 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:17:06,063 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:17:06,068 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:17:06,347 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:17:44,702 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:17:44,742 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:17:45,348 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:18:40,179 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:18:40,186 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 21:18:40,187 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:18:47,034 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:18:47,036 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:18:47,346 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:18:55,546 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:18:55,548 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:18:56,456 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11054
+INFO 2019-08-29 21:22:16,785 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/orders/models.py changed, reloading.
+INFO 2019-08-29 21:22:19,596 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 21:23:30,389 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:23:30,391 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:23:31,633 basehttp 154 "GET /user/orders/ HTTP/1.1" 200 11088
+INFO 2019-08-29 21:23:31,860 basehttp 154 "GET /media/course/1.png HTTP/1.1" 304 0
+INFO 2019-08-29 21:23:31,870 basehttp 154 "GET /media/course/course-cover_fJVWBPY.jpeg HTTP/1.1" 304 0
+INFO 2019-08-29 21:23:31,889 basehttp 154 "GET /media/course/Loginbg.3377d0c_v9pD5Me.jpg HTTP/1.1" 304 0
+INFO 2019-08-29 21:23:32,002 basehttp 154 "GET /media/course/2_cCNq6iH.jpeg HTTP/1.1" 304 0
+INFO 2019-08-29 21:23:32,007 basehttp 154 "GET /media/course/course-cover.jpeg HTTP/1.1" 304 0
+INFO 2019-08-29 21:23:32,014 basehttp 154 "GET /media/course/course-cover_tKO3utA.jpeg HTTP/1.1" 304 0
+INFO 2019-08-29 21:23:47,420 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/users/urls.py changed, reloading.
+INFO 2019-08-29 21:23:49,513 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-08-29 21:25:03,649 log 228 Not Found: /user/orders/
+WARNING 2019-08-29 21:25:03,658 basehttp 154 "GET /user/orders/ HTTP/1.1" 404 4069
+WARNING 2019-08-29 21:25:03,815 log 228 Not Found: /favicon.ico
+WARNING 2019-08-29 21:25:03,816 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3325
+INFO 2019-08-29 21:25:39,694 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 21:25:39,767 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:25:39,771 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:25:39,831 basehttp 154 "GET /user/order HTTP/1.1" 301 0
+INFO 2019-08-29 21:25:40,439 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 21:25:40,826 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11088
+INFO 2019-08-29 21:25:43,035 basehttp 154 "GET /user/order HTTP/1.1" 301 0
+INFO 2019-08-29 21:25:43,642 basehttp 154 "GET /user/order/ HTTP/1.1" 200 33334
+INFO 2019-08-29 21:25:44,092 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,103 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,104 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,104 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,107 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,112 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,143 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,144 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,144 basehttp 154 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,149 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2019-08-29 21:25:44,605 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2019-08-29 21:26:00,074 basehttp 154 "GET /user/order HTTP/1.1" 301 0
+INFO 2019-08-29 21:26:00,111 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:26:00,113 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:26:04,572 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11088
+INFO 2019-08-29 21:28:16,138 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 21:29:13,617 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:29:13,650 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:29:17,725 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11586
+INFO 2019-08-29 21:47:46,349 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 21:47:46,429 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:47:46,435 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:47:47,903 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 21:47:48,967 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11586
+INFO 2019-08-29 21:49:39,929 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/orders/models.py changed, reloading.
+INFO 2019-08-29 21:53:15,682 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 21:53:22,261 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:53:22,263 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:53:22,266 basehttp 154 "GET /banner/ HTTP/1.1" 200 192
+INFO 2019-08-29 21:53:27,185 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:53:27,195 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:53:27,757 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11586
+INFO 2019-08-29 21:53:48,380 autoreload 217 /home/moluo/Desktop/luffycity/luffyapi/luffyapi/apps/orders/models.py changed, reloading.
+INFO 2019-08-29 21:53:50,261 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-08-29 21:54:19,711 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 21:54:19,715 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 21:54:20,432 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:10:49,502 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:10:49,924 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 120
+INFO 2019-08-29 22:10:49,929 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 46
+INFO 2019-08-29 22:10:50,375 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:10:51,115 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:11:06,930 basehttp 154 "POST /payments/201908290059090000013458/alipay/ HTTP/1.1" 200 930
+INFO 2019-08-29 22:11:15,883 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:11:16,981 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:11:17,365 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:11:21,433 basehttp 154 "POST /payments/201908290059090000013458/alipay/ HTTP/1.1" 200 922
+INFO 2019-08-29 22:11:30,011 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:11:30,489 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:11:30,872 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:11:34,584 basehttp 154 "POST /payments/201908282345210000011916/alipay/ HTTP/1.1" 200 926
+INFO 2019-08-29 22:11:44,008 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:11:44,605 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:11:44,989 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:11:54,319 basehttp 154 "POST /payments/201908282334210000012241/alipay/ HTTP/1.1" 200 921
+INFO 2019-08-29 22:12:00,975 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:12:01,396 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:12:01,792 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:12:07,918 basehttp 154 "POST /payments/201908281209480000010433/alipay/ HTTP/1.1" 200 920
+INFO 2019-08-29 22:12:15,960 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:12:16,360 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:12:16,870 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:18:14,230 basehttp 154 "POST /payments/201908290059090000013458/alipay/ HTTP/1.1" 200 920
+INFO 2019-08-29 22:18:24,352 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:18:24,804 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:18:25,177 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:18:39,263 basehttp 154 "POST /payments/201908282345210000011916/alipay/ HTTP/1.1" 200 924
+INFO 2019-08-29 22:18:44,728 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:18:45,166 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:18:45,639 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478
+INFO 2019-08-29 22:19:47,604 basehttp 154 "POST /payments/201908282345210000011916/alipay/ HTTP/1.1" 200 918
+INFO 2019-08-29 22:20:03,833 basehttp 154 "OPTIONS /user/order HTTP/1.1" 200 0
+INFO 2019-08-29 22:20:04,328 basehttp 154 "OPTIONS /user/order/ HTTP/1.1" 200 0
+INFO 2019-08-29 22:20:04,795 basehttp 154 "GET /user/order/ HTTP/1.1" 200 11478

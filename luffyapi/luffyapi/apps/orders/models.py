@@ -2,6 +2,8 @@ from django.db import models
 from luffyapi.utils.models import BaseModel
 from users.models import User
 from courses.models import Course
+from django.conf import settings
+from courses.models import CourseExpire
 
 
 class Order(BaseModel):
@@ -32,6 +34,36 @@ class Order(BaseModel):
         db_table = "ly_order"
         verbose_name = "订单记录"
         verbose_name_plural = "订单记录"
+
+    def status(self):
+        """返回订单状态的文本格式"""
+        return self.status_choices[self.order_status][1]
+
+    def course_list(self):
+        """返回订单详情的课程列表"""
+        order_detail = self.order_courses.all()
+        data = []
+        for item in order_detail:
+            # 获取本地订单中用户购买的课程有效期
+            try:
+                course_expire = CourseExpire.objects.get(expire_time=item.expire, course=item.course)
+                expire = course_expire.expire_text
+            except:
+                if item.expire == 0:
+                    expire = '永久有效'
+                else:
+                    raise CourseExpire.DoesNotExist()
+
+            data.append({
+                'id': item.course.id,
+                'course_name': item.course.name,
+                'course_img': settings.DOMAIL_IMAGE_URL + item.course.course_img.url,
+                'expire': expire,
+                'price': item.price,
+                'real_price': item.real_price,
+                'discount_name': item.discount_name,
+            })
+        return data
 
     def __str__(self):
         return "%s,总价: %s,实付: %s" % (self.order_title, self.total_price, self.real_price)
