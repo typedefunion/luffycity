@@ -8,4 +8,5 @@ urlpatterns = [
     path(r'', views.CourseListAPIView.as_view()),
     # 单个课程中的课程详情信息路由
     re_path(r'(?P<pk>\d+)/', views.CourseRetrieveAPIView.as_view()),
-]
+    # 获取保利威的token
+    path(r"polyv/token/", views.PolyvAPIView.as_view()),]

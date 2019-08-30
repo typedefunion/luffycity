@@ -74,7 +74,6 @@ class CartAPIView(ViewSet):
         if len(cart_course_list) < 1:
             return Response([])
 
-
         # 否则我们需要组装商品课程信息返回给客户端
         data = []
         for course_bytes, expire_bytes in cart_course_list.items():
@@ -123,6 +122,17 @@ class CartAPIView(ViewSet):
 
         return Response({'message': '切换勾选状态成功！'})
 
+    @action(methods=["PUT"], detail=False)
+    def put(self, request):
+        """切换购物车指定商品的购买有效期"""
+        # user_id, course_id, 有效期选项
+        user_id = request.user.id
+        course_id = request.data.get("course_id")
+        expire = request.data.get("expire")
+        redis = get_redis_connection("cart")
+        redis.hset("cart_%s" % user_id, course_id, expire)
+        return Response({"message": "切换有效期选项成功！"})
+
     @action(methods=['DELETE'], detail=False)
     def delete(self, request):
         """删除购物车中的商品"""
@@ -150,10 +160,13 @@ class CartAPIView(ViewSet):
         redis = get_redis_connection('cart')
         cart_list = redis.hgetall('cart_%s' % user_id)
         selected_set = redis.smembers('selected_%s' % user_id)
+        print(2468, cart_list)
+        print(1357,selected_set)
 
         data = []
 
         for course_id_byte in selected_set:
+            print(1111,course_id_byte)
             course_id = course_id_byte.decode()
             try:
                 course = Course.objects.get(is_show=True, is_delete=False, pk=course_id)

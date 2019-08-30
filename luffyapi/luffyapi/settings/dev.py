@@ -353,3 +353,14 @@ ALIPAY_CONFIG = {
     "return_url": "http://www.luffycity.cn:8080/pay/result",
     "notify_url": "http://api.luffycity.cn:8000/pay/result",
 }
+
+
+# 设置订单超时取消的时间[单位： 秒]
+ORDER_TIMEOUT = 12 * 60 * 60
+
+# 保利威视频云存储服务
+POLYV_CONFIG = {
+    "userId": "a971622b88",
+    "secretkey": "Z3C7eIO0dr",
+    "tokenUrl": "https://hls.videocc.net/service/v1/token",
+}

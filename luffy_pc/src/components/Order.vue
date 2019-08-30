@@ -292,7 +292,6 @@
       },
       get_alipay_payment_url(order_number){
           this.$axios.post(`${this.$settings.Host}/payments/${order_number}/alipay/`).then(response=>{
-              // console.log(11111,response.data.pay_url);
               // 页面跳转
               location.href = response.data.pay_url;
           }).catch(error=>{

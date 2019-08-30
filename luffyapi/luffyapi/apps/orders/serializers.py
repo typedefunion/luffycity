@@ -50,6 +50,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
         redis = get_redis_connection("cart")
         # 从购物车中提取订单信息
         cart_list = redis.hgetall("cart_%s" % user_id)  # 购物车中的有多少商品
+        print(1234, cart_list)
         course_set = redis.smembers("selected_%s" % user_id)    # 购物车中勾选了多少商品
 
         # 如果没有任何勾选的商品，则不能继续下单
@@ -75,8 +76,6 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 "orders": 0,  # 排序字段
             })
 
-
-
             # 声明订单总价格和订单实价
             total_price = 0
 
@@ -95,7 +94,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 # 提取课程的有效期选项
                 try:
                     """有效期选项"""
-                    course_expire = CourseExpire.objects.get(expire_time=expire_time,course=course)
+                    course_expire = CourseExpire.objects.get(expire_time=expire_time, course=course)
                     price = course_expire.price
                 except CourseExpire.DoesNotExist:
                     """永久有效"""

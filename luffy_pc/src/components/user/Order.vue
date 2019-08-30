@@ -46,7 +46,7 @@
                 <li class="order-status">{{order.status}}</li>
                 <li class="order-do">
                   <span class="btn btn2" v-if="order.order_status==0" @click="get_alipay_payment_url(order.order_number)">去支付</span>
-                  <span class="btn btn2" v-if="order.order_status==1">去学习</span>
+                  <span class="btn btn2" v-if="order.order_status==1"><router-link to="/player?vid=a971622b88114705e77d86b6d3162916_a">去学习</router-link></span>
                 </li>
               </ul>
               </div>
@@ -286,7 +286,7 @@
 .user-data-list .course-expire{
     font-size: 12px;
     color: #ff5502;
-    width: 60px;
+    width: 90px;
     text-align: center;
 }
 .btn {

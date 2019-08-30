@@ -11,6 +11,7 @@ import Cart from "../components/Cart";
 import Order from "../components/Order";
 import Success from "../components/Success";
 import UserOrder from "../components/user/Order";
+import Player from "../components/Player";
 
 Vue.use(Router);
 
@@ -68,6 +69,11 @@ export default new Router({
        name:"UserOrder",
        path:"/user/order",
        component:UserOrder,
+     },
+    {
+       name:"Player",
+       path:"/player",
+       component:Player,
      },
   ]
 })
