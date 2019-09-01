@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcace91a-300e-4a34-85b1-4a796f7b1b17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/uwsgi.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffyapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/settings/dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/luffy.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffy.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffyapi/settings/prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffyapi/settings/prod.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,7 +205,7 @@
       <workItem from="1566957665011" duration="6111000" />
       <workItem from="1566976256756" duration="26841000" />
       <workItem from="1567127033697" duration="12128000" />
-      <workItem from="1567316077150" duration="3081000" />
+      <workItem from="1567316077150" duration="4818000" />
     </task>
     <servers />
   </component>
@@ -225,7 +226,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567171908038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/luffyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567356866485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/luffyapi$serializers.coverage" NAME="serializers Coverage Results" MODIFIED="1565167913390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/luffyapi/apps/home" />
   </component>
 </project>

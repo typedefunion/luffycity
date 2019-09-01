@@ -30,6 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'www.wangsijie.club',
     'api.wangsijie.club',
+    '127.0.0.1',
 ]
 
 
