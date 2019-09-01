@@ -30,7 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'www.wangsijie.club',
     'api.wangsijie.club',
-    '127.0.0.1',
+    '49.232.44.212',
 ]
 
 
@@ -113,7 +113,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'luffy_db',
-        'HOST': '127.0.0.1',
+        'HOST': '49.232.44.212',
         'PORT': 3306,
         'USER': 'root',
         'PASSWORD': '123456',
@@ -127,7 +127,7 @@ CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
         # 项目上线时,需要调整这里的路径
-        "LOCATION": "redis://127.0.0.1:6379/0",
+        "LOCATION": "redis://49.232.44.212:6379/0",
 
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
@@ -136,7 +136,7 @@ CACHES = {
     # 提供给xadmin或者admin的session存储
     "session": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
+        "LOCATION": "redis://49.232.44.212:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -144,7 +144,7 @@ CACHES = {
     # 提供存储短信验证码
     "sms_code": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/2",
+        "LOCATION": "redis://49.232.44.212:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -152,7 +152,7 @@ CACHES = {
     # 提供存储购物车信息
     "cart": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/3",
+        "LOCATION": "redis://49.232.44.212:6379/3",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
