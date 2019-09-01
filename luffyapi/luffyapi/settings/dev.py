@@ -208,6 +208,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "statics")
 ]
 
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'statics')
+
 # 项目中存储上传文件的根目录[暂时配置]，注意，static目录需要手动创建否则上传文件时报错
 MEDIA_ROOT=os.path.join(BASE_DIR,"statics")
 # 访问上传文件的url地址前缀
