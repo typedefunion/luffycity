@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     'www.wangsijie.club',
     'api.wangsijie.club',
     '49.232.44.212',
+    '127.0.0.1',
 ]
 
 
