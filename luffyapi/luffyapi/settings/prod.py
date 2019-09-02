@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'luffyapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'luffy_db',
+        'NAME': 'luffy',
         'HOST': '49.232.44.212',
         'PORT': 3306,
         'USER': 'root',
